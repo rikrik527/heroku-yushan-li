@@ -1,0 +1,34 @@
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+/* kindle fire */
+/*LG */
+/* iphonex */
+/* iphone 6 6s 7 8 */
+/* samsung */
+/* ipad mini */
+/* respond */
+/* xpreia */
+@media (max-device-width: 360px) and (max-device-height: 640px) {
+  #shan-li-image {
+    width: 90px; }
+
+  .shan-btn {
+    background-position-y: 90% !important; } }
+/* iphone 6 plus */
+/* iphone 6*/
+/* iphone5 */
+/* laptop */
+/* laptop 2 */
+/* laptop 3*/
+
+/*# sourceMappingURL=mediaQuery.css.map */

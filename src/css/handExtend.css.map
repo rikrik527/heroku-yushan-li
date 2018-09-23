@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM;EACF,SAAS,EAAE,cAAc",
+"sources": ["../sass/handExtend.scss"],
+"names": [],
+"file": "handExtend.css"
+}

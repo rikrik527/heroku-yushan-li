@@ -1,0 +1,913 @@
+    @import '../css/normalize.css';
+    @import './color.scss';
+    @import './mediaQuery';
+    @import './judoVariable';
+    @import './shanli';
+    @import './judo';
+    @import './crazy';
+    @import './animation';
+    @import './elements';
+    @import './beast';
+    @import './samurai';
+    @import './magic';
+    @import './nopo';
+    body {
+        position: relative;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+    }
+    
+    .login-page {
+        display: none;
+    }
+    
+    a {
+        outline: none;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    figure {
+        position: absolute;
+    }
+    
+    ul,
+    li,
+    ol {
+        margin: 0;
+        padding: 0;
+        list-style: none!important;
+    }
+    
+    #rain {
+        transform: rotateX(-90deg);
+    }
+    
+    svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .text {
+        fill: url(#p-fire);
+        stroke: hotpink;
+        stroke-width: 9;
+        stroke-opacity: 1;
+    }
+    
+    .iframe {
+        display: none;
+    }
+    
+    .wrapper {
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+    }
+    
+    .header-menu {
+        position: absolute;
+        top: 8%;
+        z-index: 9999999999;
+        width: 100vw;
+        height: 15vh;
+        .menu-boxcontrol {
+            position: absolute;
+            top: 0%;
+            z-index: 999999999999999999999;
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to left, rgba(255, 155, 241, 0.5), rgba(255, 155, 55, .5));
+            text-align: center;
+            transform: translateZ(10px);
+            .header-brand {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin: calc(-15vh/2) 0 0 calc(-300px/2);
+                width: 300px;
+                height: 15vh;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 21px;
+                line-height: 16px;
+                .production {
+                    position: absolute;
+                    top: 23%;
+                    left: -61%;
+                    z-index: 9999;
+                    color: white;
+                    font: status-bar;
+                    font-size: 10px;
+                    small {
+                        color: $blue3;
+                    }
+                }
+                .mr-judo-made {
+                    width: 150px;
+                    height: 100px;
+                    letter-spacing: 1px;
+                }
+                .the-game {
+                    position: absolute;
+                    top: -19%;
+                    left: -44%;
+                    z-index: 99999999;
+                    margin: -50px 0 0 -75px;
+                    width: 150px;
+                    height: 200px;
+                    text-shadow: 2px -1px 1px white;
+                    font: 10.5em/1 Open Sans, Impact;
+                    -webkit-text-decoration-line: underline;
+                }
+            }
+            .awake {
+                position: absolute;
+                top: 100%;
+                left: 47%;
+                width: 60px;
+                height: 28px;
+                background: rgba(255, 155, 225, 0.5);
+                text-align: center;
+                font-size: 13px;
+                line-height: 22px;
+                transition: all .1s linear;
+                &:hover {
+                    background: rgba(27, 194, 185, 0.5);
+                    .awake-up {
+                        top: -10px;
+                        opacity: 0;
+                    }
+                    .awake-down {
+                        top: 3px;
+                        opacity: 1;
+                        transition: all .1s linear;
+                    }
+                    .awake-border-up {
+                        width: 0px;
+                    }
+                    .awake-border-down {
+                        width: 0px;
+                    }
+                }
+                .awake-up {
+                    position: absolute;
+                    top: 4px;
+                    left: 25%;
+                    z-index: 9099999;
+                    color: white;
+                    opacity: 1;
+                    cursor: pointer;
+                    transition: all 0.1s linear;
+                }
+                .awake-border-up {
+                    position: absolute;
+                    top: -1px;
+                    left: 0%;
+                    width: calc(120px/2);
+                    border-top: 1px solid white;
+                    transition: all 1s linear .5s;
+                }
+                .awake-border-down {
+                    position: absolute;
+                    top: 95%;
+                    left: 100%;
+                    width: calc(120px/2);
+                    border-top: 1px solid white;
+                    transition: all 1s linear .5s;
+                    transform: rotateY(-180deg);
+                    transform-origin: left bottom;
+                }
+                .awake-down {
+                    position: absolute;
+                    top: 25px;
+                    left: 25%;
+                    display: block;
+                    color: maroon;
+                    text-shadow: -1px 1px 5px white;
+                    opacity: 0;
+                    transition: all 0.1s linear;
+                }
+            }
+            .prologue {
+                position: absolute;
+                top: 100%;
+                left: 67%;
+                width: 60px;
+                height: 28px;
+                background: rgba(255, 155, 225, 0.5);
+                text-align: center;
+                font-size: 13px;
+                line-height: 22px;
+                transition: all .1s linear;
+                &:hover {
+                    background: rgba(27, 194, 185, 0.5);
+                    .prologue-up {
+                        top: -10px;
+                        opacity: 0;
+                    }
+                    .prologue-down {
+                        top: 3px;
+                        opacity: 1;
+                        transition: all .1s linear;
+                    }
+                    .prologue-border-up {
+                        width: 0px;
+                    }
+                    .prologue-border-down {
+                        width: 0px;
+                    }
+                }
+                .prologue-up {
+                    position: absolute;
+                    top: 4px;
+                    left: 25%;
+                    z-index: 9099999;
+                    color: white;
+                    opacity: 1;
+                    cursor: pointer;
+                    transition: all 0.1s linear;
+                }
+                .prologue-border-up {
+                    position: absolute;
+                    top: -1px;
+                    left: 0%;
+                    width: calc(120px/2);
+                    border-top: 1px solid white;
+                    transition: all 1s linear .5s;
+                }
+                .prologue-border-down {
+                    position: absolute;
+                    top: 95%;
+                    left: 100%;
+                    width: calc(120px/2);
+                    border-top: 1px solid white;
+                    transition: all 1s linear .5s;
+                    transform: rotateY(-180deg);
+                    transform-origin: left bottom;
+                }
+                .prologue-down {
+                    position: absolute;
+                    top: 25px;
+                    left: 25%;
+                    display: block;
+                    color: maroon;
+                    text-shadow: -1px 1px 5px white;
+                    opacity: 0;
+                    transition: all 0.1s linear;
+                }
+            }
+            .location {
+                position: absolute;
+                top: 100%;
+                left: 87%;
+                width: 60px;
+                height: 28px;
+                background: rgba(255, 155, 225, 0.5);
+                text-align: center;
+                font-size: 13px;
+                line-height: 22px;
+                transition: all .1s linear;
+                &:hover {
+                    background: rgba(27, 194, 185, 0.5);
+                    .location-up {
+                        top: -10px;
+                        opacity: 0;
+                    }
+                    .location-down {
+                        top: 3px;
+                        opacity: 1;
+                        transition: all .1s linear;
+                    }
+                    .location-border-up {
+                        width: 0px;
+                    }
+                    .location-border-down {
+                        width: 0px;
+                    }
+                }
+                .location-up {
+                    position: absolute;
+                    top: 4px;
+                    left: 25%;
+                    z-index: 9099999;
+                    color: white;
+                    opacity: 1;
+                    cursor: pointer;
+                    transition: all 0.1s linear;
+                }
+                .location-border-up {
+                    position: absolute;
+                    top: -1px;
+                    left: 0%;
+                    width: calc(120px/2);
+                    border-top: 1px solid white;
+                    transition: all 1s linear .5s;
+                }
+                .location-border-down {
+                    position: absolute;
+                    top: 95%;
+                    left: 100%;
+                    width: calc(120px/2);
+                    border-top: 1px solid white;
+                    transition: all 1s linear .5s;
+                    transform: rotateY(-180deg);
+                    transform-origin: left bottom;
+                }
+                .location-down {
+                    position: absolute;
+                    top: 25px;
+                    left: 25%;
+                    display: block;
+                    color: maroon;
+                    text-shadow: -1px 1px 5px white;
+                    opacity: 0;
+                    transition: all 0.1s linear;
+                }
+            }
+            .epilogue {
+                position: absolute;
+                top: 100%;
+                left: 107%;
+                width: 60px;
+                height: 28px;
+                background: rgba(255, 155, 225, 0.5);
+                text-align: center;
+                font-size: 13px;
+                line-height: 22px;
+                transition: all .1s linear;
+                &:hover {
+                    background: rgba(27, 194, 185, 0.5);
+                    .epilogue-up {
+                        top: -10px;
+                        opacity: 0;
+                    }
+                    .epilogue-down {
+                        top: 3px;
+                        opacity: 1;
+                    }
+                    .epilogue-border-up {
+                        width: 0px;
+                    }
+                    .epilogue-border-down {
+                        width: 0px;
+                    }
+                }
+                .epilogue-up {
+                    position: absolute;
+                    top: 4px;
+                    left: 25%;
+                    z-index: 9099999;
+                    color: white;
+                    opacity: 1;
+                    cursor: pointer;
+                    transition: all 0.1s linear;
+                }
+                .epilogue-border-up {
+                    position: absolute;
+                    top: -1px;
+                    left: 0%;
+                    width: calc(120px/2);
+                    border-top: 1px solid white;
+                    transition: all 1s linear .5s;
+                }
+                .epilogue-border-down {
+                    position: absolute;
+                    top: 95%;
+                    left: 100%;
+                    width: calc(120px/2);
+                    border-top: 1px solid white;
+                    transition: all 1s linear .5s;
+                    transform: rotateY(-180deg);
+                    transform-origin: left bottom;
+                }
+                .epilogue-down {
+                    position: absolute;
+                    top: 25px;
+                    left: 25%;
+                    display: block;
+                    color: maroon;
+                    text-shadow: -1px 1px 5px white;
+                    opacity: 0;
+                    transition: all 0.1s linear;
+                }
+            }
+        }
+    }
+    
+    .shan-li-paralax1 {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        background: url('../images/autoroller1.png');
+    }
+    
+    #shan-li-image {
+        position: absolute;
+        left: 0%;
+        max-width: 100%;
+        height: auto;
+        border: 3px solid white;
+        box-shadow: -1px 1px 18px 5px hotpink;
+        transform-origin: center;
+    }
+    
+    .btn-back {
+        position: fixed;
+        bottom: 4%;
+        left: 50%;
+        z-index: 9999999999999999;
+        margin: -25px 0 0 -25px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 100px;
+        background: white;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .btn-next {
+        position: fixed;
+        bottom: 4%;
+        left: 50%;
+        z-index: 9999999999999999;
+        margin: -25px 0 0 -25px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 100px;
+        background: white;
+        text-align: center;
+        cursor: pointer;
+        transition: all 1s ease-in-out;
+    }
+    
+    .extend {
+        display: inline-block;
+        margin: 1%;
+        width: 100%;
+        height: 2000px;
+        background: green;
+    }
+    
+    .main-boxcontrol {
+        position: relative;
+        z-index: 999999;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        font-size: 16px;
+        line-height: 16px;
+        perspective: 800px;
+    }
+    
+    .awake-first-section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, $pink8, $pink2, $pink8);
+        transform: translateZ(0px);
+    }
+    
+    .awake-second-section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, $pink2, $pink8);
+        transform: translateZ(0px);
+    }
+    
+    .awake-third-section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, $pink2, $pink8);
+        transform: translateZ(0px);
+    }
+    
+    .awake-fourth-section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, $pink2, $pink8);
+        transform: translateZ(0px);
+    }
+    
+    .awake-fifth-section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, $pink2, $pink8);
+        transform: translateZ(0px);
+    }
+    
+    .prologue-first-section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, $pink2, $pink8);
+        transform: translateZ(0px);
+    }
+    
+    .location-first-section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, $pink2, $pink8);
+        transform: translateZ(0px);
+    }
+    
+    .epilogue-first-section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, $pink2, $pink8);
+        transform: translateZ(0px);
+    }
+    
+    .judo-btn {
+        display: block;
+        float: left;
+        margin: 1%;
+        padding: 1%;
+        width: 45%;
+        height: 40%;
+        background: $light-blue;
+        transition: all .3s linear;
+        transform-style: preserve-3d;
+        .judo-lowbox {
+            @include lowbox(10%,
+            10%,
+            0%,
+            0%);
+        }
+    }
+    
+    .external-cover-btn {
+        position: absolute;
+        width: 62.5em;
+        height: 28.750em;
+        background: black;
+        transition: all 1s linear;
+        animation: externalcoverbtn 1s linear 3s forwards;
+        @keyframes externalcoverbtn {
+            10%,
+            30%,
+            60%,
+            90% {
+                opacity: 0.6;
+            }
+            20%,
+            40%,
+            60%,
+            80%,
+            100% {
+                opacity: 0.3;
+            }
+        }
+    }
+    
+    .shan-btn {
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        overflow: hidden;
+        margin: calc(-28.750em/2) 0 0 calc(-62.5em/2);
+        width: 62.5em;
+        height: 28.750em;
+        background: url('../images/section1.gif')no-repeat;
+        transition: all .3s linear;
+        animation: shanbtn 3s linear 5s;
+        @keyframes shanbtn {
+            10% {
+                opacity: .5;
+            }
+            30% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .5;
+            }
+            70% {
+                opacity: 1;
+            }
+            90% {
+                opacity: .5;
+            }
+        }
+        .shan-lowbox {
+            @include lowbox(10%,
+            10%,
+            0%,
+            0%);
+        }
+    }
+    
+    .crazy-btn {
+        display: block;
+        float: left;
+        margin: 1%;
+        padding: 1%;
+        width: 30%;
+        height: 33%;
+        background: $deep-blue;
+        animation: crazy-btn 2s ease 1.5s;
+        .crazy-lowbox {
+            @include lowbox(10%,
+            10%,
+            0%,
+            0%);
+        }
+    }
+    
+    .beast-btn {
+        display: none;
+        background: $link-orange2;
+        animation: beast-btn 2s ease 2s;
+        @include btn(10%,
+        10%,
+        0%,
+        0%);
+        .beast-lowbox {
+            @include lowbox(10%,
+            10%,
+            0%,
+            0%);
+        }
+    }
+    
+    .nopo-btn {
+        background: $storm-red;
+        animation: nopo-btn 2s ease 2.5s;
+        @include btn(10%,
+        10%,
+        0%,
+        0%);
+        .nopo-lowbox {
+            @include lowbox(10%,
+            10%,
+            0%,
+            0%);
+        }
+    }
+    
+    .samurai-btn {
+        display: none;
+        background: $storm-grey2;
+        animation: samurai-btn 2s ease 3s;
+        @include btn(10%,
+        10%,
+        0%,
+        0%);
+        .samurai-lowbox {
+            @include lowbox(10%,
+            10%,
+            0%,
+            0%);
+        }
+    }
+    
+    .magic-btn {
+        display: none;
+        background: $sun-pink;
+        animation: magic-btn 2s ease 3.5s;
+        @include btn(10%,
+        10%,
+        0%,
+        0%);
+        .magic-lowbox {
+            @include lowbox(10%,
+            10%,
+            0%,
+            0%);
+        }
+    }
+    /* wrapper */
+    
+    .judo-lowbox {
+        box-shadow: 0px 0px 8px 3px $blue5;
+    }
+    
+    .shan-lowbox {
+        background: $red2;
+        box-shadow: 0px 0px 8px 3px $red5;
+        color: $red2;
+        text-shadow: 0px 0px 3px $red8;
+    }
+    
+    .crazy-lowbox {
+        background: $green2;
+        box-shadow: 0px 0px 8px 3px $green5;
+        color: $green2;
+        text-shadow: 0px 0px 3px $green8;
+    }
+    
+    .beast-lowbox {
+        background: $yellow2;
+        box-shadow: 0px 0px 8px 3px $yellow5;
+        color: white;
+        text-shadow: 0px 0px 3px $yellow8;
+    }
+    
+    .nopo-lowbox {
+        background: $red2;
+        box-shadow: 0px 0px 8px 3px $red5;
+        color: $red2;
+        text-shadow: 0px 0px 3px $red8;
+    }
+    
+    .samurai-lowbox {
+        background: $red2;
+        box-shadow: 0px 0px 8px 3px $red5;
+        color: $red2;
+        text-shadow: 0px 0px 3px $red8;
+    }
+    
+    .magic-lowbox {
+        background: $red2;
+        box-shadow: 0px 0px 8px 3px $red5;
+        color: $red2;
+        text-shadow: 0px 0px 3px $red8;
+    }
+    
+    .footer-boxcontrol {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 15vh;
+        #footer-content {}
+    }
+    
+    #lab {
+        position: absolute;
+        z-index: 99999999;
+        width: 1000px;
+        height: 460px;
+        transform: translateZ(12px);
+    }
+    
+    .shan-talk {
+        position: absolute;
+        top: 63%;
+        left: 2%;
+        z-index: 99;
+        display: block;
+        overflow: scroll;
+        width: 300px;
+        height: 150px;
+        border-radius: 5px;
+        background: #f48fb1;
+        box-shadow: 0px 0px 3px 3px #c2185b;
+        color: white;
+        text-overflow: clip;
+        text-shadow: 1px 1px 3px #c2185b;
+        white-space: wrap;
+        word-wrap: break-word;
+        .shan-conversation-li {
+            display: inline-block;
+            margin: auto;
+            width: 100%;
+            height: auto;
+            background: $pink2;
+            font-size: 10px;
+        }
+    }
+    
+    .aside-boxcontrol {
+        position: fixed;
+        top: 40%;
+        left: 0%;
+        display: block;
+        width: 50px;
+        height: 150px;
+        background: rgba(255, 100, 100, 0.5);
+        box-shadow: -1px 1px 3px 4px $pink3;
+        z-index: 999999999;
+        .aside-menu {
+            .nav {
+                position: absolute;
+            }
+            .icon-user {
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 50px;
+                background: #ec407a;
+                color: #64b5f6;
+                text-align: center;
+                line-height: 10px;
+                #username {
+                    text-overflow: ellipsis;
+                }
+            }
+            .icon-personal {
+                top: 34%;
+                left: 0%;
+                width: 100%;
+                height: 50px;
+                border: 2px solid #f06292;
+                background: #c2185b;
+                cursor: pointer;
+                &:hover {
+                    .pos1 {
+                        display: block;
+                    }
+                }
+            }
+            .icon-service {
+                top: 68%;
+                left: 0%;
+                width: 100%;
+                height: 50px;
+                border: 2px solid #f06292;
+                background: #c2185b;
+                cursor: pointer;
+                &:hover {
+                    .pos2 {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    
+    .tips {
+        position: absolute;
+        width: 105px;
+        height: auto;
+        /* outline: 1px solid #ad1457; */
+        border-radius: 3px;
+        background: rgba(255, 100, 100, 0.5);
+        box-shadow: -1px 1px 8px 3px lightpink;
+        color: snow;
+        text-align: center;
+        font-size: 10px;
+    }
+    
+    .pos1 {
+        top: 0%;
+        left: 53%;
+        display: none;
+    }
+    
+    .pos2 {
+        top: 0%;
+        left: 53%;
+        display: none;
+    }
+    
+    .paralax1 {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 15vh;
+        outline: 1px solid red;
+    }

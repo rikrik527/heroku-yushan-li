@@ -1,0 +1,70 @@
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+input[type='text'] {
+  border: 1px solid #64b5f6; }
+
+.temper-boxcontrol {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: 10px; }
+  .temper-boxcontrol .friendly-box, .temper-boxcontrol .suspicious-box, .temper-boxcontrol .angry-box {
+    background: hotpink;
+    line-height: 26px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    outline: 1px solid pink;
+    margin-top: 5px; }
+    .temper-boxcontrol .friendly-box .friendly-title, .temper-boxcontrol .suspicious-box .friendly-title, .temper-boxcontrol .angry-box .friendly-title {
+      color: white; }
+    .temper-boxcontrol .friendly-box .friendly-set-one, .temper-boxcontrol .friendly-box .friendly-set-two, .temper-boxcontrol .friendly-box .friendly-set-three, .temper-boxcontrol .friendly-box .friendly-set-four, .temper-boxcontrol .friendly-box .friendly-set-five, .temper-boxcontrol .friendly-box .friendly-set-six, .temper-boxcontrol .friendly-box .friendly-set-seven, .temper-boxcontrol .friendly-box .friendly-set-eight, .temper-boxcontrol .friendly-box .friendly-set-nigh, .temper-boxcontrol .friendly-box .friendly-set-ten, .temper-boxcontrol .suspicious-box .friendly-set-one, .temper-boxcontrol .suspicious-box .friendly-set-two, .temper-boxcontrol .suspicious-box .friendly-set-three, .temper-boxcontrol .suspicious-box .friendly-set-four, .temper-boxcontrol .suspicious-box .friendly-set-five, .temper-boxcontrol .suspicious-box .friendly-set-six, .temper-boxcontrol .suspicious-box .friendly-set-seven, .temper-boxcontrol .suspicious-box .friendly-set-eight, .temper-boxcontrol .suspicious-box .friendly-set-nigh, .temper-boxcontrol .suspicious-box .friendly-set-ten, .temper-boxcontrol .angry-box .friendly-set-one, .temper-boxcontrol .angry-box .friendly-set-two, .temper-boxcontrol .angry-box .friendly-set-three, .temper-boxcontrol .angry-box .friendly-set-four, .temper-boxcontrol .angry-box .friendly-set-five, .temper-boxcontrol .angry-box .friendly-set-six, .temper-boxcontrol .angry-box .friendly-set-seven, .temper-boxcontrol .angry-box .friendly-set-eight, .temper-boxcontrol .angry-box .friendly-set-nigh, .temper-boxcontrol .angry-box .friendly-set-ten {
+      margin: auto;
+      width: 15px;
+      height: 15px; }
+  .temper-boxcontrol .friendly-background {
+    background: yellow; }
+  .temper-boxcontrol .suspicious-box .suspicious-title {
+    color: white; }
+  .temper-boxcontrol .suspicious-box .suspicious-set-one, .temper-boxcontrol .suspicious-box .suspicious-set-two, .temper-boxcontrol .suspicious-box .suspicious-set-three, .temper-boxcontrol .suspicious-box .suspicious-set-four, .temper-boxcontrol .suspicious-box .suspicious-set-five, .temper-boxcontrol .suspicious-box .suspicious-set-six, .temper-boxcontrol .suspicious-box .suspicious-set-seven, .temper-boxcontrol .suspicious-box .suspicious-set-eight, .temper-boxcontrol .suspicious-box .suspicious-set-eigh, .temper-boxcontrol .suspicious-box .suspicious-set-ten {
+    margin: auto;
+    width: 15px;
+    height: 15px; }
+  .temper-boxcontrol .suspicious-background {
+    background: yellow; }
+  .temper-boxcontrol .angry-title {
+    color: white; }
+  .temper-boxcontrol .angry-set-one, .temper-boxcontrol .angry-set-two, .temper-boxcontrol .angry-set-three, .temper-boxcontrol .angry-set-four, .temper-boxcontrol .angry-set-five, .temper-boxcontrol .angry-set-six, .temper-boxcontrol .angry-set-seven, .temper-boxcontrol .angry-set-eight, .temper-boxcontrol .angry-set-eigh, .temper-boxcontrol .angry-set-ten {
+    margin: auto;
+    width: 15px;
+    height: 15px; }
+  .temper-boxcontrol .angry-background {
+    background: yellow; }
+
+/*# sourceMappingURL=temperApp.css.map */

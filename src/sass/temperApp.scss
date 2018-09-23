@@ -1,0 +1,85 @@
+@import './color.scss';
+@import './prefix.scss';
+
+.temper-boxcontrol{
+    
+    font-size: 12px;
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+    
+    padding: 10px;
+    .friendly-box,.suspicious-box,.angry-box{
+        background: hotpink;
+        
+        line-height: 26px;
+        
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        outline: 1px solid pink;
+        margin-top: 5px;
+        .friendly-title{
+            color: $orange8;
+            background: $yellow5;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        
+        
+        }
+        .friendly-set-one,.friendly-set-two,.friendly-set-three,.friendly-set-four,.friendly-set-five,.friendly-set-six,.friendly-set-seven,.friendly-set-eight,.friendly-set-nigh,.friendly-set-ten{
+           margin: auto;
+    
+    width: 15px;
+    height: 15px;
+        }
+    }
+    .friendly-background{
+        background: yellow;
+    }
+    .suspicious-box{
+     
+    .suspicious-title{
+        color: white;
+        background: $purple5;;
+        padding-right: 10px;
+            padding-left: 10px;
+}
+
+
+    }
+    .suspicious-set-one,.suspicious-set-two,.suspicious-set-three,.suspicious-set-four,.suspicious-set-five,.suspicious-set-six,.suspicious-set-seven,.suspicious-set-eight,.suspicious-set-eigh,.suspicious-set-ten{
+        margin: auto;
+    
+        width: 15px;
+        height: 15px;
+    }
+    
+    .suspicious-background{
+        background: yellow;
+    }
+    .angry-box{
+       
+    }
+    .angry-title{
+        color: white;
+        background:$red5;
+        padding-right: 10px;
+            padding-left: 10px;
+}
+
+
+    
+    .angry-set-one,.angry-set-two,.angry-set-three,.angry-set-four,.angry-set-five,.angry-set-six,.angry-set-seven,.angry-set-eight,.angry-set-eigh,.angry-set-ten{
+        margin: auto;
+    
+        width: 15px;
+        height: 15px;
+    }
+    .angry-background{
+        background: yellow;
+    }

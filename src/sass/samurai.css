@@ -1,0 +1,546 @@
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: "";
+  font-size: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+.clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: flow-root; }
+
+input[type='button'], input[type='submit'], button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer; }
+
+button {
+  outline: none; }
+
+iframe:focus {
+  outline: none; }
+
+iframe[seamless] {
+  display: block; }
+
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+.samurai-boxcontrol {
+  width: 100px;
+  height: 151px;
+  top: 308px;
+  left: 35%;
+  cursor: pointer;
+  position: absolute;
+  perspective: 1000px;
+  z-index: 9999;
+  transform-style: preserve-3d; }
+
+.samurai-sensor-bottom {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  top: -48px;
+  left: 0px;
+  outline: 1px solid white; }
+
+.samurai-head {
+  width: 34px;
+  height: 13px;
+  background: darkred;
+  top: 26px;
+  left: 36px;
+  position: absolute;
+  border-radius: 11px 11px 0 0; }
+  .samurai-head .samurai-hair {
+    width: 16px;
+    /* height: 30px; */
+    /* background: yellow; */
+    top: -23px;
+    left: 0px;
+    position: absolute;
+    border-bottom: 30px solid darkred;
+    border-left: 5px solid transparent;
+    border-right: 10px solid transparent;
+    transform-origin: center bottom;
+    transform: rotateZ(-6deg) translateZ(0px);
+    z-index: -999; }
+  .samurai-head .samurai-hair2 {
+    width: 8px;
+    height: 30px;
+    background: darkred;
+    top: -19px;
+    left: 21px;
+    position: absolute;
+    /* border-bottom: 30px solid yellow; */
+    /* border-left: 5px solid transparent; */
+    /* border-right: 10px solid transparent; */
+    transform-origin: center bottom;
+    transform: rotateZ(25deg);
+    z-index: -9999999999; }
+    .samurai-head .samurai-hair2 .samurai-hair3 {
+      width: 8px;
+      /* height: 30px; */
+      /* background: #ffcc80; */
+      top: -19px;
+      left: -1px;
+      border-bottom: 19px solid darkred;
+      border-left: 1px solid transparent;
+      border-right: 8px solid transparent;
+      position: absolute;
+      transform-origin: center bottom;
+      transform: rotateZ(-27deg); }
+    .samurai-head .samurai-hair2 .samurai-hair4 {
+      width: 8px;
+      /* height: 30px; */
+      /* background: #ffcc80; */
+      top: -28px;
+      left: -1px;
+      border-bottom: 29px solid darkred;
+      border-left: 4px solid transparent;
+      border-right: 6px solid transparent;
+      position: absolute;
+      transform-origin: center bottom; }
+    .samurai-head .samurai-hair2 .samurai-hair5 {
+      width: 5px;
+      /* height: 30px; */
+      /* background: #ffcc80; */
+      top: -18px;
+      left: 2px;
+      border-bottom: 19px solid darkred;
+      border-left: 2px solid transparent;
+      border-right: 4px solid transparent;
+      position: absolute;
+      transform-origin: center bottom;
+      transform: rotatez(43deg); }
+  .samurai-head .samurai-face {
+    width: 34px;
+    height: 30px;
+    background: darkred;
+    top: 13px;
+    left: 0px;
+    position: absolute;
+    border-radius: 0 0 18px 15px; }
+    .samurai-head .samurai-face .samurai-ear {
+      width: 15px;
+      /* height: 15px; */
+      /* background: #ffcc80; */
+      top: 2px;
+      left: -13px;
+      position: absolute;
+      border-right: 15px solid darkred;
+      border-bottom: 15px solid transparent;
+      border-top: 0px solid transparent;
+      transform: rotatez(17deg);
+      z-index: -999999; }
+    .samurai-head .samurai-face .samurai-ear2 {
+      width: 30px;
+      /* height: 30px; */
+      /* background: #ffcc80; */
+      top: 0px;
+      left: 31px;
+      position: absolute;
+      border-left: 15px solid darkred;
+      border-bottom: 15px solid transparent;
+      border-top: 0px solid transparent;
+      transform: rotatez(-19deg); }
+    .samurai-head .samurai-face .samurai-eye {
+      width: 10px;
+      height: 4px;
+      background: red;
+      top: 5px;
+      left: 3px;
+      position: absolute;
+      border-radius: 0 5px; }
+    .samurai-head .samurai-face .samurai-eye2 {
+      width: 10px;
+      height: 4px;
+      background: red;
+      top: 5px;
+      left: 18px;
+      position: absolute;
+      border-radius: 5px 0; }
+
+.samurai-neck {
+  width: 10px;
+  height: 8px;
+  background: darkred;
+  top: 67px;
+  left: 46px;
+  position: absolute; }
+  .samurai-neck .samurai-neck-cloth {
+    width: 20px;
+    height: 8px;
+    background: darkred;
+    top: 5px;
+    left: -4px;
+    position: absolute; }
+
+.samurai-body {
+  width: 30px;
+  height: 20px;
+  background: darkred;
+  top: 75px;
+  left: 37px;
+  position: absolute; }
+  .samurai-body .samurai-wing {
+    width: 30px;
+    /* height: 14px; */
+    /* background: darkred; */
+    top: 0px;
+    left: -26px;
+    position: absolute;
+    border-right: 33px solid darkred;
+    border-bottom: 13px solid transparent;
+    border-top: 3px solid transparent;
+    transform-origin: right center;
+    transform: rotatez(34deg); }
+    .samurai-body .samurai-wing .samurai-wing2 {
+      width: 30px;
+      /* height: 30px; */
+      /* background: #ffcc80; */
+      top: 1px;
+      left: -31px;
+      position: absolute;
+      border-right: 53px solid darkred;
+      border-bottom: 0px solid transparent;
+      border-top: 11px solid transparent;
+      transform: rotatez(0deg);
+      transform-origin: right center; }
+      .samurai-body .samurai-wing .samurai-wing2 .samurai-wing22 {
+        width: 30px;
+        /* height: 30px; */
+        /* background: #ffcc80; */
+        top: -10px;
+        left: -23px;
+        position: absolute;
+        border-right: 67px solid darkred;
+        border-bottom: 0px solid transparent;
+        border-top: 11px solid transparent;
+        transform: rotatez(-24deg);
+        transform-origin: right center; }
+  .samurai-body .samurai-wing3 {
+    width: 30px;
+    /* height: 30px; */
+    /* background: #ffcc80; */
+    top: -3px;
+    left: 23px;
+    position: absolute;
+    border-left: 33px solid darkred;
+    border-bottom: 3px solid transparent;
+    border-top: 13px solid transparent;
+    transform-origin: left center;
+    transform: rotatez(-49deg); }
+    .samurai-body .samurai-wing3 .samurai-wing4 {
+      width: 30px;
+      top: -5px;
+      left: -30px;
+      position: absolute;
+      border-left: 53px solid darkred;
+      border-bottom: 0px solid transparent;
+      border-top: 11px solid transparent;
+      transform: rotatez(12deg);
+      transform-origin: left center; }
+      .samurai-body .samurai-wing3 .samurai-wing4 .samurai-wing44 {
+        width: 30px;
+        top: -10px;
+        left: -48px;
+        position: absolute;
+        border-left: 74px solid darkred;
+        border-bottom: 0px solid transparent;
+        border-top: 11px solid transparent;
+        transform: rotatez(12deg);
+        transform-origin: left center; }
+  .samurai-body .samurai-belt {
+    width: 30px;
+    height: 8px;
+    background: indianred;
+    top: 19px;
+    left: 0px;
+    position: absolute; }
+  .samurai-body .samurai-arm {
+    width: 14px;
+    /* height: 30px; */
+    /* background: #ffcc80; */
+    top: 3px;
+    left: -10px;
+    position: absolute;
+    border-top: 10px solid darkred;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform-origin: right center;
+    transform: rotatez(51deg); }
+    .samurai-body .samurai-arm .samurai-bicep {
+      width: 13px;
+      /* height: 30px; */
+      /* background: #ffcc80; */
+      top: -1px;
+      left: -3px;
+      position: absolute;
+      border-bottom: 10px solid #bf360c;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      transform-origin: center top; }
+      .samurai-body .samurai-arm .samurai-bicep .samurai-lowarm {
+        width: 13px;
+        /* height: 30px; */
+        /* background: darkred; */
+        top: 9px;
+        left: -3px;
+        position: absolute;
+        border-top: 20px solid #bf360c;
+        border-left: 6px solid transparent;
+        border-right: 5px solid transparent;
+        transform-origin: center top;
+        transform: rotatez(9deg); }
+        .samurai-body .samurai-arm .samurai-bicep .samurai-lowarm .samurai-hand {
+          width: 15px;
+          height: 15px;
+          background: #bf360c;
+          top: -11px;
+          left: -6px;
+          position: absolute;
+          border-radius: 100px;
+          transform-origin: center top;
+          transform: rotatez(-17deg); }
+          .samurai-body .samurai-arm .samurai-bicep .samurai-lowarm .samurai-hand .samurai-sword {
+            width: 7px;
+            height: 85px;
+            background: red;
+            top: 23px;
+            left: -6px;
+            position: absolute;
+            border-radius: 0 0 10px 0;
+            transform-origin: center top;
+            transform: rotatez(30deg);
+            z-index: 9999999; }
+            .samurai-body .samurai-arm .samurai-bicep .samurai-lowarm .samurai-hand .samurai-sword .samurai-sword-head {
+              width: 8px;
+              height: 30px;
+              background: #000000;
+              top: -30px;
+              left: 0px;
+              position: absolute; }
+              .samurai-body .samurai-arm .samurai-bicep .samurai-lowarm .samurai-hand .samurai-sword .samurai-sword-head .samurai-sword-deco {
+                width: 14px;
+                height: 13px;
+                background: black;
+                top: 18px;
+                left: -3px;
+                position: absolute; }
+  .samurai-body .samurai-arm2 {
+    width: 14px;
+    /* height: 30px; */
+    /* background: #ffcc80; */
+    top: 3px;
+    left: 27px;
+    position: absolute;
+    border-top: 10px solid darkred;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform-origin: left center;
+    transform: rotatez(-32deg); }
+    .samurai-body .samurai-arm2 .samurai-bicep2 {
+      width: 13px;
+      /* height: 30px; */
+      /* background: #ffcc80; */
+      top: 0px;
+      left: -2px;
+      position: absolute;
+      border-bottom: 10px solid #bf360c;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      transform-origin: center top; }
+      .samurai-body .samurai-arm2 .samurai-bicep2 .samurai-lowarm2 {
+        width: 12px;
+        /* height: 30px; */
+        /* background: #ffcc80; */
+        top: 10px;
+        left: -2px;
+        position: absolute;
+        border-top: 20px solid #bf360c;
+        border-left: 6px solid transparent;
+        border-right: 5px solid transparent;
+        transform-origin: center top;
+        transform: rotatez(36deg); }
+        .samurai-body .samurai-arm2 .samurai-bicep2 .samurai-lowarm2 .samurai-hand2 {
+          width: 15px;
+          height: 15px;
+          background: #bf360c;
+          top: -12px;
+          left: -7px;
+          position: absolute;
+          border-radius: 100px;
+          z-index: 999999; }
+
+.samurai-peegu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: #ffcc80;
+  z-index: -99999; }
+  .samurai-peegu .samurai-line1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background: #ffcc80; }
+  .samurai-peegu .samurai-line2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background: #ffcc80; }
+  .samurai-peegu .samurai-line3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background: #ffcc80; }
+  .samurai-peegu .samurai-line4 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background: #ffcc80; }
+  .samurai-peegu .samurai-leg {
+    width: 26px;
+    /* height: 30px; */
+    /* background: #ffcc80; */
+    top: 98px;
+    left: 30px;
+    border-bottom: 30px solid darkred;
+    position: absolute;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform-origin: center top; }
+    .samurai-peegu .samurai-leg .samurai-lowleg {
+      width: 12px;
+      height: 16px;
+      background: darkred;
+      top: 30px;
+      left: 3px;
+      position: absolute;
+      transform-origin: center top; }
+      .samurai-peegu .samurai-leg .samurai-lowleg .samurai-feet {
+        width: 19px;
+        height: 10px;
+        background: darkred;
+        top: 14px;
+        left: -7px;
+        position: absolute;
+        border-radius: 10px 0 0;
+        transform-origin: center top; }
+  .samurai-peegu .samurai-leg2 {
+    width: 26px;
+    top: 98px;
+    left: 46px;
+    border-bottom: 30px solid darkred;
+    position: absolute;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform-origin: center top; }
+    .samurai-peegu .samurai-leg2 .samurai-lowleg2 {
+      width: 12px;
+      height: 16px;
+      background: darkred;
+      top: 30px;
+      left: 8px;
+      position: absolute;
+      transform-origin: center top; }
+      .samurai-peegu .samurai-leg2 .samurai-lowleg2 .samurai-feet2 {
+        width: 20px;
+        height: 10px;
+        background: darkred;
+        top: 14px;
+        left: 0px;
+        position: absolute;
+        border-radius: 0 10px 0px 0px;
+        transform-origin: center top; }
+  .samurai-peegu .samurai-tail {
+    width: 14px;
+    /* height: 30px; */
+    /* background: #ffcc80; */
+    border-top: 20px solid darkred;
+    top: 30px;
+    left: 0px;
+    position: absolute;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transform-origin: center top; }
+    .samurai-peegu .samurai-tail .samurai-tail2 {
+      width: 14px;
+      /* height: 30px; */
+      /* background: #ffcc80; */
+      border-top: 20px solid darkred;
+      top: 30px;
+      left: 0px;
+      position: absolute;
+      border-left: 2px solid transparent;
+      border-right: 2px solid transparent;
+      transform-origin: center top; }
+      .samurai-peegu .samurai-tail .samurai-tail2 .samurai-tail3 {
+        width: 14px;
+        /* height: 30px; */
+        /* background: #ffcc80; */
+        border-top: 20px solid darkred;
+        top: 30px;
+        left: 0px;
+        position: absolute;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        transform-origin: center top; }
+
+.samurai-effect1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background: linear-gradient(red, darkred);
+  bottom: 200px;
+  position: absolute;
+  animation: sameffect1 .63s linear infinite; }
+@keyframes sameffect1 {
+  to {
+    margin-top: -300px; } }
+
+/*# sourceMappingURL=samurai.css.map */

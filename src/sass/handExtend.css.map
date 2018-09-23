@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "handExtend.css",
+  "sources": [
+    "handExtend.scss"
+  ],
+  "mappings": ";AAAA,AAAA,KAAK,CAAC;EACF,SAAS,EAAE,cAAO,GACrB",
+  "names": []
+}

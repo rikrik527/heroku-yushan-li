@@ -1,0 +1,293 @@
+@import './color.scss';
+$px780:48.750em;
+$px700:43.750em;
+$px620:38.750em;
+$px460:28.750em;
+$px400:25em;
+$px230:14.375em;
+$per476:47.6%;
+$per227:22.7%;
+$per50: 50%;
+$per47: 47%;
+$per100:100%;
+$px1000:62.500em;
+$per14:14.28571428571429%;
+$per7:7.142857142857145%;
+$per3:3.571428571428573%;
+$px1156:72.250em;
+$per5:5.28571%;
+$per8:8.25%;
+$num3:3.8;
+$p8:8%;
+$p10:10%;
+
+
+
+
+@mixin name($namec, $namec2) {
+    display: inline-block;
+    width: 100%;
+    height: 2em;
+    background: repeating-linear-gradient($namec, $namec2);
+   color: black;
+    text-align: center;
+   font-size: 16px;
+   line-height: 33px;
+
+}
+
+@mixin status($r1, $r2) {
+    display: block;
+    overflow: scroll;
+    padding: 2px;
+    width: 100%;
+    height: 12em;
+    background: repeating-linear-gradient(to right,$r1, $r2);
+}
+
+@mixin s($sw, $sh, $sb, $st, $sf) {
+    position: absolute;
+    top: $st;
+    left: $sf;
+    width: $sw;
+    height: $sh;
+    background: $sb;
+}
+
+@mixin cd($cdw, $cdh, $cdb) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: $cdw;
+    height: $cdh;
+    background: $cdb;
+}
+
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: "";
+    font-size: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: flow-root;
+}
+
+input[type='button'],input[type = 'submit'],button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance:none;
+    -o-appearance:none;
+    appearance:none;
+    outline: none;
+    border:none;
+    background:none;
+    cursor: pointer;
+
+
+}
+
+button {
+    outline: none;
+}
+
+iframe:focus {
+    outline: none;
+}
+
+iframe[seamless] {
+    display: block;
+}
+
+@mixin ani($ani) {
+    animation: $ani 1s linear infinite;
+}
+
+@mixin mainboxcontrol {
+    display: block;
+    float: left;
+    margin: 10px 10px 5px 5px;
+    width: $per47;
+    outline: 1px solid;
+}
+
+@mixin shanli($slw, $slh, $slbg, $slt, $sll) {
+    position: absolute;
+    top: $slt;
+    left: $sll;
+    width: $slw;
+    height: $slh;
+    background: $slbg;
+}
+
+@mixin judo($w, $h, $bg, $t, $l, $rz, $rx, $name, $sec) {
+    position: absolute;
+    top: $t;
+    left: $l;
+    width: $w;
+    height: $h;
+    background: $bg;
+    transform: rotatez($rz)rotateX($rx);
+    animation: $name $sec linear infinite;
+}
+
+@mixin space($ws, $wh, $wg, $wt, $wl) {
+    position: absolute;
+    top: $wt;
+    left: $wl;
+    width: $ws;
+    height: $wh;
+    background: $wg;
+    animation: bump .5s linear infinite;
+}
+
+@mixin crazy($cw, $ch, $cb, $ct, $cl) {
+    position: absolute;
+    top: $ct;
+    left: $cl;
+    width: $cw;
+    height: $ch;
+    background: $cb;
+}
+@mixin lowname(){
+    display: inline-block;
+    width: 100%;
+    height: 2em;
+    padding: 1px;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    line-height: 23px;
+}
+@mixin input($inputop,$inputleft,$bgcolor,$color){
+    position: absolute;
+    top: $inputop;
+    left:$inputleft;
+    width: 10%;
+    height: auto;
+    font-size: 12px;
+    transition:all 1.5s linear;
+    background: $bgcolor;
+    color: $color;
+    -moz-border-radius:10px;
+    border-radius:10px;
+
+}
+@mixin radius($radius){
+  -moz-border-radius:$radius;
+  -o-border-radius:$radius;
+  -ms-border-radius:$radius;
+  -webkit-border-radius:$radius;
+}
+@mixin photo(){
+    display: inline-block;
+
+    width: 100%;
+
+}
+@mixin btn ($btnwidth,$btnheight,$btntop,$btnleft) {
+position: absolute;
+    width:$btnwidth;
+    height:$btnheight;
+    margin:1%;
+
+    transition: all .3s linear;
+    top:$btntop;
+    left:$btnleft;
+    padding:1%;
+
+
+}
+@mixin lowbox($lwidth,$lheight,$ltop,$lleft){
+   position: absolute;
+    width: $lwidth;
+    height: $lheight;
+    overflow: hidden;
+    top:$ltop;
+    left:$lleft;
+    transition: all .3s linear;
+
+    font-family: "Cutive Mono",monospace;
+
+
+
+}
+
+@mixin btnz($btnzw, $btnzh, $btnzt, $btnzl) {
+    position: absolute;
+    top: $btnzt;
+    left: $btnzl;
+    display: block;
+    margin: -150px 0 0 -100px;
+    width: $btnzw!important;
+    height: $btnzh!important;
+}
+
+@mixin planet($color3, $color8, $blendmode, $aniname, $color6, $color2) {
+    position: absolute;
+    top: 256px;
+    left: 18%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-image: linear-gradient(to top, $color3 40%, $color8 60%), url('../images/earth.png');
+    animation: $aniname 90s linear infinite;
+
+    background-blend-mode: $blendmode;
+    @keyframes #{$aniname} {
+        0% {
+            border: 1px solid $color2;
+            background-position-y: 900%;
+            box-shadow: 0px 0px 4px 4px $color6;
+        }
+        20% {
+            border: 1px solid $color2;
+            background-position-y: 1800%;
+            box-shadow: -2px -2px 2px 2px $color6;
+        }
+        40% {
+            border: 1px solid $color2;
+            background-position-y: 2700%;
+            box-shadow: 0px 0px 4px 4px $color6;
+        }
+        60% {
+            border: 1px solid $color2;
+            background-position-y: 3600%;
+            box-shadow: 2px 2px 2px 2px $color6;
+        }
+        80% {
+            border: 1px solid $color2;
+            background-position-y: 4500%;
+            box-shadow: 0px 0px 4px 4px $color6;
+        }
+        100% {
+            border: 1px solid $color2;
+            background-position-y: 5400%;
+            box-shadow: 2px 2px 2px 2px $color6;
+        }
+    }
+}
+
+@mixin judo-effect() {
+    position: absolute;
+    top: 92px;
+    left: 11px;
+    width: 10px;
+    height: 10px;
+    color: white;
+    text-shadow: 0px 0px 3px cyan;
+    font-weight: bolder;
+    font-size: 12px;
+    font-family: sans-serif;
+}

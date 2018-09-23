@@ -1,0 +1,125 @@
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+input[type='text'] {
+  border: 1px solid #64b5f6; }
+
+.shan-li-chat-app {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 20vh auto 20vh;
+  grid-template-rows: 20vh auto 20vh;
+  right: 2%;
+  outline: 1px solid yellow;
+  bottom: 0px;
+  position: absolute;
+  background: url("../images/icon-new.svg") no-repeat;
+  background-size: 2462%;
+  width: 300px;
+  height: 510px;
+  bottom: 3%;
+  z-index: 999999999;
+  background-position: -141px -1186px; }
+
+.shan-li-chat-boxcontrol {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  border: 1px solid #c2185b;
+  box-shadow: 2px 2px 2px #ef9a9a;
+  z-index: 9999999999999999;
+  position: absolute;
+  padding: 3px;
+  bottom: 0%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px; }
+  .shan-li-chat-boxcontrol .chat-board-boxcontrol {
+    position: relative;
+    grid-column: span 8;
+    grid-row: span 12;
+    overflow: hidden;
+    background: url("../images/icon-new.svg") no-repeat;
+    background-size: 100%; }
+    .shan-li-chat-boxcontrol .chat-board-boxcontrol .chat-board {
+      overflow: hidden;
+      display: flex;
+      height: 470px;
+      background: linear-gradient(to bottom, #64b5f6, #1e88e5);
+      justify-content: flex-end;
+      flex-direction: column; }
+
+.chat-shan-li {
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 1%;
+  align-self: flex-start;
+  background: #f8bbd0;
+  font-size: 14px;
+  margin: 3%;
+  animation: animateshantalk 1s linear forwards;
+  -moz-animation: animateshantalk 1s linear forwards; }
+
+.chat-user-li {
+  padding: 1%;
+  align-self: flex-end;
+  margin: 5%;
+  max-width: 100%;
+  border-radius: 10px;
+  font-size: 14px;
+  height: auto;
+  background: lightblue; }
+
+.user-talk {
+  position: absolute;
+  right: 11%;
+  width: 89%;
+  border-radius: 10px;
+  z-index: 9999999;
+  bottom: 0%;
+  height: 25px; }
+
+.user-btn {
+  font-size: 12px;
+  position: absolute;
+  width: 9%;
+  height: 25px;
+  background: lightblue;
+  z-index: 999999;
+  right: 2%;
+  bottom: 0%;
+  border-radius: 10px;
+  border: 1px solid white;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer; }
+  .user-btn:hover {
+    background: #64b5f6; }
+
+/*# sourceMappingURL=shanlichatApp.css.map */

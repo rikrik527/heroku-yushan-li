@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAoB,wBAAwB;AAOxB,YAAY;AAOZ,cAAc;AAOd,iBAAiB;AAOjB,eAAe;AAOf,aAAa;AAMb,eAAe;AAOf,qBAAqB;AAOrB,gBAAgB;AAchB,qBAAqB;AAqLrB,aAAa;AACb,wBAAwB;AC1P5C,kBAAkB;EACd,MAAM,EAAC,iBAAgB",
+"sources": ["../sass/color.scss","../sass/prefix.scss"],
+"names": [],
+"file": "prefix.css"
+}

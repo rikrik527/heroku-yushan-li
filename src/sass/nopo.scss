@@ -1,0 +1,105 @@
+@import './color';
+@import './judoVariable.scss';
+.nopo-boxcontrol {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: absolute;
+    top: 21%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: translateZ(10px);
+    transform-origin: center bottom;
+    left: 81.5%;
+    transition: all .5s linear;
+    z-index: 99999999999999;
+}
+
+.nopo-hair {
+    .nopo-mawei {
+        .nopo-hair2 {}
+    }
+}
+
+.nopo-face {
+    .nopo-chink {}
+    .nopo-chink2 {}
+    .nopo-nose {}
+    .nopo-nose-left {}
+    .nopo-nose-right {}
+    .nopo-ear {
+        .nopo-ear-deco {}
+
+    }
+    .nopo-ear2 {
+        .nopo-ear2-deco {}
+
+    }
+    .nopo-eyebrow {}
+    .nopo-eyebrow2 {}
+    .nopo-eye {
+        .nopo-eyeball {}
+    }
+    .nopo-eye2 {
+        .nopo-eyeball2 {}
+    }
+    .nopo-lips {
+        .nopo-mouth {
+            .nopo-teeth {}
+        }
+        .nopo-lips2 {}
+    }
+    .nopo-jaw {}
+}
+
+.nopo-neck {
+    .nopo-necklace {}
+}
+
+.nopo-body {
+    .nopo-arm {
+        .nopo-bicep {
+            .nopo-lowarm {
+                .nopo-hand {}
+            }
+        }
+    }
+    .nopo-arm2 {
+        .nopo-bicep2 {
+            .nopo-lowarm2 {
+                .nopo-hand2 {}
+            }
+        }
+    }
+    .nopo-mimi {
+        .nopo-mimi-deco {}
+    }
+    .nopo-mimi2 {
+        .nopo-mimi2-deco {}
+    }
+    .nopo-lowbody {
+        .nopo-fat-left {}
+        .nopo-fat-right {}
+    }
+}
+
+.nopo-peegu {
+    .nopo-fats {}
+    .nopo-fats2 {}
+    .nopo-skirt {}
+    .nopo-leg {
+        .nopo-lowleg {
+            .nopo-boot {
+                .nopo-foot {}
+            }
+        }
+    }
+    .nopo-leg2 {
+        .nopo-lowleg2 {
+            .nopo-boot2 {
+                .nopo-foot2 {}
+            }
+        }
+    }
+
+}

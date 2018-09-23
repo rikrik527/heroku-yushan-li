@@ -1,0 +1,227 @@
+/* line 1, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+.hand-back-position {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 49px;
+  left: 39px;
+  z-index: 999;
+  outline: 1px solid white; }
+
+/* line 11, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+.click-box {
+  width: 60px;
+  height: 60px;
+  outline: 1px solid white;
+  position: absolute;
+  left: 39px;
+  top: 49px;
+  transition: all .1s linear; }
+
+/* line 23, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+.hand-boxcontrol {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  z-index: 99999999999999;
+  border-radius: 100px;
+  left: 48%;
+  top: 58%;
+  margin: -20px 0 0 -20px;
+  background: white;
+  transform: scale(0.7) rotateZ(0deg) rotatex(0deg) rotatey(0deg) translatez(0px) translateY(0px);
+  transition: all .1s linear;
+  cursor: pointer; }
+  /* line 36, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+  .hand-boxcontrol .hand-thumb {
+    width: 10px;
+    height: 13px;
+    border-radius: 6px 13px 0 0;
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    background: white;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -ms-transform: rotate(8deg);
+    transform: rotatez(72deg);
+    transition: all 1s linear;
+    border-left: 1px solid black;
+    border-right: 1px solid; }
+    /* line 51, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+    .hand-boxcontrol .hand-thumb .hand-thumb2 {
+      width: 10px;
+      height: 10px;
+      background: white;
+      position: absolute;
+      border-radius: 5px 5px 0 0;
+      top: -6px;
+      left: -1px;
+      transition: all 1s linear;
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      transform-origin: center bottom; }
+  /* line 66, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+  .hand-boxcontrol .hand-finger {
+    width: 10px;
+    height: 10px;
+    background: white;
+    position: absolute;
+    top: -1px;
+    left: 27px;
+    transition: all 1s linear;
+    -ms-transform-origin: center top;
+    transform-origin: center bottom;
+    -ms-transform: rotate(-37deg);
+    transform: rotateZ(21deg);
+    border-left: 1px solid;
+    border-right: 1px solid; }
+    /* line 80, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+    .hand-boxcontrol .hand-finger .hand-finger2 {
+      width: 10px;
+      height: 10px;
+      background: white;
+      position: absolute;
+      top: -10px;
+      left: -1px;
+      transition: all 1s linear;
+      -ms-transform-origin: center top;
+      transform-origin: center bottom;
+      border-left: 1px solid;
+      border-right: 1px solid; }
+      /* line 92, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+      .hand-boxcontrol .hand-finger .hand-finger2 .hand-finger3 {
+        width: 10px;
+        height: 10px;
+        background: white;
+        position: absolute;
+        top: -10px;
+        left: -1px;
+        transition: all 1s linear;
+        border-top: 1px solid;
+        border-radius: 5px 5px 0 0;
+        -ms-transform-origin: center bottom;
+        transform-origin: center bottom;
+        border-left: 1px solid;
+        border-right: 1px solid; }
+    /* line 108, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+    .hand-boxcontrol .hand-finger .hand-middle-finger {
+      width: 10px;
+      height: 10px;
+      background: white;
+      position: absolute;
+      top: 0px;
+      left: -10px;
+      transition: all 1s linear;
+      border-left: 1px solid;
+      border-right: 1px solid;
+      transform-origin: center bottom;
+      transform: rotatez(-6deg); }
+      /* line 120, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+      .hand-boxcontrol .hand-finger .hand-middle-finger .hand-middle-finger2 {
+        width: 10px;
+        height: 10px;
+        background: white;
+        position: absolute;
+        top: -10px;
+        left: -1px;
+        transition: all 1s linear;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        transform-origin: center bottom; }
+        /* line 131, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+        .hand-boxcontrol .hand-finger .hand-middle-finger .hand-middle-finger2 .hand-middle-finger3 {
+          width: 10px;
+          height: 10px;
+          background: white;
+          position: absolute;
+          top: -10px;
+          left: -1px;
+          transition: all 1s linear;
+          border-radius: 5px 5px 0 0;
+          border-top: 1px solid;
+          border-left: 1px solid;
+          border-right: 1px solid;
+          transform-origin: center bottom; }
+    /* line 147, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+    .hand-boxcontrol .hand-finger .hand-four-finger {
+      width: 10px;
+      height: 10px;
+      background: white;
+      position: absolute;
+      top: 1px;
+      left: -19px;
+      transition: all 1s linear;
+      border-right: 1px solid;
+      border-left: 1px solid;
+      transform-origin: center bottom;
+      z-index: 99;
+      transform: rotatez(-10deg); }
+      /* line 160, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+      .hand-boxcontrol .hand-finger .hand-four-finger .hand-four-finger2 {
+        width: 10px;
+        height: 7px;
+        background: white;
+        position: absolute;
+        top: -7px;
+        left: -1px;
+        transition: all 1s linear;
+        border-right: 1px solid;
+        border-left: 1px solid;
+        transform-origin: center bottom; }
+        /* line 171, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+        .hand-boxcontrol .hand-finger .hand-four-finger .hand-four-finger2 .hand-four-finger3 {
+          width: 10px;
+          height: 10px;
+          background: white;
+          position: absolute;
+          top: -10px;
+          left: -1px;
+          transition: all 1s linear;
+          border-radius: 5px 5px 0 0;
+          border-top: 1px solid;
+          transform-origin: center bottom;
+          border-right: 1px solid;
+          border-left: 1px solid; }
+    /* line 187, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+    .hand-boxcontrol .hand-finger .hand-small-thumb {
+      width: 10px;
+      height: 10px;
+      background: white;
+      position: absolute;
+      top: 9px;
+      left: -25px;
+      transition: all 1s linear;
+      transform-origin: center bottom;
+      border-left: 1px solid;
+      border-right: 1px solid;
+      transform: rotatez(-20deg); }
+      /* line 199, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+      .hand-boxcontrol .hand-finger .hand-small-thumb .hand-small-thumb2 {
+        width: 10px;
+        height: 7px;
+        background: white;
+        position: absolute;
+        top: -7px;
+        left: -1px;
+        transition: all 1s linear;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        transform-origin: center bottom; }
+        /* line 210, /Users/rikrik527/Desktop/project/src/sass/elements.scss */
+        .hand-boxcontrol .hand-finger .hand-small-thumb .hand-small-thumb2 .hand-small-thumb3 {
+          width: 10px;
+          height: 7px;
+          background: white;
+          position: absolute;
+          top: -7px;
+          left: -1px;
+          transition: all 1s linear;
+          border-top: 1px solid;
+          border-left: 1px solid;
+          border-right: 1px solid;
+          border-radius: 5px 5px 0 0;
+          transform-origin: center bottom; }
+
+/*# sourceMappingURL=elements.css.map */

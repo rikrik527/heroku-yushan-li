@@ -1,0 +1,565 @@
+@import './color';
+@import '../css/normalize.css';
+@import './color';
+@import './mediaQuery';
+@import './judoVariable';
+@import './shanli';
+@import './judo';
+
+@import './animation';
+@import './elements';
+@import './temperApp';
+@import './specialApp';
+@import './shanlichatApp';
+
+
+
+
+@import './prefix';
+
+body {
+    position: relative;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#renderCanvas{
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+    position: absolute;
+    top: 0px;
+    
+}
+.login-page {
+    display: none;
+}
+
+a {
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+figure {
+    position: absolute;
+}
+
+ul,
+li,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+}
+
+#rain {
+    transform: rotateX(-90deg);
+}
+
+svg {
+    position: absolute;
+    width: 100%;
+}
+
+.text {
+    fill: url(#p-fire);
+    stroke: hotpink;
+    stroke-width: 9;
+    stroke-opacity: 1;
+}
+
+.iframe {
+    display: none;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    font-size: 15px;
+}
+
+.main-boxcontrol {
+    position: absolute;
+    z-index: 999999;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20vh auto 10vh;
+}
+
+.header-menu {
+    position: absolute;
+    /* top: 0%; */
+    width: 100vw;
+    justify-content: flex-end;
+    height: 20vh;
+    padding:1%;
+    background: linear-gradient(to right, $red5, $pink5);
+    z-index: 9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+}
+    .menu-boxcontrol {
+        position: absolute;
+        grid-column: span 12;
+        grid-row: span 3;
+        .header-brand {
+            .production {
+                grid-column: 10;
+                grid-row: 1;
+                .developer {}
+            }
+            .mr-judo-made {
+                display: grid;
+                /* grid-column: span 10; */
+                width: 100vw;
+                height: 20vh;
+                /* background: honeydew; */
+                grid-template-columns: repeat(5, 1fr);
+                /* grid-template-rows: 1fr; */
+                grid-gap: 1%;
+                padding: 1%;
+            }
+            .the-game {
+                text-shadow: 2px -1px 1px white;
+    /* z-index: -999999; */
+    top: -80%;
+    width: 100px;
+    font: 10.5em/1 Open Sans, Impact;
+    -webkit-text-decoration-line: underline;
+    position: absolute;
+    height: 100px;
+  
+    right: 0%;
+}
+        }
+       
+    }
+
+.awake-first-section {
+    z-index: 5;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: #fb8c00;
+    -ms-grid-column: span 12;
+    grid-column: span 12;
+    -ms-grid-row: span 3;
+    /* grid-row: span 3; */
+    top: 0px;
+    max-width: 100vw;
+    display: grid;
+    /* position: relative; */
+    grid-template-columns: repeat(20, 100px);
+    grid-template-rows: 20vh auto 20vh;
+   
+}
+
+
+
+.shan-btn {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    grid-row: 1;
+    overflow: hidden;
+    max-width: 2000px;
+    height: 100%;
+    width: 1000px;
+    height: 70vh;
+    outline: 1px solid #c2185b;
+    margin: calc(-70vh/2) 0 0 -500px;
+    min-height: 400px;
+}
+.shan-house{
+    position: relative;
+    max-width: 2000px;
+z-index: -9;
+    height: 100%;
+    background: url('../images/shan-house.png')no-repeat;
+    background-position: center;
+
+}
+.shan-talk-boxcontrol{
+    display:block;
+    position: relative;
+    /* top: 40%; */
+    /* left: 50%; */
+    z-index: 99999999;
+    width: 150px;
+    height: 100px;
+    top: 8px;
+    left: -50px;
+    margin: -50px 0 0 -75px;
+    max-width: 200px;
+    min-width: 0px;
+    max-height: 200px;
+    height: 100px;
+    font-size: 12px;
+    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: pink;
+    overflow: hidden;
+    border: 2px solid hotpink;
+}
+.shan-talk {
+    position: absolute;
+    /* top: 1%; */
+    /* left: 5%; */
+    display: -ms-flexbox;
+    /* display: flex; */
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    max-width: 150px;
+    max-height: 100px;
+    border-radius: 5px;
+    background: #F48FC4;
+    box-shadow: 0px 0px 3px 3px #c2185b;
+    color: white;
+    text-overflow: clip;
+    text-shadow: 1px 1px 3px #c2185b;
+    white-space: wrap;
+    word-wrap: break-word;
+    -ms-flex-pack: end;
+    /* justify-content: flex-end; */
+    -ms-flex-direction: column;
+    /* flex-direction: column; */
+    transition: all 0.5s linear;
+    width: 100%;
+    height: 100%;}
+    .shan-conversation-li,
+    .first-shan-greeting {
+        max-width: 100%;
+        border-radius: 10px;
+        padding: 1%;
+        align-self: flex-start;
+        background: $pink2;
+        font-size: 14px;
+        margin: 3%;
+        animation: animateshantalk 1s linear forwards;
+        -moz-animation: animateshantalk 1s linear forwards;
+    }
+    .first-user-greeting,
+    .user-conversation-li {
+        padding: 1%;
+        align-self: flex-end;
+        margin: 5%;
+        max-width: 100%;
+        border-radius: 10px;
+        font-size: 14px;
+        height: auto;
+        background: lightblue;
+    }
+
+
+
+.user-talk-boxcontrol {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    top: 25%;
+    left: 72%;
+    max-width: 200px;
+    min-width: 0px;
+    max-height: 200px;
+    height: auto;
+    font-size: 12px;
+    display: block;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: #64b5f6;
+    overflow: hidden;
+    .user-talk-box {
+        width: 100%;
+        max-width: 200px;
+        min-width: 0px;
+        height: auto;
+        max-height: 200px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background: #64b5f6;
+        overflow-y: scroll;
+        .user-talk-box-li{
+            width: 100%;
+            height: auto;
+            
+        }
+    }
+}
+
+
+    
+
+
+
+
+
+
+
+
+.paralax1 {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 15vh;
+    outline: 1px solid red;
+}
+
+.actived {
+    background: rgba(27, 194, 185, 0.5);
+}
+
+.new-canvas {
+    position: absolute;
+}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: $pink6;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.prev {
+    float: left;
+    padding-top: 10px;
+    &:hover {
+        color: yellow;
+    }
+}
+
+.next {
+    float: right;
+    padding-top: 10px;
+    &:hover {
+        color: yellow;
+    }
+}
+
+.weekdays {
+    top: 135px;
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    background: $pink3
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: $pink9;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: lightpink;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: $pink9;
+}
+
+.active {
+    padding: 5px;
+    background: $blue6;
+    color: white !important;
+}
+
+.calender {
+    width: 300px;
+    outline: 1px solid yellow;
+    position: absolute;
+    top: -126px;
+    left: 142%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    left: 274px;
+    color: yellow;
+    width: 20px;
+    height: 20px;
+    background: brown;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.img-slider-boxcontrol {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 2%;
+    left: 79%;
+    background: rgba(255, 100, 100, 0.5);
+    padding: 10px 30px;
+    z-index: 99999999999999;
+    outline: 1px solid pink;
+    .img-change {
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        left: 25%;
+        top: 10%;
+        transition: all 1s ease-in-out;
+    }
+    .img-change2 {
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        left: 25%;
+        top: 10%;
+        transition: all 1s ease-in-out;
+    }
+    .img-change3 {
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        left: 25%;
+        top: 10%;
+        transition: all 1s ease-in-out;
+    }
+    .right-arrow {
+        color: white;
+        top: 50%;
+        cursor: pointer;
+        position: absolute;
+        left: 87%;
+        font-size: 20px;
+        cursor: pointer;
+        &:hover {
+            color: yellow;
+        }
+    }
+    .left-arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 11%;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        &:hover {
+            color: yellow;
+        }
+    }
+}
+
+.img-outline {
+    width: 300px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 160px;
+    outline: 1px solid;
+}
+
+.tool-box {
+    display: flex;
+    position: absolute;
+    width: 60px;
+    overflow: hidden;
+    justify-content: flex-start;
+    height: 396px;
+    border: 3px solid #c2185b;
+    border-radius: 10px;
+    background: $pink3;
+    top: 0%;
+    right: 0px;
+    flex-direction: column;
+    .title {
+        font-size: 14px;
+        text-align: center;
+        color: paleturquoise;
+        text-align: center;
+        width: 100%;
+        height: 30px;
+        line-height: 28px;
+        align-self: flex-start;
+        /* position: absolute; */
+        background: $pink6;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .tool-set-one,
+    .tool-set-two,
+    .tool-set-three,
+    .tool-set-four,
+    .tool-set-five,
+    .tool-set-six,
+    .tool-set-seven,
+    .tool-set-eight,
+    .tool-set-nigh {
+        width: 130px;
+        height: 50px;
+        background: yellow;
+        align-self: flex-start;
+        margin: 5% 0 0 5%;
+        cursor: pointer;
+    }
+}
+
+.footer-boxcontrol {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    bottom: -90%;
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to right, $pink5, $red5);
+    z-index: 99999999;
+    #footer-content {}
+}

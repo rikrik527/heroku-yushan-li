@@ -1,0 +1,420 @@
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: "";
+  font-size: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+.clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: flow-root; }
+
+input[type='button'], input[type='submit'], button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer; }
+
+button {
+  outline: none; }
+
+iframe:focus {
+  outline: none; }
+
+iframe[seamless] {
+  display: block; }
+
+/* animation hand set */
+.handboxcontrol1 {
+  animation: handboxcontrol 1s linear 2s infinite; }
+@keyframes handboxcontrol {
+  30% {
+    transform: scale(0.7) rotatez(40deg); }
+  60% {
+    transform: scale(0.7) rotatez(-50deg); } }
+.handmiddlefinger1 {
+  animation: handmiddlefinger 10s linear 10s infinite; }
+@keyframes handmiddlefinger {
+  14%,
+        20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70% {
+    transform: rotatez(104deg); }
+  80%,
+        90%,
+        100% {
+    transform: rotatez(-6deg); } }
+.handmiddlefinger2 {
+  animation: handmiddlefinger2 10s linear 10s infinite; }
+@keyframes handmiddlefinger2 {
+  19%,
+        20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70% {
+    transform: rotatez(81deg); }
+  80%,
+        90%,
+        100% {
+    transform: rotatez(0deg); } }
+.handmiddlefinger3 {
+  animation: handmiddlefinger3 10s linear 10s infinite; }
+@keyframes handmiddlefinger3 {
+  25%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70% {
+    transform: rotatez(64deg);
+    top: -7px; }
+  80%,
+        90%,
+        100% {
+    transform: rotatez(0deg); } }
+.handfourfinger1 {
+  animation: handfourfinger 10s linear 10s infinite; }
+@keyframes handfourfinger {
+  12%,
+        20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70% {
+    transform: rotatez(103deg); }
+  80%,
+        90%,
+        100% {
+    transform: rotatez(-10deg); } }
+.handfourfinger2 {
+  animation: handfourfinger2 10s linear 10s infinite; }
+@keyframes handfourfinger2 {
+  17%,
+        20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70% {
+    transform: rotatez(84deg); }
+  80%,
+        90%,
+        100% {
+    transform: rotatez(0deg); } }
+.handfourfinger3 {
+  animation: handfourfinger3 10s linear 10s infinite; }
+@keyframes handfourfinger3 {
+  22%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70% {
+    transform: rotatez(95deg); }
+  80%,
+        90%,
+        100% {
+    transform: rotatez(0deg); } }
+.handsmallthumb1 {
+  animation: handsmallthumb 10s linear 10s infinite; }
+@keyframes handsmallthumb {
+  10%,
+        20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70% {
+    z-index: 999;
+    transform: rotatez(57deg); }
+  80%,
+        90%,
+        100% {
+    transform: rotatez(-20deg); } }
+.handsmallthumb2 {
+  animation: handsmallthumb2 10s linear 10s infinite; }
+@keyframes handsmallthumb2 {
+  15%,
+        20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70% {
+    transform: rotatez(84deg); }
+  80%,
+        90%,
+        100% {
+    transform: rotatez(0deg); } }
+.handsmallthumb3 {
+  animation: handsmallthumb3 10s linear 10s infinite; }
+@keyframes handsmallthumb3 {
+  20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70% {
+    transform: rotatez(100deg); }
+  80%,
+        90%,
+        100% {
+    transform: rotatez(0deg); } }
+.handthumb2-s {
+  animation: handthumb2-s 10s linear 10s infinite; }
+@keyframes handthumb2-s {
+  20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70%,
+        80%,
+        90%,
+        100% {
+    transform: rotatez(-110deg); } }
+.handmiddlefinger1-s {
+  animation: handmiddlefinger1-s 10s linear 10s infinite; }
+@keyframes handmiddlefinger1-s {
+  20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70%,
+        80%,
+        90%,
+        100% {
+    transform: rotatez(70deg); } }
+.handmiddlefinger2-s {
+  animation: handmiddlefinger2-s 10s linear 10s infinite; }
+@keyframes handmiddlefinger2-s {
+  20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70%,
+        80%,
+        90%,
+        100% {
+    transform: rotatez(106deg); } }
+.handmiddlefinger3-s {
+  animation: handmiddlefinger3-s 10s linear 10s infinite; }
+@keyframes handmiddlefinger3-s {
+  20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70%,
+        80%,
+        90%,
+        100% {
+    transform: rotatez(42deg); } }
+.handfourfinger1-s {
+  animation: handfourfinger1-s 10s linear 10s infinite; }
+@keyframes handfourfinger1-s {
+  20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70%,
+        80%,
+        90%,
+        100% {
+    transform: rotatez(85deg); } }
+.handfourfinger2-s {
+  animation: handfourfinger2-s 10s linear 10s infinite; }
+@keyframes handfourfinger2-s {
+  20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70%,
+        80%,
+        90%,
+        100% {
+    transform: rotatez(94deg); } }
+.handfourfinger3-s {
+  animation: handfourfinger3-s 10s linear 10s infinite; }
+@keyframes handfourfinger3-s {
+  20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70%,
+        80%,
+        90%,
+        100% {
+    transform: rotatez(48deg); } }
+/* animation crazy set*/
+/* shan-li animation */
+.shanlihair1 {
+  animation: lihead 1s linear infinite; }
+
+.shanlihair2 {
+  animation: lihead 1s linear infinite; }
+
+.shanlihair3 {
+  animation: lihead 1s linear infinite; }
+
+.shanlihead {
+  animation: lihead 1s linear infinite; }
+@keyframes lihead {
+  30% {
+    transform: translateY(1px); }
+  60% {
+    transform: translateY(-1px); } }
+.shanlihorsefrontleg {
+  animation: frontleg 1s ease-in infinite; }
+@keyframes frontleg {
+  40% {
+    transform: rotateX(20deg); }
+  80% {
+    transform: rotateX(40deg); } }
+.judoboxcontrol {
+  animation: judoboxcontrol 1s linear infinite; }
+@keyframes judoboxcontrol {
+  10% {
+    transform: translatey(-1px) translateZ(10px); }
+  30% {
+    transform: translatey(0px) translateZ(10px); }
+  60% {
+    transform: translatey(-1px) translateZ(10px); }
+  90% {
+    transform: translatey(0px) translateZ(10px); } }
+.judoarm {
+  animation: judoarm 1s linear forwards; }
+@keyframes judoarm {
+  to {
+    transform: rotatez(45deg); } }
+.judobicep {
+  animation: judobicep 1s linear forwards; }
+@keyframes judobicep {
+  to {
+    transform: rotateZ(22deg); } }
+.judolowarm {
+  animation: judolowarm 1s linear forwards; }
+@keyframes judolowarm {
+  to {
+    transform: rotatez(-4deg) rotatex(180deg); } }
+.judoarm2 {
+  animation: judoarm2 1s linear forwards; }
+@keyframes judoarm2 {
+  to {
+    transform: rotatez(0deg); } }
+.judobicep2 {
+  animation: judobicep2 1s linear forwards; }
+@keyframes judobicep2 {
+  to {
+    transform: rotateZ(96deg); } }
+.judolowarm2 {
+  animation: judolowarm2 1s linear forwards; }
+@keyframes judolowarm2 {
+  to {
+    transform: rotatez(2deg);
+    border-top: 14px solid #455a64; } }
+.judoupleg {
+  animation: judoupleg 1s linear forwards; }
+@keyframes judoupleg {
+  to {
+    left: 0px;
+    width: 15px;
+    background: #455a64; } }
+.judolowleg {
+  animation: judolowleg 1s linear forwards; }
+@keyframes judolowleg {
+  to {
+    top: 11px;
+    left: 0px;
+    width: 15px;
+    border-top: 6px solid #546e7a; } }
+.judofoot {
+  animation: judofoot 1s linear forwards; }
+@keyframes judofoot {
+  to {
+    top: 0px;
+    left: 1px;
+    width: 11px;
+    border-bottom: 7px solid #78909c; } }
+.judoshoe {
+  animation: judoshoe 1s linear forwards; }
+@keyframes judoshoe {
+  to {
+    width: 17px;
+    top: 4px;
+    left: -7px; } }
+.judoupleg2 {
+  animation: judoupleg2 1s linear forwards; }
+@keyframes judoupleg2 {
+  to {
+    transform: rotatez(-28deg) translatez(38px);
+    width: 20px;
+    height: 14px;
+    background: #607d8b; } }
+.judolowleg2 {
+  animation: judolowleg2 1s linear forwards; }
+@keyframes judolowleg2 {
+  to {
+    top: 13px;
+    transform: rotatez(18deg);
+    border-top: 17px solid #78909c; } }
+.judoshoe2 {
+  animation: judoshoe2 1s linear forwards; }
+@keyframes judoshoe2 {
+  to {
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    left: -2px; } }
+.judofoot2 {
+  animation: judofoot2 1s linear forwards; }
+
+.judopeegu {
+  animation: judopeegu 1s linear infinite; }
+
+/*# sourceMappingURL=animation.css.map */

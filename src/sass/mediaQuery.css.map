@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAoB,wBAAwB;AAOxB,YAAY;AAOZ,cAAc;AAOd,iBAAiB;AAOjB,eAAe;AAOf,aAAa;AAMb,eAAe;AAOf,qBAAqB;AAOrB,gBAAgB;AAchB,qBAAqB;AAqLrB,aAAa;AACb,wBAAwB;AC1P5C,iBAAiB;AAKjB,OAAO;AAIP,aAAa;AAIb,qBAAqB;AAIrB,aAAa;AAIb,eAAe;AAIf,YAAY;AAIZ,mBAAmB;AAInB,aAAa;AAIb,aAAa;AAKb,YAAY;AAIZ,cAAc;AAId,aAAa",
+"sources": ["color.scss","mediaQuery.scss"],
+"names": [],
+"file": "mediaQuery.css"
+}

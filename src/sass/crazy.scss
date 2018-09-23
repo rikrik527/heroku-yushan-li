@@ -1,0 +1,1307 @@
+@import './color';
+@import './judoVariable.scss';
+.crazy-boxcontrol {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: absolute;
+    top: 57%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: translateZ(10px);
+    transform-origin: center bottom;
+    left: 18.5%;
+    transition: all .5s linear;
+    z-index: 99999999999999;
+    animation: crazyboxcontrol 1s linear infinite;
+    @keyframes crazyboxcontrol {
+        30% {
+            transform: rotatez(-1deg)
+        }
+        90% {
+            transform: rotateZ(1deg)
+        }
+    }
+    .crazy-sensor-top {}
+    .crazy-flag {
+        width: 10px;
+        height: 24px;
+        position: absolute;
+        top: -25px;
+        left: 50px;
+        z-index: -9999;
+        background: $yellow6;
+        border-left: 1px solid greenyellow;
+        border-right: 1px solid greenyellow;
+        border-bottom: 1px solid $yellow6;
+        &:before {
+            content: '';
+            width: 29px;
+            height: 5px;
+            position: absolute;
+            top: 24px;
+            left: -20px;
+            background: #ffeb3b;
+            border-top: 1px solid greenyellow;
+            border-bottom: 1px solid greenyellow;
+        }
+        .crazy-text {
+            font-size: 10px;
+            z-index: 999999;
+            text-align: center;
+            top: -52px;
+            width: 30px;
+            height: 50px;
+            left: -23px;
+            position: absolute;
+            writing-mode: vertical-lr;
+            line-height: 18px;
+            font-weight: bolder;
+            color: hotpink;
+            font-family: cursive;
+        }
+        .crazy-circle {
+            width: 50px;
+            height: 70px;
+            top: -65px;
+            border-radius: 100px;
+            background: $green7;
+            left: -18px;
+            position: absolute;
+            z-index: 9999;
+            overflow: hidden;
+            border: 1px solid greenyellow;
+            .crazy-powpow1 {
+                width: 7px;
+                height: 7px;
+                position: absolute;
+                left: 15px;
+                z-index: 9999;
+                border-radius: 100px;
+            }
+            .crazy-powpow2 {}
+            .crazy-powpow3 {}
+            .crazy-powpow4 {}
+            .crazy-oil {
+                width: 70px;
+                height: 70px;
+                background: $yellow6;
+                position: absolute;
+                top: 20px;
+                left: -10px;
+                animation: crazyoil 2s linear infinite;
+    @keyframes crazyoil {
+        30% {
+            transform: rotatez(10deg);
+        }
+        60% {
+            transform: rotateZ(-10deg);
+        }
+    }
+                .crazy-oil-before {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 100px;
+                    position: absolute;
+                    background: $yellow6;
+                    animation: crazyoilbefore 10s linear infinite;
+    @keyframes crazyoilbefore {
+        20% {
+            top: -3px;
+            left: 70px;
+            transform: skewX(30deg);
+        }
+        40% {
+            top: -2px;
+            left: 2px;
+            transform: skew(-30deg);
+        }
+        60% {
+            top: -3px;
+            left: 70px;
+            transform: skewX(30deg);
+        }
+        80% {
+            top: -2px;
+            left: 2px;
+            transform: skew(0deg);
+        }
+        100% {
+            top: -2px;
+            left: 70px;
+            transform: skew(10deg)
+        }
+    }
+                }
+                .crazy-oil-after {
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 100px;
+                    position: absolute;
+                    background: $yellow6;
+                    animation: crazyoilafter 10s linear .5s infinite;
+                    @keyframes crazyoilafter {
+                        20% {
+                            width: 10px;
+                            height: 10px;
+                            top: -2px;
+                            left: 68px;
+                            transform: skewX(30deg);
+                        }
+                        40% {
+                            top: -2px;
+                            left: 2px;
+                            transform: skew(50deg);
+                        }
+                        60% {
+                            width: 10px;
+                            height: 10px;
+                            top: -1px;
+                            left: 68px;
+                            transform: skew(-50deg);
+                        }
+                        80% {
+                            top: -2px;
+                            left: 2px;
+                            transform: skew(-30deg)
+                        }
+                        100% {
+                            width: 10px;
+                            height: 10px;
+                            top: -2px;
+                            left: 68px;
+                            transform: skew(10deg)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .crazy {
+        &-hair1 {
+            width: 12px;
+            height: 20px;
+            top: 0px;
+            left: 35px;
+            position: absolute;
+            border-bottom: 29px solid #4caf50;
+            border-left: 5px solid transparent;
+            border-right: 8px solid transparent;
+        }
+        &-hair2 {
+            width: 10px;
+            border-bottom: 30px solid #4caf50;
+            position: absolute;
+            top: 0px;
+            left: -8px;
+            border-left: 7px solid transparent;
+            border-right: 8px solid transparent;
+        }
+        &-hair3 {
+            width: 42px;
+            height: 20px;
+            background: lightseagreen;
+            position: absolute;
+            top: -15px;
+            left: -1px;
+            border-radius: 50px;
+            z-index: -9999;
+        }
+        &-head {
+            position: absolute;
+            top: 13px;
+            left: 34px;
+            width: 39px;
+            height: 34px;
+            z-index: 99;
+            border-radius: 0 0 16px 17px;
+            background: linear-gradient(to right, $bluegrey5, $bluegrey2);
+            transform-origin: center bottom;
+            animation: crazyhead 1s linear infinite;
+            @keyframes crazyhead {
+                10% {
+                    transform: rotatez(10deg);
+
+                }
+                90% {
+                    transform: rotateZ(-10deg);
+
+                }
+            }
+            .crazy {
+                &-eyebrow {
+                    width: 17px;
+                    height: 2px;
+                    border-radius: 10px;
+                    position: absolute;
+                    top: 3px;
+                    left: 7px;
+                    transform: rotatez(30deg);
+                    background: lightpink;
+                }
+                &-eyebrow2 {
+                    width: 17px;
+                    height: 2px;
+                    border-radius: 10px;
+                    position: absolute;
+                    top: 3px;
+                    left: 24px;
+                    background: lightpink;
+                    transform: rotateZ(-30deg)
+                }
+                &-eye {
+                    width: 10px;
+                    height: 3px;
+                    background: #c62828;
+                    position: absolute;
+                    top: 8px;
+                    left: 12px;
+                    overflow: hidden;
+                    border-top-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    .crazy-eyeball {
+                        width: 5px;
+                        height: 5px;
+                        background: #388e3c;
+                        position: absolute;
+                        top: -2px;
+                        left: 2px;
+                        border-radius: 10px;
+                    }
+                }
+                &-eye2 {
+                    width: 10px;
+                    height: 3px;
+                    background: #c62828;
+                    position: absolute;
+                    top: 8px;
+                    left: 27px;
+                    overflow: hidden;
+                    border-top-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    .crazy-eyeball2 {
+                        width: 5px;
+                        height: 5px;
+                        background: #388e3c;
+                        position: absolute;
+                        top: -1px;
+                        left: 1px;
+                        border-radius: 10px;
+                    }
+                }
+                &-nose {
+                    width: 4px;
+                    height: 6px;
+                    background: #8d6e63;
+                    position: absolute;
+                    top: 12px;
+                    left: 22px;
+                }
+                &-lips {
+                    width: 10px;
+                    height: 2px;
+                    background: #2e7d32;
+                    position: absolute;
+                    top: 19px;
+                    left: 19px;
+                }
+                &-mouth {
+                    width: 10px;
+                    height: 4px;
+                    background: #8e24aa;
+                    position: absolute;
+                    top: 21px;
+                    left: 18px;
+                    animation: crazymouth 1s linear infinite;
+                    @keyframes crazymouth {
+                        10% {
+                            border-radius: 30px;
+                        }
+                        90% {
+                            height: 10px;
+                        }
+                    }
+                    .crazy-teeth {
+                        width: 10px;
+                        height: 1px;
+                        background: white;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                    }
+                }
+                &-lips2 {
+                    width: 10px;
+                    height: 2px;
+                    background: #2e7d32;
+                    position: absolute;
+                    top: 25px;
+                    left: 18px;
+                    animation: crazylips2 1s linear infinite;
+                    @keyframes crazylips2 {
+                        90% {
+                            top: 29px;
+                        }
+                    }
+                }
+            }
+        }
+        &-neck {
+            width: 17px;
+            height: 8px;
+            background: $green4;
+            position: absolute;
+            top: 45px;
+            left: 47px;
+            z-index: -99;
+            animation: crazyneck 1s linear infinite;
+            @keyframes crazyneck {
+                10% {
+                    transform: translatey(1px)
+                }
+                90% {
+                    transform: translatey(-1px)
+                }
+            }
+        }
+        &-body {
+            width: 42px;
+            height: 6px;
+            position: absolute;
+            top: 49px;
+            left: 35px;
+            border-top: 16px solid #66bb6a;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            z-index: -999;animation: crazybody 1s linear infinite;
+            @keyframes crazybody {
+                30% {
+                    transform: rotateZ(-5deg)
+                }
+                90% {
+                    transform: rotateZ(5deg)
+                }
+
+            }
+        }
+        &-stomach {
+            width: 35px;
+            height: 10px;
+            background: #a5d6a7;
+            position: absolute;
+            top: 65px;
+            left: 38px;
+            z-index: -999;
+        }
+        &-peegu {
+            width: 37px;
+            position: absolute;
+            top: 74px;
+            left: 37px;
+            z-index: -2;
+            border-bottom: 6px solid #4caf50;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+        }
+        &-arm {
+            width: 10px;
+            height: 19px;
+            background: #4caf50;
+            position: absolute;
+            top: 53px;
+            left: 34px;
+            transform: rotateZ(40deg);
+            transform-origin: right top;
+            z-index: -999;
+            animation: crazyarm 1s linear infinite;
+            @keyframes crazyarm {
+                10% {
+                    transform: rotatez(40deg)translatey(1px)
+                }
+                90% {
+                    transform: rotatez(40deg)translatey(-1px)
+                }
+            }
+            .crazy-deco1 {
+                width: 20px;
+                border-left: 25px solid $green3;
+                border-top: 6px solid transparent;
+                border-bottom: 5px solid transparent;
+                position: absolute;
+                top: -10px;
+                left: 0px;
+                transform-origin: left bottom;
+                transform: rotatez(180deg);
+            }
+            .crazy-deco2 {
+                width: 20px;
+                border-left: 14px solid $green2;
+                border-top: 6px solid transparent;
+                border-bottom: 5px solid transparent;
+                position: absolute;
+                top: -4px;
+                left: 0px;
+                transform-origin: left bottom;
+                transform: rotatez(180deg);
+            }
+        }
+        &-arm2 {
+            width: 10px;
+            height: 22px;
+            background: #4caf50;
+            position: absolute;
+            top: 48px;
+            left: 71px;
+            z-index: -9;
+            -ms-transform: rotate(0deg);
+            transform: rotateZ(0deg);
+            -ms-transform-origin: center top;
+            transform-origin: center top;
+            animation: crazyarm2 1s linear infinite;
+            @keyframes crazyarm2 {
+                10% {
+                    transform: rotatez(0deg)translatey(1px)
+                }
+                90% {
+                    transform: rotatez(0deg)translatey(-1px)
+                }
+            }
+            .crazy-deco3 {
+                width: 20px;
+                border-left: 25px solid #a5d6a7;
+                border-top: 6px solid transparent;
+                border-bottom: 5px solid transparent;
+                position: absolute;
+                top: -1px;
+                left: 10px;
+                -ms-transform-origin: right bottom;
+                transform-origin: right bottom;
+                -ms-transform: rotate(360deg);
+                transform: rotatez(360deg);
+            }
+            .crazy-deco4 {
+                width: 20px;
+                border-left: 14px solid #c8e6c9;
+                border-top: 6px solid transparent;
+                border-bottom: 5px solid transparent;
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                -ms-transform-origin: right bottom;
+                transform-origin: right bottom;
+                -ms-transform: rotate(360deg);
+                transform: rotatez(360deg);
+            }
+        }
+        &-lowarm {
+            width: 11px;
+            height: 19px;
+            background: #43a047;
+            position: absolute;
+            top: 65px;
+            left: 19px;
+            z-index: 99;
+            -ms-transform-origin: center top;
+            transform-origin: center top;
+            transform: rotatez(-50deg);
+            animation: crazylowarm 1s linear infinite;
+    @keyframes crazylowarm {
+        10% {
+            transform: rotatez(-50deg)translatey(1px)
+        }
+        90% {
+            transform: rotatez(-50deg)translatey(-1px)
+        }
+    }
+            .crazy-weapon {
+                width: 80px;
+                height: 5px;
+                position: absolute;
+                top: 48px;
+                left: -8px;
+                background: #fdd835;
+                transform-origin: center top;
+                z-index: -1;
+                transform: rotateZ(73deg);
+                .crazy-shadow1 {}
+                .crazy-weapon-middle {
+                    width: 40px;
+                    height: 5px;
+                    position: absolute;
+                    top: 5px;
+                    left: 23px;
+                    background: $brown7;
+                    transform-origin: center top;
+                    transform: rotatez(0deg);animation: crazyweapon-middle 1s ease-in-out infinite;
+                    @keyframes crazyweapon-middle {
+                        50% {
+                            left: 27px;
+                        }
+                        100% {
+                            left: 20px;
+                        }
+                    }
+                    .crazy-shadow2 {
+                        width: 29px;
+                        height: 3px;
+                        background-image: linear-gradient(135deg, transparent 5px, rgba(255, 255, 255, 0.5) 0px);
+                        background-blend-mode: multiply;
+                        position: absolute;
+                        left: 10px;
+                        top: 1px; animation: crazyshadow2 .5s linear infinite;
+                        @keyframes crazyshadow2 {
+                            30% {
+                                transform: translateX(-3px);
+                            }
+                            60% {
+                                transform: translatex(3px);
+                            }
+                        }
+                    }
+                    .crazy-weapon-finger {
+                        width: 30px;
+                        height: 20px;
+                        border-radius: 5px 20px 20px 5px;
+                        background: linear-gradient(to left, $orange3, $orange8);
+                        text-align: center;
+                        transform-origin: center top;
+                        transform: rotatez(0deg);
+                        position: absolute;
+                        top: -10px;
+                        left: 40px;
+                        overflow: visible;
+                        .crazy-shadow3 {
+                            width: 20px;
+                            border-top: 24px solid $yellow2;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            .crazy-shadow3-before {
+                                border-bottom: 20px solid #fff59d;
+                                border-left: 5px solid transparent;
+                                border-right: 5px solid transparent;
+                                position: absolute;
+                                top: -6px;
+                                left: -7px;
+                                transform-origin: center top;animation: crazyshadow3-before 1s ease-in infinite;
+                                @keyframes crazyshadow3-before {
+                                    30% {
+                                        transform: rotateX(30deg)rotateZ(-10deg)
+                                    }
+                                    60% {
+                                        transform: rotateX(-30deg)rotateZ(20deg)
+                                    }
+                                }
+                            }
+                            .crazy-shadow3-after {
+                                border-bottom: 15px solid $yellow6;
+                                border-left: 5px solid transparent;
+                                border-right: 5px solid transparent;
+                                position: absolute;
+                                top: -6px;
+                                left: -3px;
+                                transform-origin: center top;animation: crazyshadow3-after 3s ease-in infinite;
+                                @keyframes crazyshadow3-after {
+                                    40% {
+                                        transform: rotateX(30deg)rotateZ(-10deg)
+                                    }
+                                    70% {
+                                        transform: rotateX(-30deg)rotateZ(20deg)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .crazy-weapon-handbar {
+                    width: 10px;
+                    border-top: 24px solid $yellow6;
+                    border-left: 2px solid transparent;
+                    border-right: 4px solid transparent;
+                    position: absolute;
+                    top: 4px;
+                    left: 5px;
+                    transform-origin: center top;
+                    transform: rotateZ(30deg);
+                    .crazy-shadow4 {}
+                    .crazy-weapon-handbar2 {
+                        width: 10px;
+                        height: 35px;
+                        background: #ffa726;
+                        position: absolute;
+                        top: -63px;
+                        left: 8px;
+                        transform: rotatez(61deg);
+                        -ms-transform-origin: center center;
+                        transform-origin: center center;
+                        &:before {
+                            content: '';
+                            width: 4px;
+                            height: 12px;
+                            position: absolute;
+                            top: -7px;
+                            left: 2px;
+                            background: $yellow8;
+                            -ms-transform: rotate(30deg);
+                            transform: rotateZ(94deg);
+                        }
+                        &:after {
+                            content: '';
+                            width: 4px;
+                            height: 12px;
+                            position: absolute;
+                            top: 29px;
+                            left: 2px;
+                            background: $yellow8;
+                            -ms-transform: rotate(30deg);
+                            transform: rotateZ(92deg);
+                        }
+                        .crazy-shadow5 {}
+                    }
+                }
+                .crazy-weapon-front-deco {
+                    width: 10px;
+                    height: 5px;
+                    background: #ffeb3b;
+                    position: absolute;
+                    top: -5px;
+                    left: 25px;
+                    .crazy-shadow6 {}
+                    .crazy-weapon-front-deco2 {
+                        .crazy-shadow7 {}
+                        .crazy-weapon-knife {
+                            .crazy-shadow9 {}
+                        }
+                    }
+                }
+                .crazy-weapon-gun {
+                    .crazy-shadow8 {}
+                }
+            }
+            .crazy-hand {
+                width: 11px;
+                height: 11px;
+                background: white;
+                position: absolute;
+                top: 13px;
+                left: 0px;
+                border-radius: 50px;
+                z-index: 99999;
+            }
+        }
+        &-lowarm2 {
+            width: 11px;
+            height: 19px;
+            background: #43a047;
+            position: absolute;
+            top: 67px;
+            z-index: -1;
+            left: 72px;
+            transform: rotatez(30deg);
+            transform-origin: center top;
+            animation: crazylowarm2 1s linear infinite;
+            @keyframes crazylowarm2 {
+                10% {
+                    transform: rotatez(20deg)translatey(1px)
+                }
+                90% {
+                    transform: rotatez(40deg)translatey(-1px)
+                }
+            }
+            .crazy-hand2 {
+                width: 12px;
+                height: 12px;
+                background: white;
+                position: absolute;
+                top: 15px;
+                left: 1px;
+                border-radius: 50px;
+                z-index: 99999;
+            }
+        }
+        &-leg {
+            width: 20px;
+            border-top: 18px solid #43a047;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            position: absolute;
+            top: 79px;
+            left: 37px;
+            -ms-transform-origin: center top;
+            transform-origin: center top;
+            animation: crazyleg 1s linear infinite;
+            @keyframes crazyleg {
+                10% {
+                    transform: rotatez(0deg)rotatex(30deg);
+                    border-top: 18px solid $green5;
+                }
+                90% {
+                    transform: rotatez(-10deg)rotatex(-20deg);
+                    border-top: 18px solid $green8;
+                }
+            }
+        }
+        &-lowleg {
+            width: 16px;
+            border-top: 14px solid #e57373;
+            border-left: 4px solid transparent;
+            border-right: 3px solid transparent;
+            position: absolute;
+            top: 0px;
+            left: 2px;
+            z-index: -1;
+            -ms-transform-origin: center top;
+            transform-origin: center top;animation: crazylowleg 1s linear infinite;
+            @keyframes crazylowleg {
+                50% {
+                    transform: rotateZ(0deg)rotateX(-30deg);
+                    left: 0px;
+                }
+                100% {
+                    transform: rotateZ(0deg) rotateX(0deg);
+                    width: 14px;
+                    border-top: 19px solid #e53935;
+                    left: 0px;
+                }
+            }
+            .crazy-feet {
+                width: 13px;
+                background: $red3;
+                height: 10px;
+                border-radius: 5px 5px 0 0;
+                position: absolute;
+                top: -3px;
+                left: -2px;
+                -ms-transform-origin: right top;
+                transform-origin: center top;animation: crazyfeet 1s linear infinite;
+                @keyframes crazyfeet {
+                    50% {
+                        width: 16px;
+                        height: 12px;
+                        top: -6px;
+                        left: -6px;
+                        background: #e57373;
+                    }
+                    100% {
+                        width: 9px;
+                        height: 7px;
+                        top: -5px;
+                        left: -1px;
+                        background: #d32f2f;
+                        z-index: -9;
+                        transform: rotatez(20deg);
+                    }
+                }
+            }
+        }
+        &-leg2 {
+            width: 20px;
+            z-index: -2;
+            border-top: 18px solid #43a047;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            position: absolute;
+            top: 78px;
+            left: 55px;
+            transform: rotatez(0deg);
+            -ms-transform-origin: center top;
+            transform-origin: center top;animation: crazyleg2 1s linear infinite;
+            @keyframes crazyleg2 {
+                50% {
+                    transform: rotatez(0deg)rotatex(-20deg);
+                    border-top: 18px solid $green8;
+                }
+                100% {
+                    transform: rotatez(10deg)rotatex(30deg);
+                    border-top: 18px solid $green5;
+                    width: 24px;
+                }
+            }
+        }
+        &-lowleg2 {
+            width: 20px;
+            border-top: 14px solid #e57373;
+            border-left: 4px solid transparent;
+            border-right: 6px solid transparent;
+            position: absolute;
+            -ms-transform-origin: center top;
+            transform-origin: center top;
+            top: 0px;
+            left: 0px;animation: crazylowleg2 1s linear infinite;
+            @keyframes crazylowleg2 {
+                100% {
+                    transform: rotateZ(-10deg)rotateX(-30deg);
+                    left: -3px;
+                    width: 23px;
+                    border-top: 14px solid $red4;
+                }
+                50% {
+                    transform: rotateZ(5deg)rotateX(0deg);
+                    width: 14px;
+                    border-top: 14px solid $red7;
+                    border-left: 1px solid transparent;
+                    border-right: 2px solid transparent;
+                    left: 3px
+                }
+            }
+            .crazy-feet2 {
+                width: 15px;
+                height: 10px;
+                border-radius: 5px 5px 0 0;
+                position: absolute;
+                top: 0px;
+                left: -2px;
+                background: #d32f2f;
+                -ms-transform-origin: center top;
+                transform-origin: center top;animation: crazyfeet2 1s linear infinite;
+                @keyframes crazyfeet2 {
+                    50% {
+                        transform: rotatez(0deg)scale(0.7)rotateX(0deg);
+                        background: $red9;
+                    }
+                    100% {
+                        transform: rotatez(0deg)scale(1.5)rotateX(-30deg);
+                        background: $red4;
+                        ;
+                    }
+                }
+            }
+        }
+        &-dog-line1 {
+            width: 2px;
+            height: 46px;
+            background: $pink3;
+            position: absolute;
+            top: 69px;
+            left: 35px;
+            transform-origin: center top;animation: crazydogline1 1s linear infinite;
+            @keyframes crazydogline1 {
+                30% {
+                    transform: rotateX(10deg)rotatez(10deg)
+                }
+                90% {
+                    transform: rotatex(-10deg)rotatez(0deg)
+                }
+            }
+        }
+        &-dog-line2 {
+            width: 10%;
+            height: 10%;
+            background: rosybrown;
+            position: absolute;
+            border-radius: 10px;
+            top: 110%;
+            left: 28%;
+            z-index: 9999;
+            transform-origin: center center;animation: crazydogline2 1s linear infinite;
+            @keyframes crazydogline2 {
+                30% {
+
+                    left: 23%;
+                }
+                90% {
+
+                    left: 28%;
+                }
+            }
+        }
+        &-dog-line3 {
+            width: 2px;
+            height: 30px;
+            background: black;
+            position: absolute;
+            top: 87px;
+            left: 29px;
+            background: $pink3;
+            -ms-transform-origin: center bottom;
+            transform-origin: center bottom; animation: crazydogline3 1s linear infinite;
+            @keyframes crazydogline3 {
+                30% {
+                    transform: translatex(-3px)rotatez(-15deg)rotatex(-10deg);
+                }
+                90% {
+                    transform: translatex(4px)rotatez(-20deg)rotatex(0deg)
+                }
+            }
+        }
+        &-dog-head {
+            width: 35px;
+            height: 35px;
+            border-radius: 10px 10px 30px 30px;
+            background: black;
+            position: absolute;
+            top: 55px;
+            left: -3px;
+            z-index: 9999;
+            transform-origin: center bottom; animation: crazydoghead 1s linear infinite;
+            @keyframes crazydoghead {
+                30% {
+                    transform: rotatez(5deg);
+                }
+                90% {
+                    transform: rotateZ(-5deg)
+                }
+            }
+            .crazy-dog-white {
+                width: 10px;
+                height: 20px;
+                background: white;
+                border-radius: 5px 5px 10px 10px;
+                position: absolute;
+                top: 8px;
+                left: 10px; animation: crazydogwhite .5s linear infinite;
+                @keyframes crazydogwhite {
+                    30% {
+                        height: 5px;
+                    }
+                }
+                .crazy-dog-smallwhite {
+                    width: 10px;
+                    height: 10px;
+                    background: white;
+                    position: absolute;
+                    top: 13px;
+                    left: 6px;
+                    border-radius: 30px;
+                    border: 1px solid black;animation: crazydogsmallwhite .5s linear infinite;
+                    @keyframes crazydogsmallwhite {
+                        30% {
+                            top: 7px;
+                            transform: scale(1.4)
+                        }
+                    }
+                }
+                .crazy-dog-smallwhite2 {
+                    width: 10px;
+                    height: 10px;
+                    background: white;
+                    position: absolute;
+                    top: 12px;
+                    left: -4px;
+                    border-radius: 30px;
+                    border: 1px solid black;animation: crazydogsmallwhite2 .5s linear infinite;
+                    @keyframes crazydogsmallwhite2 {
+                        30% {
+                            top: 7px;
+                            transform: scale(1.4)
+                        }
+                    }
+                }
+            }
+            .crazy-dog-eye {
+                width: 6px;
+                height: 5px;
+                background: white;
+                position: absolute;
+                top: 11px;
+                left: 3px;
+                border-radius: 2px 2px 10px 10px;
+                overflow: hidden;animation: crazydogeye 1s linear infinite;
+                @keyframes crazydogeye {
+                    60% {
+                        transform: scale(1.5);
+                        background: $red9
+                    }
+                }
+                .crazy-dog-eyeball {
+                    width: 4px;
+                    height: 4px;
+                    background: black;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    border-radius: 10px;animation: crazydogeyeball 3s ease-in-out infinite;
+                    @keyframes crazydogeyeball {
+                        30% {
+                            left: 0px;
+                        }
+                        90% {
+                            left: -7px;
+                        }
+                    }
+                }
+            }
+            .crazy-dog-eye2 {
+                width: 7px;
+                height: 5px;
+                background: white;
+                position: absolute;
+                top: 11px;
+                left: 22px;
+                border-radius: 2px 2px 10px 10px;
+                overflow: hidden; animation: crazydogeye2 1s linear infinite;
+                @keyframes crazydogeye2 {
+                    90% {
+                        transform: scale(1.5);
+                        background: $red9;
+                    }
+                }
+                .crazy-dog-eyeball2 {
+                    width: 4px;
+                    height: 4px;
+                    background: black;
+                    position: absolute;
+                    top: 0px;
+                    left: 2px;
+                    border-radius: 10px;animation: crazydogeyeball2 3s ease-in-out infinite;
+                    @keyframes crazydogeyeball2 {
+                        30% {
+                            left: 2px;
+                        }
+                        90% {
+                            left: 10px;
+                        }
+                    }
+                }
+            }
+            .crazy-dog-ear {
+                width: 15px;
+                border-bottom: 15px solid black;
+                border-left: 7px solid transparent;
+                border-right: 8px solid transparent;
+                position: absolute;
+                top: -12px;
+                left: 0px; animation: crazydogear 1s linear infinite;
+                @keyframes crazydogear {
+                    30% {
+                        border-bottom: 7px solid black;
+                        top: -5px;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                    }
+                }
+            }
+            .crazy-dog-ear2 {
+                width: 15px;
+                border-bottom: 15px solid black;
+                border-left: 8px solid transparent;
+                border-right: 7px solid transparent;
+                position: absolute;
+                top: -11px;
+                left: 18px; animation: crazydogear2 1s linear infinite;
+                @keyframes crazydogear2 {
+                    90% {
+                        border-bottom: 7px solid black;
+                        top: -5px;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                    }
+                }
+            }
+            .crazy-dog-nose {
+                width: 8px;
+                height: 8px;
+                background: black;
+                position: absolute;
+                top: 16px;
+                left: 11px;
+                border-radius: 5px 5px 5px 5px; animation: crazydognose .5s linear infinite;
+                @keyframes crazydognose {
+                    30% {
+                        top: 10px;
+                        transform: scale(1.4)
+                    }
+                }
+            }
+            .crazy-dog-nose2 {
+                width: 3px;
+                height: 3px;
+                background: brown;
+                position: absolute;
+                top: 20px;
+                left: 12px;
+                border-radius: 30px;animation: crazydognose2 .5s linear infinite;
+                @keyframes crazydognose2 {
+                    30% {
+                        top: 15px;
+                        transform: scale(1.4)
+                    }
+                }
+                &:before {
+                    content: '';
+                    width: 3px;
+                    height: 3px;
+                    background: brown;
+                    position: absolute;
+                    top: 0px;
+                    left: 3px;
+                    border-radius: 30px;
+                }
+            }
+            .crazy-dog-mouth {
+                width: 9px;
+                position: absolute;
+                top: 28px;
+                left: 11px;
+                border-bottom: 5px solid $red8;
+                border-radius: 0px 0px 5px 5px;
+                border-left: 2px solid transparent;
+                border-right: 2px solid transparent;animation: crazydogmouth .5s linear infinite;
+                @keyframes crazydogmouth {
+                    30% {
+                        top: 30px;
+                        transform: scale(1.4)
+                    }
+                }
+                .crazy-dog-teeth {
+                    width: 4px;
+                    border-top: 10px solid #fff59d;
+                    border-left: 1px solid transparent;
+                    border-right: 3px solid transparent;
+                    position: absolute;
+                    top: -3px;
+                    left: -3px;
+                }
+                .crazy-dog-teeth2 {
+                    width: 3px;
+                    border-top: 10px solid #fff59d;
+                    border-left: 1px solid transparent;
+                    border-right: 2px solid transparent;
+                    position: absolute;
+                    top: -3px;
+                    left: 6px;
+                }
+                .crazy-dog-downmouth {}
+            }
+        }
+        &-dog-neck {
+            width: 22px;
+            height: 10px;
+            position: absolute;
+            top: 81px;
+            left: 4px;
+            background: $pink3;
+        }
+        &-dog-body {
+            width: 32px;
+            height: 21px;
+            position: absolute;
+            top: 89px;
+            left: -1px;
+            background: black;
+            border-radius: 0px 0px 10px 10px;
+            z-index: -99;
+            transform-origin: center top;animation: crazydogbody 1s linear infinite;
+            @keyframes crazydogbody {
+                30% {
+                    transform: translateY(1px);
+                }
+                90% {
+                    transform: translateY(-1px);
+                }
+            }
+            .crazy-dog-front-leg {
+                width: 10px;
+                position: absolute;
+                top: 10px;
+                left: 1px;
+                transform-origin: center top;
+                border-top: 7px solid black;
+                border-left: 1px solid transparent;
+                border-right: 1px solid transparent;animation: crazydogfrontleg 1s linear infinite;
+                @keyframes crazydogfrontleg {
+                    10% {
+                        top: 12px;
+                        border-top: 9px solid $grey9;
+                    }
+                }
+                .crazy-dog-front-low-leg {
+                    width: 10px;
+                    position: absolute;
+                    top: -2px;
+                    left: -1px;
+                    transform-origin: center top;
+                    border-bottom: 10px solid white;
+                    border-left: 3px solid transparent;
+                    border-right: 3px solid transparent; animation: crazydogfrontlowleg 1s linear infinite;
+                    @keyframes crazydogfrontlowleg {
+                        40% {
+                            top: 2px;
+                            border-bottom: 9px solid rgb(200, 200, 200);
+                        }
+                    }
+                    .crazy-dog-feet {
+                        width: 10px;
+                        position: absolute;
+                        top: 9px;
+                        left: -3px;
+                        border-bottom: 6px solid black;
+                        border-left: 1px solid transparent;
+                        border-right: 1px solid transparent;  @include ani(crazydogfeet);
+                        @keyframes crazydogfeet {
+                            40% {
+                                border-bottom: 3px solid black;
+                                top: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+            .crazy-dog-front-leg2 {
+                width: 10px;
+                height: 20px;
+                position: absolute;
+                left: 19px;
+                top: 12px;
+                border-top: 9px solid black;
+                border-left: 3px solid transparent;
+                border-right: 3px solid transparent; @include ani(crazydogfrontleg2);
+                @keyframes crazydogfrontleg2 {
+                    10% {
+                        top: 10px;
+                        border-top: 7px solid $grey7;
+                        border-left: 1px solid transparent;
+                        border-right: 1px solid transparent;
+                    }
+                }
+                .crazy-dog-front-low-leg2 {
+                    width: 9px;
+                    height: 20px;
+                    position: absolute;
+                    left: -3px;
+                    top: -14px;
+                    border-bottom: 7px solid rgb(200, 200, 200);
+                    border-left: 2px solid transparent;
+                    border-right: 2px solid transparent; @include ani(crazydogfrontlowleg2);
+                    @keyframes crazydogfrontlowleg2 {
+                        40% {
+                            top: -12px;
+                            left: -2px;
+                            border-bottom: 10px solid white;
+                            border-left: 3px solid transparent;
+                            border-right: 3px solid transparent;
+                        }
+                    }
+                    .crazy-dog-feet2 {
+                        width: 10px;
+                        height: 20px;
+                        position: absolute;
+                        left: -3px;
+                        border-bottom: 3px solid black;
+                        top: 3px;
+                        border-left: 1px solid transparent;
+                        border-right: 1px solid transparent; @include ani(crazydogfeet2);
+                        @keyframes crazydogfeet2 {
+                            40% {
+                                top: 6px;
+                                border-bottom: 6px solid black;
+                            }
+                        }
+                    }
+                }
+            }
+            .crazy-dog-back-leg {
+                .crazy-dog-back-low-leg {
+                    .crazy-dog-back-feet {}
+                }
+            }
+            .crazy-dog-back-leg2 {
+                .crazy-dog-back-low-leg2 {
+                    .crazy-dog-back-feet2 {}
+                }
+            }
+        }
+    }
+}

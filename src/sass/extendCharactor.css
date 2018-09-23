@@ -1,0 +1,2150 @@
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+/* line 16, /Users/rikrik527/Desktop/project/src/sass/judoVariable.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0; }
+
+/* line 25, /Users/rikrik527/Desktop/project/src/sass/judoVariable.scss */
+.clearfix {
+  display: inline-block; }
+
+/* line 29, /Users/rikrik527/Desktop/project/src/sass/judoVariable.scss */
+.clearfix {
+  height: 1%; }
+
+/* line 33, /Users/rikrik527/Desktop/project/src/sass/judoVariable.scss */
+.clearfix {
+  display: block; }
+
+/* line 37, /Users/rikrik527/Desktop/project/src/sass/judoVariable.scss */
+input {
+  outline: none;
+  margin: none;
+  padding: none;
+  cursor: pointer; }
+
+/* line 3, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-boxcontrol {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  top: 127px;
+  outline: 1px solid;
+  transform-style: preserve-3d;
+  transform: perspective(3000px);
+  margin: 10px;
+  transition: all 1s linear;
+  z-index: 9999;
+  animation: judo-boxcontrol .5s linear infinite; }
+
+@keyframes judo-boxcontrol {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-1px); }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateY(1px); } }
+  /* line 32, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-boxcontrol .effect0 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    top: 150px;
+    left: 53px;
+    background: #757575;
+    animation: effect0 .5s linear infinite; }
+
+@keyframes effect0 {
+  from {
+    top: 140px; }
+  to {
+    top: 120px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    opacity: 0; } }
+  /* line 54, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-boxcontrol .effect1 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    top: 140px;
+    left: 73px;
+    background: #9e9e9e;
+    animation: effect1 .5s linear infinite; }
+
+@keyframes effect1 {
+  from {
+    top: 140px; }
+  to {
+    top: 100px;
+    left: 120px;
+    width: 15px;
+    height: 20px;
+    opacity: 0; } }
+  /* line 76, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-boxcontrol .effect2 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    top: 140px;
+    left: 43px;
+    background: #e0e0e0;
+    animation: effect2 .5s linear infinite; }
+
+@keyframes effect2 {
+  from {
+    top: 140px; }
+  to {
+    top: 100px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.2; } }
+
+/* line 102, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-hat1 {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  border-radius: 50px 50px 0px 0px;
+  background: black;
+  top: -5px;
+  left: 42px;
+  z-index: 99;
+  transform-origin: center bottom;
+  animation: hat1 .5s linear infinite; }
+
+@keyframes hat1 {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translatey(-1px); }
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateY(1px); } }
+
+/* line 131, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-hat2 {
+  position: absolute;
+  width: 46px;
+  height: 30px;
+  /* border-radius: 50px 0px 0px 50px; */
+  background: rgba(0, 0, 0, 0.5);
+  top: 15px;
+  left: 44px;
+  animation: hat1 .5s linear infinite;
+  z-index: 9999; }
+
+/* line 142, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-hat3 {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  border-radius: 50px 0px 0px 50px;
+  background: black;
+  top: 15px;
+  left: 37px;
+  animation: hat1 .5s linear infinite;
+  z-index: 9999; }
+
+/* line 153, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-hat4 {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  border-radius: 0px 50px 50px 0px;
+  background: black;
+  top: 20px;
+  left: 88px;
+  animation: hat1 .5s linear infinite;
+  z-index: 99999; }
+
+/* line 164, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-hat5 {
+  width: 10px;
+  border-top: 10px solid #eeeeee;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  top: 15px;
+  left: 63px;
+  animation: hat1 .5s linear infinite;
+  z-index: 99999; }
+
+/* line 179, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-head {
+  width: 40px;
+  height: 35px;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 11px;
+  background: linear-gradient(to left, #ffa726, #fb8c00);
+  top: 25px;
+  left: 47px;
+  z-index: 999;
+  position: absolute;
+  animation: bump .5s linear infinite; }
+
+@keyframes bump {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateX(1px) translateY(-1px); }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-1px, 1px, 0px); } }
+  /* line 206, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-head .judo-eyebrow1 {
+    width: 15px;
+    height: 4px;
+    background: black;
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    -ms-transform: rotate(30deg);
+    transform: rotatez(16deg); }
+  /* line 216, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-head .judo-eye1 {
+    width: 13px;
+    height: 7px;
+    background: white;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    border-radius: 4px; }
+    /* line 224, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+    .judo-head .judo-eye1 .judo-eyeball1 {
+      width: 2px;
+      height: 2px;
+      background: black;
+      border-radius: 10px;
+      top: 2px;
+      left: 6px;
+      position: absolute; }
+  /* line 234, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-head .judo-eyebrow2 {
+    width: 12px;
+    height: 4px;
+    background: black;
+    position: absolute;
+    top: -1px;
+    left: 26px;
+    -ms-transform: rotate(30deg);
+    transform: rotatez(-16deg); }
+  /* line 244, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-head .judo-eye2 {
+    width: 13px;
+    height: 8px;
+    background: white;
+    position: absolute;
+    top: 6px;
+    left: 25px;
+    border-radius: 4px;
+    animation: judoeye2 .5s linear infinite; }
+
+@keyframes judoeye2 {
+  50% {
+    height: 3px;
+    top: 9px; } }
+    /* line 259, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+    .judo-head .judo-eye2 .judo-eyeball2 {
+      width: 2px;
+      height: 2px;
+      background: black;
+      border-radius: 10px;
+      top: 0px;
+      left: 5px;
+      position: absolute;
+      animation: judoeyeball2 .5s linear infinite; }
+
+@keyframes judoeyeball2 {
+  50% {
+    top: 2px; } }
+  /* line 275, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-head .judo-nose {
+    border-top: 10px solid #fb8c00;
+    /* border: 1px solid black; */
+    /* border-left: saddlebrown; */
+    border-bottom: 2px solid #ef6c00;
+    border-left: 1px solid #ef6c00;
+    border-right: 1px solid #ef6c00;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: absolute;
+    width: 10px;
+    top: 8px;
+    left: 17px; }
+  /* line 289, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-head .judo-lipsup {
+    width: 14px;
+    height: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    background: #d32f2f;
+    animation: moveup .5s linear infinite; }
+
+@keyframes moveup {
+  50% {
+    top: 24px; } }
+  /* line 305, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-head .judo-lipsdown {
+    width: 10px;
+    height: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 27px;
+    left: 16px;
+    background: #d32f2f;
+    animation: movedown .5s linear infinite; }
+
+@keyframes movedown {
+  50% {
+    top: 37px; } }
+  /* line 321, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-head .judo-mouth {
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    background: linear-gradient(to top, #c62828, #ef9a9a);
+    top: 20px;
+    left: 16px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation: open .5s linear infinite; }
+
+@keyframes open {
+  50% {
+    height: 12px;
+    top: 27px; } }
+    /* line 337, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+    .judo-head .judo-mouth .judo-teeth {
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      background: white;
+      top: 0px;
+      left: 0px; }
+
+/* judo -head */
+/* line 352, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-ear1 {
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  top: 32px;
+  left: 41px;
+  background: #ff9800;
+  animation: bump .5s linear infinite; }
+
+/* line 361, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-ear2 {
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  top: 33px;
+  left: 88px;
+  background: #ff9800;
+  animation: bump .5s linear infinite; }
+
+/* line 370, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-neck {
+  width: 13px;
+  height: 7px;
+  position: absolute;
+  top: 56px;
+  left: 61px;
+  z-index: 99;
+  background: orange; }
+  /* line 378, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-neck:before {
+    content: '';
+    position: absolute;
+    border-top: 10px solid orange;
+    border-left: 7px solid transparent;
+    border-right: 6px solid transparent;
+    top: 7px;
+    left: 0px; }
+
+/* line 388, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-body {
+  width: 45px;
+  border-top: 30px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: 57px;
+  left: 44px;
+  animation: bump .5s linear infinite; }
+
+/* line 398, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-arm1 {
+  width: 16px;
+  height: 14px;
+  border-top-left-radius: 5px;
+  background: #ff9800;
+  top: 54px;
+  left: 30px;
+  position: absolute;
+  animation: judoarm1 .5s linear infinite; }
+
+@keyframes judoarm1 {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-1px); }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateY(1px); } }
+  /* line 423, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-arm1 .judo-bicep {
+    width: 10px;
+    height: 19px;
+    background: #ff9800;
+    transform-origin: center top;
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    transform: rotatez(86deg);
+    animation: judobicep .5s linear infinite; }
+
+@keyframes judobicep {
+  from {
+    top: 5px;
+    left: 4px;
+    transform: rotateZ(77deg); }
+  to {
+    top: 8px;
+    left: 1px;
+    transform: rotateZ(89deg); } }
+
+/* line 447, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-lowarm1 {
+  width: 12px;
+  height: 16px;
+  position: absolute;
+  background: #f57c00;
+  top: 51px;
+  left: 21px;
+  transform: rotatex(-282deg) rotatez(-131deg) rotatey(-45deg);
+  z-index: 99;
+  animation: judolowarm1 .5s linear infinite; }
+
+@keyframes judolowarm1 {
+  from {
+    transform: rotatex(-282deg) rotatez(-131deg) rotatey(-45deg);
+    top: 51px; }
+  to {
+    transform: rotatex(-282deg) rotatez(-131deg) rotatey(-45deg);
+    top: 51px; } }
+  /* line 467, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-lowarm1 .judo-hand {
+    width: 17px;
+    height: 13px;
+    position: absolute;
+    background: #ffcc80;
+    top: 13px;
+    left: -4px;
+    border-radius: 50px;
+    z-index: 9999;
+    animation: bump .5s linear infinite; }
+
+/* line 479, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-arm2 {
+  width: 14px;
+  height: 15px;
+  position: absolute;
+  background: #ff9800;
+  top: 54px;
+  left: 86px;
+  border-top-right-radius: 5px;
+  animation: bumparm2 .5s linear infinite; }
+
+@keyframes bumparm2 {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    top: 55px;
+    left: 87px; }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    top: 53px;
+    left: 85px; } }
+  /* line 506, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-arm2 .judo-bicep2 {
+    width: 10px;
+    height: 19px;
+    background: #ff9800;
+    transform-origin: center top;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    transform: rotatez(-84deg);
+    animation: judobicep2 .5s linear infinite; }
+
+@keyframes judobicep2 {
+  from {
+    transform: rotateZ(-86deg); }
+  to {
+    transform: rotate(-82deg); } }
+
+/* line 526, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-lowarm2 {
+  width: 12px;
+  height: 21px;
+  position: absolute;
+  background: #f57c00;
+  top: 49px;
+  left: 94px;
+  transform: rotatex(146deg) rotatez(82deg) rotatey(-4deg);
+  z-index: 99;
+  animation: judolowarm2 .5s linear; }
+
+@keyframes judolowarm2 {
+  from {
+    transform: rotateX(146deg) rotateZ(82deg) rotateY(-4deg) translateY(1px); }
+  to {
+    transform: rotateX(146deg) rotateZ(82deg) rotateY(-4deg) translateY(-1px); } }
+  /* line 544, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-lowarm2 .judo-hand2 {
+    width: 15px;
+    height: 11px;
+    position: absolute;
+    background: #ffcc80;
+    top: 10px;
+    left: -3px;
+    border-radius: 50px;
+    animation: bump .5s linear infinite;
+    z-index: -9; }
+
+/* line 556, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-peegu {
+  width: 32px;
+  height: 12px;
+  position: absolute;
+  background: black;
+  top: 73px;
+  left: 51px;
+  z-index: -999; }
+
+/* line 565, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-upleg1 {
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  background: #64b5f6;
+  top: 83px;
+  left: 36px;
+  transform: rotatez(-30deg); }
+
+/* line 574, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-lowleg1 {
+  width: 12px;
+  position: absolute;
+  top: 93px;
+  left: 30px;
+  border-top: 15px solid #ff9800;
+  border-left: 1px solid transparent;
+  border-right: 2px solid transparent;
+  transform: rotateZ(18deg);
+  animation: bumpleg .5s linear infinite; }
+
+@keyframes bumpleg {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotatez(24deg); }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: rotatez(13deg); } }
+  /* line 600, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-lowleg1 .judo-foot1 {
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    top: -1px;
+    left: -8px;
+    transform: rotateZ(0deg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+
+/* line 612, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-upleg2 {
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  background: #64b5f6;
+  top: 83px;
+  left: 79px;
+  transform: rotatez(38deg); }
+
+/* line 621, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-lowleg2 {
+  width: 14px;
+  position: absolute;
+  top: 95px;
+  left: 91px;
+  border-top: 15px solid #ff9800;
+  border-left: 9px solid transparent;
+  border-right: -7px solid transparent;
+  transform: rotatez(-26deg);
+  animation: bumpleg2 .5s linear infinite; }
+
+@keyframes bumpleg2 {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotatez(-20deg); }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: rotatez(-31deg); } }
+  /* line 647, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-lowleg2 .judo-foot2 {
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    top: -1px;
+    left: -5px;
+    -ms-transform: rotate(30deg);
+    transform: rotatez(-15deg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+
+/* line 660, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-handle1 {
+  width: 27px;
+  height: 6px;
+  position: absolute;
+  background: black;
+  top: 58px;
+  left: 35px;
+  -ms-transform: rotate(30deg);
+  transform: rotateZ(9deg);
+  z-index: 9999099;
+  animation: judospaceshiphandle2 1s linear; }
+
+/* line 672, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-handle2 {
+  width: 27px;
+  height: 7px;
+  position: absolute;
+  background: black;
+  top: 58px;
+  left: 74px;
+  -ms-transform: rotate(-30deg);
+  transform: rotateZ(-9deg);
+  animation: judospaceshiphandle2 1s linear; }
+
+@keyframes judospaceshiphandle2 {
+  from {
+    top: 63px; }
+  to {
+    top: 58px; } }
+
+/* line 691, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-line {
+  width: 5px;
+  height: 20px;
+  position: absolute;
+  background: #424242;
+  top: 41px;
+  left: 43px;
+  -ms-transform: rotate(10deg);
+  transform: rotatez(-44deg) rotatex(-14deg) translateZ(15px);
+  animation: judospaceshipline 1s linear; }
+
+@keyframes judospaceshipline {
+  from {
+    top: 46px; }
+  to {
+    top: 41px; } }
+
+/* line 710, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-line2 {
+  width: 5px;
+  height: 20px;
+  position: absolute;
+  background: #424242;
+  top: 41px;
+  left: 84px;
+  -ms-transform: rotate(10deg);
+  transform: rotatez(44deg) rotatex(-8deg) translateZ(22px);
+  z-index: 9999;
+  animation: judospaceshipline2 1s linear; }
+
+@keyframes judospaceshipline2 {
+  from {
+    top: 46px; }
+  to {
+    top: 41px; } }
+
+/* line 730, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-glass {
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  background: black;
+  top: 38px;
+  left: 26px;
+  border-radius: 4px;
+  transform: translate3d(0px, 0px, 0px) rotatex(21deg);
+  animation: judospaceshipglass 1s linear; }
+
+@keyframes judospaceshipglass {
+  from {
+    top: 44px; }
+  to {
+    top: 38px; } }
+
+/* line 749, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-glass2 {
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  background: black;
+  top: 38px;
+  left: 89px;
+  border-radius: 4px;
+  transform: translate3d(0px, 0px, 0px) rotatex(25deg);
+  animation: judospaceshipglass2 1s linear; }
+
+@keyframes judospaceshipglass2 {
+  from {
+    top: 44px; }
+  to {
+    top: 38px; } }
+
+/* line 768, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-sit {
+  width: 30px;
+  height: 17px;
+  position: absolute;
+  top: 55px;
+  left: 51px;
+  background: black;
+  border-radius: 3px 3px 0 0;
+  z-index: 99999;
+  animation: judospaceshipsit 1s linear; }
+
+@keyframes judospaceshipsit {
+  from {
+    top: 63px; }
+  to {
+    top: 55px; } }
+
+/* line 787, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-sit2 {
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  top: 58px;
+  left: 59px;
+  background: white;
+  z-index: 9999999;
+  border-radius: 3px 3px 3px 3px;
+  animation: judospaceshipsit2 1s linear; }
+
+@keyframes judospaceshipsit2 {
+  from {
+    top: 68px;
+    box-shadow: 2px -2px 3px 4px #90caf9; }
+  to {
+    top: 58px;
+    box-shadow: 2px -2px 4px 4px #90caf9; } }
+
+/* line 808, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-front {
+  width: 30px;
+  height: 30px;
+  background: aliceblue;
+  position: absolute;
+  top: 66px;
+  left: 51px;
+  animation: judospaceshipfront 1s linear; }
+
+@keyframes judospaceshipfront {
+  from {
+    top: 69px; }
+  to {
+    top: 66px; } }
+
+/* line 825, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-tire {
+  width: 30px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  overflow: hidden;
+  top: 68px;
+  left: 51px;
+  animation: judospaceshiptire 1s linear;
+  border-radius: 10px;
+  z-index: 9999999;
+  border: 0.5px solid #616161; }
+
+@keyframes judospaceshiptire {
+  0% {
+    top: 96px;
+    height: 50px; }
+  100% {
+    top: 68px;
+    height: 60px; } }
+  /* line 847, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-spaceship-tire .effect4 {
+    width: 22px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: -10px;
+    left: 3px;
+    z-index: 9999999;
+    animation: effect4 .3s linear .2s infinite; }
+
+@keyframes effect4 {
+  to {
+    top: 46px;
+    opacity: 0; } }
+  /* line 863, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-spaceship-tire .effect5 {
+    width: 22px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: -10px;
+    left: 3px;
+    z-index: 9999999;
+    animation: effect5 .3s linear .4s infinite; }
+
+@keyframes effect5 {
+  to {
+    top: 46px;
+    opacity: 0; } }
+  /* line 879, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-spaceship-tire .effect6 {
+    width: 22px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: -10px;
+    left: 3px;
+    z-index: 9999999;
+    animation: effect6 .3s linear .6s infinite; }
+
+@keyframes effect6 {
+  to {
+    top: 46px;
+    opacity: 0; } }
+  /* line 895, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-spaceship-tire .effect7 {
+    width: 22px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: -10px;
+    left: 3px;
+    z-index: 9999999;
+    animation: effect7 .3s linear .8s infinite; }
+
+@keyframes effect7 {
+  to {
+    top: 46px;
+    opacity: 0; } }
+  /* line 911, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-spaceship-tire .effect8 {
+    width: 22px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: -10px;
+    left: 3px;
+    z-index: 9999999;
+    animation: effect8 .3s linear 1s infinite; }
+
+@keyframes effect8 {
+  to {
+    top: 46px;
+    opacity: 0; } }
+  /* line 927, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-spaceship-tire .effect9 {
+    width: 22px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: -10px;
+    left: 3px;
+    z-index: 9999999;
+    animation: effect9 .3s linear infinite; }
+
+@keyframes effect9 {
+  to {
+    top: 46px;
+    opacity: 0.3; } }
+
+/* line 944, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-deco {
+  width: 10px;
+  height: 30px;
+  background: #f5f5f5;
+  position: absolute;
+  top: 77px;
+  left: 41px;
+  animation: judospaceshipdeco 1s linear;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #e0e0e0;
+  z-index: 9; }
+
+@keyframes judospaceshipdeco {
+  from {
+    top: 90px; }
+  to {
+    top: 77px; } }
+
+/* line 964, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-deco2 {
+  width: 10px;
+  height: 30px;
+  background: #f5f5f5;
+  position: absolute;
+  top: 77px;
+  left: 81px;
+  animation: judospaceshipdeco2 1s linear;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #e0e0e0;
+  z-index: 9; }
+
+@keyframes judospaceshipdeco2 {
+  from {
+    top: 90px; }
+  to {
+    top: 77px; } }
+
+/* line 984, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-deco3 {
+  width: 35px;
+  height: 10px;
+  background: white;
+  position: absolute;
+  top: 78px;
+  left: 49px;
+  animation: judospaceshipdeco3 1s linear;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #e0e0e0;
+  z-index: 9999; }
+
+@keyframes judospaceshipdeco3 {
+  from {
+    top: 92px; }
+  to {
+    top: 78px; } }
+
+/* line 1004, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-deco4 {
+  width: 5px;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 82px;
+  left: 43px;
+  animation: judospaceshipdeco4 1s linear;
+  z-index: 99; }
+
+@keyframes judospaceshipdeco4 {
+  from {
+    top: 96px; }
+  to {
+    top: 82px; } }
+
+/* line 1022, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-deco5 {
+  width: 5px;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 91px;
+  left: 43px;
+  animation: judospaceshipdeco5 1s linear;
+  z-index: 99; }
+
+@keyframes judospaceshipdeco5 {
+  from {
+    top: 103px; }
+  to {
+    top: 91px; } }
+
+/* line 1040, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-deco6 {
+  width: 5px;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 83px;
+  left: 84px;
+  animation: judospaceshipdeco6 1s linear;
+  z-index: 999; }
+
+@keyframes judospaceshipdeco6 {
+  from {
+    top: 98px; }
+  to {
+    top: 83px; } }
+
+/* line 1058, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-deco7 {
+  width: 5px;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 91px;
+  left: 84px;
+  animation: judospaceshipdeco7 1s linear;
+  z-index: 999; }
+
+@keyframes judospaceshipdeco7 {
+  from {
+    top: 105px; }
+  to {
+    top: 91px; } }
+
+/* line 1076, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-deco8 {
+  width: 44px;
+  height: 36px;
+  background: lightgrey;
+  position: absolute;
+  top: 99px;
+  left: 44px;
+  animation: judospaceshipdeco8 1s linear;
+  z-index: -9; }
+
+@keyframes judospaceshipdeco8 {
+  from {
+    height: 26px;
+    top: 91px; }
+  to {
+    top: 99px;
+    height: 36px; } }
+
+/* line 1096, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.judo-spaceship-deco9 {
+  width: 39px;
+  height: 30px;
+  background: black;
+  position: absolute;
+  top: 115px;
+  left: 46px;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  z-index: -9;
+  animation: judospaceshipdeco9 1s linear; }
+
+@keyframes judospaceshipdeco9 {
+  from {
+    width: 27px;
+    left: 52px; }
+  to {
+    width: 39px;
+    left: 46px; } }
+  /* line 1117, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-spaceship-deco9 .effect10 {
+    width: 30px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    z-index: 9999999;
+    animation: effect10 .3s linear infinite; }
+
+@keyframes effect10 {
+  to {
+    top: 29px;
+    opacity: 0; } }
+  /* line 1133, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-spaceship-deco9 .effect11 {
+    width: 30px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    z-index: 9999999;
+    animation: effect11 .3s linear .2s infinite; }
+
+@keyframes effect11 {
+  to {
+    top: 29px;
+    opacity: 0; } }
+  /* line 1149, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-spaceship-deco9 .effect12 {
+    width: 30px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    z-index: 9999999;
+    animation: effect12 .3s linear .4s infinite; }
+
+@keyframes effect12 {
+  to {
+    top: 29px;
+    opacity: 0; } }
+  /* line 1165, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-spaceship-deco9 .effect13 {
+    width: 30px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    z-index: 9999999;
+    animation: effect13 .3s linear .6s infinite; }
+
+@keyframes effect13 {
+  to {
+    top: 29px;
+    opacity: 0; } }
+  /* line 1181, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .judo-spaceship-deco9 .effect14 {
+    width: 30px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    z-index: 9999999;
+    animation: effect14 .3s linear .8s infinite; }
+
+@keyframes effect14 {
+  to {
+    top: 29px;
+    opacity: 0; } }
+
+/* line 1204, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-boxcontrol-ex {
+  width: 100px;
+  height: 100px;
+  outline: 1px solid;
+  position: absolute;
+  top: 150px;
+  left: 20%;
+  transform-style: preserve-3d;
+  perspective: 1000px; }
+
+/* line 1215, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-hair1-ex {
+  width: 45px;
+  height: 7px;
+  border-bottom: 25px solid #6d4c41;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  position: absolute;
+  top: -9px;
+  left: -5px;
+  animation: lihair-ex .5s linear infinite; }
+
+/* line 1227, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-hair2-ex {
+  width: 10px;
+  height: 35px;
+  background: #6d4c41;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 12px;
+  position: absolute;
+  top: -1px;
+  left: -4px;
+  animation: lihair2-ex .5s linear infinite; }
+
+/* line 1239, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-hair3-ex {
+  width: 10px;
+  height: 33px;
+  background: #6d4c41;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  animation: lihair3-ex .5s linear infinite; }
+
+/* line 1251, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-neck-ex {
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  background: #ffcc80;
+  top: 37px;
+  left: 13px;
+  z-index: -999; }
+  /* line 1259, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-neck-ex:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ffb74d;
+    top: 2px;
+    left: 0px;
+    border-radius: 10px; }
+
+/* line 1271, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-head-ex {
+  width: 34px;
+  height: 33px;
+  background: #ffcc80;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  animation: lihead-ex .5s linear infinite;
+  /*.shan-li-lips2 {
+        position: absolute;
+        width: 6px;
+        height: 2px;
+        background: $red8;
+        top: 31px;
+        left: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        animation: lips2 .5s linear infinite;
+        @keyframes lips2 {
+            50% {
+                top: 31px
+            }
+        }
+    }*/ }
+
+@keyframes lihead-ex {
+  30% {
+    transform: translateY(2px); }
+  60% {
+    transform: translateY(-1px); } }
+  /* line 1289, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-head-ex .shan-li-eyebrow-ex {
+    position: absolute;
+    width: 11px;
+    height: 3px;
+    background: #795548;
+    top: 4px;
+    left: 3px;
+    -ms-transform: rotate(15deg);
+    transform: rotatez(15deg); }
+  /* line 1299, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-head-ex .shan-li-eyebrow2-ex {
+    position: absolute;
+    width: 11px;
+    height: 3px;
+    background: #795548;
+    top: 4px;
+    left: 21px;
+    -ms-transform: rotate(-15deg);
+    transform: rotateZ(-15deg);
+    animation: lieyebrow2-ex .5s linear infinite; }
+
+@keyframes lieyebrow2-ex {
+  50% {
+    transform: translateY(1px) rotatez(-30deg); } }
+  /* line 1315, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-head-ex .shan-li-eye-ex {
+    position: absolute;
+    width: 13px;
+    height: 7px;
+    border: 0.5px solid;
+    background: white;
+    overflow: hidden;
+    top: 7px;
+    left: 1px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 10px;
+    -ms-transform: rotate(15deg);
+    transform: rotateZ(5deg); }
+    /* line 1328, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+    .shan-li-head-ex .shan-li-eye-ex .shan-li-eyeball-ex {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #ef9a9a;
+      top: -1px;
+      left: 3px;
+      border-radius: 10px; }
+  /* line 1338, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-head-ex .shan-li-eye2-ex {
+    position: absolute;
+    width: 13px;
+    height: 7px;
+    border: 0.5px solid;
+    background: white;
+    top: 7px;
+    left: 20px;
+    -ms-transform: rotate(-15deg);
+    transform: rotateZ(-8deg);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    animation: lieye2-ex .5s linear infinite; }
+
+@keyframes lieye2-ex {
+  50% {
+    height: 3px;
+    top: 9px; } }
+    /* line 1358, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+    .shan-li-head-ex .shan-li-eye2-ex .shan-li-eyeball2-ex {
+      position: absolute;
+      width: 8px;
+      height: 7px;
+      background: #ef9a9a;
+      top: 0px;
+      left: 0px;
+      border-radius: 10px; }
+  /* line 1368, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-head-ex .shan-li-nose-ex {
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    top: 13px;
+    left: 14px;
+    border-bottom: 8px solid #ffa726;
+    border-left: 3px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 4px; }
+  /* line 1380, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-head-ex .shan-li-lips-ex {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: #d32f2f;
+    top: 23px;
+    left: 13px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    animation: lilips-ex .5s linear infinite; }
+
+@keyframes lilips-ex {
+  50% {
+    width: 12px;
+    left: 12px;
+    top: 20px; } }
+  /* line 1414, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-head-ex .shan-li-mouth-ex {
+    position: absolute;
+    width: 10px;
+    height: 7px;
+    overflow: hidden;
+    background: linear-gradient(to top, #d32f2f, #ffcdd2);
+    top: 24px;
+    left: 13px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: limouth-ex .5s linear infinite; }
+
+@keyframes limouth-ex {
+  50% {
+    height: 8px;
+    width: 11px;
+    left: 12px;
+    top: 23px; } }
+    /* line 1433, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+    .shan-li-head-ex .shan-li-mouth-ex .shan-li-teeth-ex {
+      position: absolute;
+      width: 10px;
+      height: 1px;
+      background: white;
+      top: 0px;
+      left: 0px; }
+
+/* line 1444, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-body-ex {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  background: #f06292;
+  top: 36px;
+  left: 3px;
+  z-index: -9999;
+  animation: libody-ex .5s linear infinite; }
+
+@keyframes libody-ex {
+  30% {
+    transform: translateY(2px); }
+  60% {
+    transform: translatey(-2px); } }
+  /* line 1461, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-body-ex .shan-li-mimi-ex {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #f48fb1;
+    top: 9px;
+    left: -2px;
+    border-radius: 50px;
+    animation: mimi-ex .5s linear infinite; }
+
+@keyframes mimi-ex {
+  30% {
+    transform: translatey(1px); }
+  60% {
+    transform: translateY(-1px); } }
+  /* line 1479, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-body-ex .shan-li-mimi2-ex {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #f48fb1;
+    top: 9px;
+    left: 18px;
+    border-radius: 50px;
+    animation: mimi-ex .5s linear infinite; }
+
+/* line 1491, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-arm-ex {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background: linear-gradient(to top, #e91e63, #f06292);
+  top: 37px;
+  left: -3px;
+  z-index: -999999;
+  transform: rotateX(-40deg) rotatez(47deg);
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  animation: liarm-ex .5s linear infinite; }
+
+@keyframes liarm-ex {
+  50% {
+    transform: rotatex(30deg) rotatez(10deg); } }
+
+/* line 1510, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-arm2-ex {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background: linear-gradient(to top, #e91e63, #f06292);
+  top: 36px;
+  left: 29px;
+  z-index: -999999;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  transform: rotatex(-40deg) rotatez(-47deg);
+  animation: liarm2-ex .5s linear infinite; }
+
+@keyframes liarm2-ex {
+  50% {
+    transform: rotateX(30deg) rotateZ(-10deg); } }
+
+/* line 1529, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-lowarm-ex {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background: #ffb74d;
+  top: 47px;
+  left: -9px;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -ms-transform: rotatex(60deg) rotate(-20deg);
+  transform: rotatex(79deg) rotatez(-20deg) rotatey(-30deg);
+  animation: lowarm-ex .5s linear infinite; }
+
+@keyframes lowarm-ex {
+  50% {
+    transform: rotateX(50deg) rotateZ(-10deg); } }
+  /* line 1546, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-lowarm-ex .shan-li-hand-ex {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: wheat;
+    border: .5px solid;
+    top: 11px;
+    left: -1px;
+    border-radius: 50px; }
+
+/* line 1558, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-lowarm2-ex {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background: #ffb74d;
+  top: 47px;
+  left: 35px;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -ms-transform: rotatex(60deg) rotate(20deg);
+  transform: rotatex(79deg) rotatez(20deg) rotatey(30deg);
+  animation: lowarm2-ex .5s linear infinite; }
+
+@keyframes lowarm2-ex {
+  50% {
+    transform: rotateX(50deg) rotatez(10deg); } }
+  /* line 1575, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-lowarm2-ex .shan-li-hand2-ex {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: wheat;
+    top: 11px;
+    left: -2px;
+    border-radius: 50px;
+    border: .5px solid; }
+
+/* line 1587, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-peegu-ex {
+  position: absolute;
+  width: 36px;
+  height: 10px;
+  border-bottom: 10px solid #ec407a;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  /* border-bottom-left-radius: 5px; */
+  top: 50px;
+  left: -1px;
+  z-index: -999999;
+  animation: shanlipeegu-ex .5s linear infinite; }
+
+@keyframes shanlipeegu-ex {
+  30% {
+    transform: translatey(1px); }
+  60% {
+    transform: translateX(-1px); } }
+
+/* line 1609, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-leg-ex {
+  position: absolute;
+  width: 14px;
+  height: 20px;
+  border-top: 20px solid #e91e63;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  top: 60px;
+  left: -5px;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -ms-transform: rotatex(56deg) rotate(26deg);
+  transform: rotatex(56deg) rotatez(26deg);
+  animation: lileg-ex .5s linear infinite; }
+
+@keyframes lileg-ex {
+  50% {
+    transform: rotatex(70deg) rotateZ(10deg); } }
+
+/* line 1630, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-leg2-ex {
+  position: absolute;
+  width: 14px;
+  height: 20px;
+  border-top: 20px solid deeppink;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  top: 60px;
+  left: 26px;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -ms-transform: rotatex(56deg) rotate(-26deg);
+  transform: rotatex(56deg) rotatez(-26deg);
+  animation: lileg2-ex .5s linear infinite; }
+
+@keyframes lileg2-ex {
+  50% {
+    transform: rotatex(70deg) rotateZ(-10deg); } }
+
+/* line 1652, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-lowleg-ex {
+  position: absolute;
+  width: 15px;
+  /* background: #ec407a; */
+  border-bottom: 10px solid deeppink;
+  top: 70px;
+  left: -13px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -ms-transform: rotatex(40deg);
+  transform: rotatex(40deg);
+  animation: lowleg-ex .5s linear infinite; }
+
+@keyframes lowleg-ex {
+  50% {
+    transform: rotatez(-30deg) translateY(-7px) translatex(2px) scalex(0.8); } }
+  /* line 1671, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-lowleg-ex .shan-li-feet-ex {
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    /* background: darkred; */
+    /* border: 0.5px solid; */
+    top: 9px;
+    left: -3px;
+    border-bottom: 10px solid darkred;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+/* line 1686, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-lowleg2-ex {
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  /* background: #ec407a; */
+  border-bottom: 10px solid deeppink;
+  top: 70px;
+  left: 34px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -ms-transform: rotatex(40deg);
+  transform: rotatex(40deg);
+  animation: lowleg2-ex .5s linear infinite; }
+
+@keyframes lowleg2-ex {
+  50% {
+    transform: rotatez(30deg) translateY(-7px) translatex(-2px) scalex(0.8); } }
+  /* line 1706, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-lowleg2-ex .shan-li-feet2-ex {
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    /* background: darkred; */
+    /* border: 0.5px solid; */
+    top: 9px;
+    left: -3px;
+    border-bottom: 10px solid darkred;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+/* line 1723, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-hair-ex {
+  position: absolute;
+  width: 10px;
+  top: 30px;
+  left: 12px;
+  border-bottom: 15px solid #f44336;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  animation: horsehair-ex .5s linear infinite; }
+
+@keyframes horsehair-ex {
+  50% {
+    border-bottom: 10px solid #c62828;
+    top: 36px; } }
+
+/* line 1739, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-head-ex {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  top: 45px;
+  left: 8px;
+  border-top: 30px solid #5d4037;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-radius: 0 0 5px 5px;
+  animation: horsehead-ex .5s linear infinite; }
+
+@keyframes horsehead-ex {
+  30% {
+    transform: translateY(-1px);
+    border-top: 20px solid #5d4037; }
+  60% {
+    transform: translateY(1px);
+    border-top: 30px solid #5d4037; } }
+  /* line 1756, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-horse-head-ex .shan-li-horse-eye-ex {
+    position: absolute;
+    width: 7px;
+    height: 5px;
+    background: #e53935;
+    top: -28px;
+    left: -2px;
+    border-radius: 0 3px 0 3px;
+    transform: rotatez(10deg); }
+    /* line 1765, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+    .shan-li-horse-head-ex .shan-li-horse-eye-ex .shan-li-horse-eyeball-ex {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: black;
+      top: 0px;
+      left: 1px;
+      border-radius: 30px;
+      animation: horseeyeball-ex .5s linear infinite; }
+
+@keyframes horseeyeball-ex {
+  50% {
+    transform: translateX(-1px); } }
+  /* line 1781, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-horse-head-ex .shan-li-horse-eye2-ex {
+    position: absolute;
+    width: 7px;
+    height: 5px;
+    background: #e53935;
+    top: -28px;
+    left: 7px;
+    border-radius: 3px 0px 3px 0px;
+    transform: rotatez(-10deg); }
+    /* line 1790, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+    .shan-li-horse-head-ex .shan-li-horse-eye2-ex .shan-li-horse-eyeball2-ex {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: black;
+      top: 0px;
+      left: 1px;
+      border-radius: 30px;
+      animation: horseeyeball2-ex .5s linear infinite; }
+
+@keyframes horseeyeball2 {
+  50% {
+    transform: translateX(1px); } }
+  /* line 1806, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-horse-head-ex .shan-li-horse-nose-ex {
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    /* background: #fbc02d; */
+    top: -4px;
+    left: -1px;
+    border-top: 10px solid gold;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform-origin: center top;
+    animation: horsenose-ex .5s linear infinite; }
+
+@keyframes horsenose-ex {
+  50% {
+    border-top: 4px solid gold; } }
+
+/* line 1831, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-neck-ex {
+  position: absolute;
+  width: 26px;
+  height: 21px;
+  top: 58px;
+  left: 5px;
+  border-bottom: 26px solid #bf360c;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  z-index: -99;
+  animation: horseneck-ex .5s linear infinite; }
+
+@keyframes horseneck-ex {
+  50% {
+    border-bottom: 22px solid #bf360c;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent; } }
+
+/* line 1853, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-body-ex {
+  position: absolute;
+  width: 34px;
+  height: 10px;
+  top: 66px;
+  left: 1px;
+  border-bottom: 26px solid brown;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  z-index: -9999;
+  animation: horsebody-ex .5s linear infinite; }
+
+@keyframes horsebody-ex {
+  50% {
+    transform: scale(1.1); } }
+
+/* line 1872, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-sit-ex {
+  position: absolute;
+  background: linear-gradient(to top, #ef9a9a, #d32f2f);
+  width: 30px;
+  height: 20px;
+  top: 75px;
+  left: 3px;
+  font-size: 14px;
+  line-height: 19px;
+  transform-origin: center top;
+  color: #f57c00;
+  font-family: 'Impact, Haettenschweiler, Arial Narrow Bold, sans-serif';
+  text-align: center;
+  z-index: 100;
+  animation: horsesit-ex .5s linear infinite; }
+
+@keyframes horsesit-ex {
+  40% {
+    color: #ffe0b2;
+    text-shadow: 1px 1px 3px #ffeb3b;
+    transform: rotatex(60deg) translateY(-2px);
+    background: linear-gradient(to top, #e57373, #f44336); } }
+
+/* line 1898, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-mask-ex {
+  z-index: 999999;
+  position: absolute;
+  width: 5px;
+  height: 27px;
+  background: #fbc02d;
+  top: 41px;
+  left: 15px;
+  animation: horsemask-ex .5s linear infinite; }
+
+@keyframes horsemask-ex {
+  50% {
+    transform: translateY(3px); } }
+
+/* line 1913, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-circle-ex {
+  width: 10px;
+  position: absolute;
+  background: grey;
+  top: 76px;
+  border-top: 5px solid gold;
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+  left: 13px; }
+
+/* line 1923, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-line3-ex {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background: white;
+  top: 49px;
+  left: 10px;
+  transform: rotatez(-61deg) rotateX(83deg);
+  border: 1px solid;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  transform-origin: center bottom;
+  animation: line3-ex .4s linear infinite;
+  z-index: 99; }
+
+@keyframes line3-ex {
+  50% {
+    transform: rotateZ(-20deg) rotateX(30deg); } }
+
+/* line 1943, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-line4-ex {
+  position: absolute;
+  width: 3px;
+  height: 21px;
+  background: white;
+  top: 49px;
+  left: 22px;
+  transform: rotatez(49deg) rotateX(68deg);
+  border: 1px solid;
+  transform-origin: center bottom;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  animation: line4-ex .5s linear infinite;
+  z-index: 99; }
+
+@keyframes line4-ex {
+  50% {
+    transform: rotateZ(20deg) rotateX(30deg); } }
+
+/* line 1963, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-line5-ex {
+  position: absolute;
+  width: 3px;
+  height: 46px;
+  background: white;
+  top: 46px;
+  left: 17px;
+  transform: rotatez(-90deg);
+  border: 1px solid;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  z-index: -9;
+  animation: line5-ex .5s linear infinite; }
+
+@keyframes line5-ex {
+  to {
+    transform: rotateZ(-90deg);
+    top: 30px; } }
+
+/* line 1984, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-frontleg-ex {
+  position: absolute;
+  width: 12px;
+  top: 92px;
+  left: 0px;
+  border-top: 10px solid #d84315;
+  border-left: 2px solid transparent;
+  border-right: 1px solid transparent;
+  transform-origin: center top;
+  animation: frontleg-ex .5s ease-in infinite; }
+
+@keyframes frontleg-ex {
+  0% {
+    transform: rotateX(70deg); }
+  100% {
+    transform: rotateX(-70deg);
+    border-top: 10px solid #4e342e;
+    border-left: 4px solid transparent; } }
+
+/* line 2002, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-frontlowleg-ex {
+  position: absolute;
+  width: 14px;
+  top: 96px;
+  left: -1px;
+  border-bottom: 15px solid #ff7043;
+  border-left: 4px solid transparent;
+  border-right: 1px solid transparent;
+  transform-origin: center top;
+  z-index: 9999;
+  animation: frontlowleg-ex .5s ease-in infinite; }
+
+@keyframes frontlowleg-ex {
+  0% {
+    transform: rotateX(20deg); }
+  70% {
+    transform: rotateX(-90deg);
+    border-bottom: 15px solid #ffccbc;
+    border-left: 3px solid transparent;
+    border-right: 4px solid transparent; } }
+  /* line 2021, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-horse-frontlowleg-ex .shan-li-horse-feet-ex {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    top: 11px;
+    left: -2px;
+    border-radius: 5px 5px 0 0;
+    z-index: -999; }
+
+/* line 2027, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-frontleg2-ex {
+  position: absolute;
+  width: 12px;
+  top: 92px;
+  left: 24px;
+  border-top: 10px solid #d84315;
+  border-left: 1px solid transparent;
+  border-right: 2px solid transparent;
+  transform-origin: center top;
+  animation: frontleg2-ex .5s ease-in backwards infinite; }
+
+@keyframes frontleg2-ex {
+  0% {
+    transform: rotateX(-50deg); }
+  100% {
+    transform: rotateX(100deg); } }
+
+/* line 2043, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-frontlowleg2-ex {
+  position: absolute;
+  width: 14px;
+  top: 96px;
+  left: 23px;
+  border-bottom: 15px solid #ff7043;
+  border-left: 1px solid transparent;
+  border-right: 4px solid transparent;
+  transform-origin: center top;
+  z-index: 9999;
+  animation: frontlowleg2-ex .5s ease-in infinite; }
+
+@keyframes frontlowleg2-ex {
+  20% {
+    transform: rotateX(90deg); }
+  70% {
+    transform: rotateX(-40deg);
+    border-bottom: 15px solid #ffccbc;
+    border-left: 3px solid transparent;
+    border-right: 4px solid transparent; } }
+  /* line 2062, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-horse-frontlowleg2-ex .shan-li-horse-feet2-ex {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    top: 11px;
+    left: 0px;
+    border-radius: 5px 5px 0 0;
+    z-index: -999; }
+
+/* line 2097, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-effect12-ex {
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  width: 100px;
+  height: 1px;
+  outline: 1px solid black; }
+
+/* line 2105, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-weapon-ex {
+  position: absolute;
+  width: 5px;
+  height: 100px;
+  background: #c62828;
+  top: -26px;
+  left: 41px;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -ms-transform: rotate(100deg);
+  transform: rotateZ(-50deg);
+  z-index: -999999;
+  animation: horseweapon-ex .5s linear infinite; }
+
+@keyframes horseweapon-ex {
+  50% {
+    transform: rotateZ(-47deg); } }
+  /* line 2123, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-horse-weapon-ex .shan-li-horse-flag-ex {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: linear-gradient(to right, #ffcdd2, #c62828);
+    color: #f8bbd0;
+    transform-origin: right center;
+    top: 0px;
+    text-shadow: 1px 1px 1px #fa9600;
+    left: -15px;
+    text-align: center;
+    animation: horseflag-ex .2s linear infinite; }
+
+@keyframes horseflag-ex {
+  50% {
+    color: #f48fb1;
+    text-shadow: 2px 2px 4px #fa9600;
+    transform: rotateY(50deg); } }
+
+/* line 2144, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-sword-ex {
+  width: 12px;
+  border-top: 22px solid #ef5350;
+  border-right: 11px solid transparent;
+  position: absolute;
+  top: -22px;
+  left: -57px;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -ms-transform: rotate(-120deg);
+  transform: rotatez(120deg);
+  animation: horsesword-ex .5s linear infinite; }
+
+@keyframes horsesword-ex {
+  50% {
+    top: -24px; } }
+
+/* line 2162, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-weapon2-ex {
+  position: absolute;
+  width: 5px;
+  height: 100px;
+  background: #1565c0;
+  top: -34px;
+  left: -15px;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -ms-transform: rotate(-100deg);
+  transform: rotateZ(50deg);
+  z-index: -99999;
+  animation: horseweapon2-ex .5s linear infinite; }
+
+@keyframes horseweapon2-ex {
+  40% {
+    transform: rotatez(48deg); } }
+  /* line 2180, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+  .shan-li-horse-weapon2-ex .shan-li-horse-flag2-ex {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: linear-gradient(to left, #fff9c4, #f9a825);
+    color: #c62828;
+    transform-origin: left center;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    animation: horseflag2-ex .2s linear infinite; }
+
+@keyframes horseflag2-ex {
+  50% {
+    color: #ffcc80;
+    text-shadow: 2px 2px 4px #fa9600;
+    transform: rotatey(50deg); } }
+
+/* line 2200, /Users/rikrik527/Desktop/project/src/sass/extendCharactor.scss */
+.shan-li-horse-sword2-ex {
+  width: 12px;
+  border-top: 22px solid #ef5350;
+  border-left: 11px solid transparent;
+  position: absolute;
+  top: -26px;
+  left: 78px;
+  transform-origin: center bottom;
+  transform: rotatez(-120deg);
+  animation: horsesword2-ex .5s linear infinite; }
+
+@keyframes horsesword2-ex {
+  40% {
+    top: -28px; } }
+
+/*# sourceMappingURL=extendCharactor.css.map */

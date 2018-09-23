@@ -1,0 +1,2028 @@
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+/*fashion set 1 smooth*/
+/*set2 sun*/
+/*set3 grass*/
+/* sunday light*/
+/* dark storm*/
+/* rainbow */
+/* pineapple */
+/* deep ocean cloud*/
+/* color-link */
+/* colors in order */
+/* in text */
+/*fashion set 1 smooth*/
+input[type='text'] {
+  border: 1px solid #64b5f6; }
+
+.judo-flag-boxcontrol {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  perspective: 1300px;
+  transform-style: preserve-3d;
+  top: 63%;
+  left: 72%;
+  margin: -50px 0 0 -50px;
+  transform: rotatey(16deg); }
+  .judo-flag-boxcontrol .judo-boat {
+    position: absolute;
+    width: 6rem;
+    height: 10rem;
+    outline: 1px solid brown;
+    top: -32%;
+    left: -29%;
+    transform-style: preserve-3d;
+    transform: translateZ(-193px) rotateX(-9deg);
+    -webkit-transform: translateZ(-193px) rotateX(-9deg);
+    -moz-transform: translateZ(-193px) rotateX(-9deg);
+    -ms-transform: translateZ(-193px) rotateX(-9deg);
+    -o-transform: translateZ(-193px) rotateX(-9deg); }
+    .judo-flag-boxcontrol .judo-boat .judo-boat-front {
+      width: 5rem;
+      height: 2rem;
+      background: #bcaaa4;
+      transform-origin: center top;
+      transform: rotateX(0deg) translateZ(39px) translatey(89px);
+      -webkit-transform: rotateX(0deg) translateZ(39px) translatey(89px);
+      -moz-transform: rotateX(0deg) translateZ(39px) translatey(89px);
+      -ms-transform: rotateX(0deg) translateZ(39px) translatey(89px);
+      -o-transform: rotateX(0deg) translateZ(39px) translatey(89px); }
+    .judo-flag-boxcontrol .judo-boat .judo-boat-left {
+      width: 80px;
+      height: 2rem;
+      background: #795548;
+      transform: rotateY(90deg) translatez(45px);
+      top: 56%;
+      left: -5%;
+      -webkit-transform: rotateY(90deg) translatez(45px);
+      -moz-transform: rotateY(90deg) translatez(45px);
+      -ms-transform: rotateY(90deg) translatez(45px);
+      -o-transform: rotateY(90deg) translatez(45px); }
+    .judo-flag-boxcontrol .judo-boat .judo-boat-right {
+      width: 80px;
+      height: 2rem;
+      background: #8d6e63;
+      transform: rotateY(-90deg) translatez(36px);
+      top: 56%;
+      left: -4%;
+      -webkit-transform: rotateY(-90deg) translatez(36px);
+      -moz-transform: rotateY(-90deg) translatez(36px);
+      -ms-transform: rotateY(-90deg) translatez(36px);
+      -o-transform: rotateY(-90deg) translatez(36px); }
+    .judo-flag-boxcontrol .judo-boat .judo-boat-back {
+      width: 5rem;
+      height: 2rem;
+      background: #5d4037;
+      top: 56%;
+      left: 0%;
+      transform: translatez(-39px);
+      -webkit-transform: translatez(-39px);
+      -moz-transform: translatez(-39px);
+      -ms-transform: translatez(-39px);
+      -o-transform: translatez(-39px); }
+    .judo-flag-boxcontrol .judo-boat .judo-boat-bottom {
+      width: 5rem;
+      height: 5rem;
+      background: #5d4037;
+      top: 27%;
+      left: 50%;
+      transform: rotateX(90deg); }
+
+.judo-effect1 {
+  transform: translatez(-193px);
+  -webkit-transform: translatez(-193px);
+  -moz-transform: translatez(-193px);
+  -ms-transform: translatez(-193px);
+  -o-transform: translatez(-193px); }
+
+.judo-boxcontrol {
+  position: absolute;
+  top: 80%;
+  margin: -50px 0 0 -50px;
+  width: 100px;
+  transform-style: preserve-3d;
+  perspective: 1300px;
+  height: 100px;
+  cursor: pointer;
+  transform-origin: center bottom; }
+  .judo-boxcontrol .judo-sensor {
+    position: absolute;
+    top: -26px;
+    left: -24px;
+    width: 77px;
+    height: 100px;
+    outline: 3px solid;
+    z-index: 9999; }
+  .judo-boxcontrol .judo-head {
+    position: absolute;
+    top: -5%;
+    left: -1%;
+    z-index: 999;
+    width: 33%;
+    height: 38%;
+    border-radius: 0 0 17px 17px;
+    background: #ffcc80;
+    border: 1px solid #ffa726;
+    transform-origin: center bottom;
+    transition: all 1s linear;
+    animation: judohead 2s linear infinite; }
+@keyframes judohead {
+  10%,
+            30%,
+            50% {
+    transform: rotatey(5deg); }
+  20%,
+            40%,
+            60% {
+    transform: rotateZ(-5deg); } }
+    .judo-boxcontrol .judo-head .judo-ear {
+      position: absolute;
+      height: 30%;
+      background: #ffcc80;
+      top: 37%;
+      left: -15%;
+      transition: all 1s linear;
+      border-radius: 5px 0 0 5px; }
+    .judo-boxcontrol .judo-head .judo-ear2 {
+      position: absolute;
+      width: 24%;
+      height: 28%;
+      background: #ffcc80;
+      top: 36%;
+      transition: all 1s linear;
+      left: 92%;
+      border-radius: 0px 5px 5px 0;
+      z-index: 9999999999;
+      border-right: 1px solid #ffb74d; }
+    .judo-boxcontrol .judo-head .judo-hair1 {
+      position: absolute;
+      top: -63%;
+      left: -12%;
+      width: 105%;
+      height: 57%;
+      transition: all 1s linear;
+      background: #4e342e;
+      border-radius: 10px 0 10px 0px;
+      transform-origin: left bottom;
+      transform: rotateZ(24deg);
+      animation: judohair1 1s linear infinite; }
+@keyframes judohair1 {
+  10%,
+                30%,
+                50% {
+    transform: rotateZ(20deg); }
+  20%,
+                40%,
+                60% {
+    transform: rotateZ(28deg); } }
+    .judo-boxcontrol .judo-head .judo-hair2 {
+      position: absolute;
+      top: -13px;
+      left: 29px;
+      transition: all 1s linear;
+      width: 35px;
+      border-left: 34px solid #5d4037;
+      border-bottom: 14px solid transparent;
+      border-top: 4px solid transparent;
+      transform-origin: left center;
+      transform: rotatez(70deg);
+      animation: judohair2 1s linear infinite; }
+@keyframes judohair2 {
+  10%,
+                30%,
+                50% {
+    transform: rotateZ(74deg); }
+  20%,
+                40%,
+                60% {
+    transform: rotateZ(60deg); } }
+    .judo-boxcontrol .judo-head .judo-hair3 {
+      position: absolute;
+      top: -17px;
+      left: 9px;
+      width: 15px;
+      transition: all 1s linear;
+      border-left: 33px solid #6d4c41;
+      border-bottom: 7px solid transparent;
+      border-top: 6px solid transparent;
+      transform-origin: left center;
+      transform: rotatez(-13deg);
+      animation: judohair3 1s linear infinite; }
+@keyframes judohair3 {
+  10%,
+                30%,
+                50% {
+    transform: rotateZ(-21deg); }
+  20%,
+                40%,
+                60% {
+    transform: rotateZ(-5deg); } }
+    .judo-boxcontrol .judo-head .judo-hair-white {
+      position: absolute;
+      top: -10px;
+      left: 1px;
+      width: 28px;
+      transition: all 1s linear;
+      height: 15px;
+      border-left: 22px solid #5d4037;
+      border-bottom: 9px solid transparent;
+      border-top: 7px solid transparent;
+      transform-origin: left center;
+      transform: rotatez(97deg);
+      animation: judohairwhite 1s linear infinite; }
+@keyframes judohairwhite {
+  10%,
+                30%,
+                50% {
+    transform: rotateZ(85deg); }
+  20%,
+                40%,
+                60% {
+    transform: rotateZ(109deg); } }
+      .judo-boxcontrol .judo-head .judo-hair-white .judo-hair-white2 {
+        position: absolute;
+        top: 2px;
+        left: -27px;
+        z-index: 9999;
+        width: 10px;
+        transition: all 1s linear;
+        border-left: 27px solid #795548;
+        border-bottom: 5px solid transparent;
+        border-top: 4px solid transparent;
+        transform-origin: left center;
+        transform: rotatez(-88deg);
+        animation: judohairwhite2 2s linear infinite; }
+@keyframes judohairwhite2 {
+  10%,
+                    30%,
+                    50% {
+    transform: rotatez(-95deg); }
+  20%,
+                    40%,
+                    60% {
+    transform: rotatez(-80deg); } }
+      .judo-boxcontrol .judo-head .judo-hair-white .judo-hair-white3 {
+        position: absolute;
+        top: -28px;
+        left: -54px;
+        z-index: 9999;
+        width: 10px;
+        transition: all 1s linear;
+        border-right: 25px solid #4e342e;
+        border-bottom: 6px solid transparent;
+        border-top: 5px solid transparent;
+        transform: rotatez(71deg);
+        transform-origin: right center;
+        animation: judohairwhite3 1s linear infinite; }
+@keyframes judohairwhite3 {
+  10%,
+                    30%,
+                    50% {
+    transform: rotateZ(90deg); }
+  20%,
+                    40%,
+                    60% {
+    transform: translatey(45deg); } }
+    .judo-boxcontrol .judo-head .judo-eyebrow {
+      position: absolute;
+      top: 7px;
+      left: -6px;
+      width: 13px;
+      transition: all 1s linear;
+      height: 5px;
+      background: black;
+      transform: rotatez(30deg); }
+    .judo-boxcontrol .judo-head .judo-eyebrow2 {
+      position: absolute;
+      top: 7px;
+      left: 9px;
+      width: 13px;
+      height: 5px;
+      background: black;
+      transition: all 1s linear;
+      transform: rotatez(-30deg); }
+    .judo-boxcontrol .judo-head .judo-eye {
+      position: absolute;
+      top: 12px;
+      left: -3px;
+      overflow: hidden;
+      width: 8px;
+      height: 3px;
+      transition: all 1s linear;
+      border-top: 1px solid brown;
+      border-radius: 0px 10px 0 10px;
+      background: white;
+      transform-origin: right center;
+      animation: judoeye 1s linear infinite; }
+@keyframes judoeye {
+  20%,
+                40%,
+                60% {
+    height: 5px;
+    transform: rotateZ(5deg); } }
+      .judo-boxcontrol .judo-head .judo-eye .judo-eyeball {
+        position: absolute;
+        top: 0px;
+        left: 4px;
+        width: 2px;
+        height: 2px;
+        transition: all 1s linear;
+        border-radius: 10px;
+        background: black; }
+    .judo-boxcontrol .judo-head .judo-eye2 {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      overflow: hidden;
+      transition: all 1s linear;
+      width: 10px;
+      height: 3px;
+      border-top: 1px solid brown;
+      border-radius: 10px 0px 10px 0;
+      background: white;
+      transform-origin: left center;
+      animation: judoeye2 1s linear infinite; }
+@keyframes judoeye2 {
+  20%,
+                40%,
+                60% {
+    height: 5px;
+    transform: rotatez(-5deg); } }
+      .judo-boxcontrol .judo-head .judo-eye2 .judo-eyeball2 {
+        position: absolute;
+        top: -1px;
+        left: 2px;
+        width: 2px;
+        transition: all 1s linear;
+        height: 2px;
+        border-radius: 10px;
+        background: black; }
+    .judo-boxcontrol .judo-head .judo-nose {
+      position: absolute;
+      top: 16px;
+      transition: all 1s linear;
+      left: 0px;
+      width: 11px;
+      height: 7px;
+      border-bottom: 1px solid saddlebrown;
+      border-left: 1px solid saddlebrown;
+      border-radius: 10px;
+      background: #ffa726;
+      animation: judonose 1s linear infinite; }
+@keyframes judonose {
+  10%,
+                30%,
+                50% {
+    transform: translateY(1px); }
+  20%,
+                40%,
+                60% {
+    transform: translateY(-1px); } }
+    .judo-boxcontrol .judo-head .judo-lips {
+      position: absolute;
+      top: 28px;
+      left: 10px;
+      transition: all 1s linear; }
+      .judo-boxcontrol .judo-head .judo-lips .judo-mouth {
+        position: absolute;
+        top: -2px;
+        left: 0px;
+        width: 10px;
+        overflow: hidden;
+        height: 3px;
+        transition: all 1s linear;
+        border-radius: 10px 10px 0px 0px;
+        background: #c62828; }
+        .judo-boxcontrol .judo-head .judo-lips .judo-mouth .judo-teeth {
+          width: 16px;
+          height: 1px;
+          background: white;
+          position: absolute;
+          transition: all 1s linear; }
+
+.judo-neck {
+  position: absolute;
+  top: 32%;
+  left: 10%;
+  width: 0.7rem;
+  transform-style: preserve-3d;
+  height: 0.4rem;
+  transition: all 1s linear;
+  background: #ffb74d;
+  z-index: 99999999999;
+  animation: judoneck 1s linear infinite; }
+@keyframes judoneck {
+  30% {
+    transform: rotatez(10deg); }
+  60% {
+    transform: rotatez(-10deg); } }
+  .judo-neck .judo-neck-line1 {
+    width: 0.1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: black;
+    transform-origin: top center;
+    transform: translateZ(3px) rotateZ(-10deg); }
+  .judo-neck .judo-neck-line2 {
+    width: 0.1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0%;
+    left: 73%;
+    background: black;
+    transform-origin: top center;
+    transform: translateZ(3px) rotateZ(10deg); }
+  .judo-neck .judo-neck-brand {
+    width: 0.7rem;
+    height: 0.7rem;
+    position: absolute;
+    top: 198%;
+    left: 0%;
+    background: black;
+    border-radius: 100px;
+    cursor: pointer;
+    transform-origin: center top;
+    animation: judoneckbrand 3s linear infinite; }
+@keyframes judoneckbrand {
+  40% {
+    transform: rotateZ(3deg); }
+  80% {
+    transform: rotateZ(-3deg); } }
+    .judo-neck .judo-neck-brand:before {
+      content: '';
+      position: absolute;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 100px;
+      top: 0%;
+      left: 0%;
+      animation: judoneckbrandbefore 1s linear infinite; }
+@keyframes judoneckbrandbefore {
+  40% {
+    transform: skewX(90deg); }
+  80% {
+    transform: skewY(90deg); } }
+.judo-body {
+  position: absolute;
+  top: 36px;
+  left: -4px;
+  transform-style: preserve-3d;
+  transition: all 1s linear;
+  z-index: 99999999;
+  width: 40px;
+  border-top: 20px solid #ffcc80;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-radius: 10px 10px 0 0;
+  animation: judobody 1s linear infinite; }
+@keyframes judobody {
+  10% {
+    transform: rotatez(-1deg); }
+  90% {
+    transform: rotatez(1deg); } }
+  .judo-body .judo-clothes {
+    width: 15px;
+    border-top: 10px solid #37474f;
+    border-left: 6px solid transparent;
+    border-right: 0px solid transparent;
+    transition: all 1s linear;
+    position: absolute;
+    top: -29px;
+    left: -11px;
+    transform-origin: center right;
+    animation: judoclothes 3s linear infinite; }
+@keyframes judoclothes {
+  30%,
+            60%,
+            90% {
+    transform: rotatey(18deg); }
+  20%,
+            40%,
+            80% {
+    transform: rotatey(43deg); } }
+    .judo-body .judo-clothes .judo-clothes-top {
+      width: 20px;
+      border-top: 10px solid #455a64;
+      border-right: 0px solid transparent;
+      border-left: 5px solid transparent;
+      transition: all 1s linear;
+      z-index: 99999999;
+      position: absolute;
+      top: -3px;
+      left: -10px;
+      transform-origin: center top;
+      animation: judoclothestop 3s linear infinite; }
+@keyframes judoclothestop {
+  30%,
+                60%,
+                90% {
+    transform: rotatex(28deg); }
+  20%,
+                40%,
+                80% {
+    transform: rotatey(43deg); } }
+    .judo-body .judo-clothes .judo-clothes-chest {
+      width: 15px;
+      height: 15px;
+      background: #546e7a;
+      z-index: 99999999;
+      transition: all 1s linear;
+      position: absolute;
+      top: 7px;
+      left: -5px;
+      transform-origin: center top;
+      animation: judoclotheschest 3s linear infinite; }
+@keyframes judoclotheschest {
+  30%,
+                60%,
+                90% {
+    top: 6px;
+    transform: rotatex(47deg); }
+  20%,
+                40%,
+                80% {
+    transform: rotatex(-13deg); } }
+    .judo-body .judo-clothes .judo-clothes-bottom {
+      width: 15px;
+      border-bottom: 17px solid #607d8b;
+      border-right: 0px solid transparent;
+      border-left: 5px solid transparent;
+      z-index: 99999999;
+      transition: all 1s linear;
+      position: absolute;
+      top: 22px;
+      left: -9px;
+      transform-origin: center top;
+      animation: judoclothesbottom 3s linear infinite; }
+@keyframes judoclothesbottom {
+  30%,
+                60%,
+                90% {
+    top: 16px;
+    transform: rotatex(25deg); }
+  20%,
+                40%,
+                80% {
+    transform: rotatex(0deg); } }
+  .judo-body .judo-arm {
+    position: absolute;
+    top: -20px;
+    left: -18px;
+    z-index: 9999;
+    width: 15px;
+    border-top: 12px solid #455a64;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-radius: 10px 0 0 0;
+    transform: rotatez(78deg) rotateX(34deg);
+    transition: all 1s linear;
+    -ms-transform-origin: right top;
+    transform-origin: right center; }
+    .judo-body .judo-arm .judo-bicep {
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: 11px;
+      height: 9px;
+      border-radius: 2px 2px 2px 2px;
+      background: #546e7a;
+      -ms-transform-origin: center top;
+      transition: all 1s linear;
+      transform-origin: center top; }
+      .judo-body .judo-arm .judo-bicep .judo-lowarm {
+        position: absolute;
+        top: 7px;
+        left: -1px;
+        width: 15px;
+        border-top: 12px solid black;
+        border-right: 4px solid transparent;
+        transition: all 1s linear;
+        border-left: 4px solid transparent;
+        border-radius: 9px 9px 0 0;
+        -ms-transform-origin: center top;
+        transform-origin: center top;
+        transform: rotateZ(101deg); }
+        .judo-body .judo-arm .judo-bicep .judo-lowarm .judo-hand {
+          position: absolute;
+          top: -1px;
+          left: -3px;
+          width: 13px;
+          height: 13px;
+          transition: all 1s linear;
+          z-index: 99999999999;
+          border-radius: 100px;
+          background: #263238;
+          transform: rotateZ(-201deg);
+          animation: judohand 1s linear infinite; }
+  .judo-body .judo-clothes2 {
+    position: absolute;
+    top: -31px;
+    left: 17px;
+    width: 15px;
+    transition: all 1s linear;
+    border-right: 4px solid transparent;
+    border-top: 10px solid #37474f;
+    border-left: 0px solid transparent;
+    animation: judoclothes2 3s linear infinite; }
+@keyframes judoclothes2 {
+  30%,
+            60%,
+            90% {
+    transform: rotatey(-10deg) translateZ(3px); }
+  20%,
+            40%,
+            80% {
+    transform: rotatey(30deg) translateZ(3px); } }
+    .judo-body .judo-clothes2 .judo-clothes2-top {
+      width: 24px;
+      border-top: 10px solid #455a64;
+      border-right: 5px solid transparent;
+      border-left: 0px solid transparent;
+      z-index: 99999999;
+      position: absolute;
+      transition: all 1s linear;
+      top: 0px;
+      left: 0px;
+      transform-origin: center top;
+      animation: judoclothes2top 3s linear infinite; }
+@keyframes judoclothes2top {
+  30%,
+                60%,
+                90% {
+    top: -1px;
+    left: -2px;
+    transform: rotatey(36deg) rotatez(-5deg) translateZ(3px); }
+  20%,
+                40%,
+                80% {
+    transform: rotatey(21deg) rotatez(0deg) translateZ(3px); } }
+    .judo-body .judo-clothes2 .judo-clothes2-chest {
+      width: 15px;
+      height: 15px;
+      background: #546e7a;
+      z-index: 99999999;
+      position: absolute;
+      transition: all 1s linear;
+      top: 9px;
+      left: 0px;
+      transform-origin: center top;
+      animation: judoclothes2chest 3s linear infinite; }
+@keyframes judoclothes2chest {
+  30%,
+                60%,
+                90% {
+    transform: rotatey(1deg) rotatez(0deg) translateZ(3px); }
+  20%,
+                40%,
+                80% {
+    transform: rotatey(20deg) rotatez(12deg) translateZ(3px); } }
+    .judo-body .judo-clothes2 .judo-clothes2-bottom {
+      width: 18px;
+      border-bottom: 17px solid #607d8b;
+      border-right: 5px solid transparent;
+      border-left: 0px solid transparent;
+      z-index: 99999999;
+      position: absolute;
+      top: 24px;
+      transition: all 1s linear;
+      left: 1px;
+      transform-origin: center top;
+      animation: judoclothes2bottom 3s linear infinite; }
+@keyframes judoclothes2bottom {
+  30%,
+                60%,
+                90% {
+    transform: rotatez(-30deg) rotatex(44deg) translateZ(3px);
+    top: 21px; }
+  20%,
+                40%,
+                80% {
+    transform: rotatez(0deg) rotatex(0deg) translateZ(3px); } }
+  .judo-body .judo-arm2 {
+    z-index: 999;
+    position: absolute;
+    top: -20px;
+    transition: all 1s linear;
+    left: 25px;
+    width: 13px;
+    border-top: 11px solid #455a64;
+    border-right: 4px solid transparent;
+    border-left: 3px solid transparent;
+    border-radius: 0px 5px 5px 0px;
+    -ms-transform: rotate(17deg);
+    transform: rotatez(0deg);
+    -ms-transform-origin: right top;
+    transform-origin: left center; }
+    .judo-body .judo-arm2 .judo-bicep2 {
+      position: absolute;
+      top: -2px;
+      left: -1px;
+      transition: all 1s linear;
+      width: 10px;
+      height: 9px;
+      border-radius: 2px 2px 2px 2px;
+      background: #546e7a;
+      -ms-transform-origin: center top;
+      transform-origin: center top; }
+      .judo-body .judo-arm2 .judo-bicep2 .judo-lowarm2 {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 14px;
+        transition: all 1s linear;
+        border-top: 11px solid black;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        border-radius: 8px 9px 0 0;
+        -ms-transform-origin: center top;
+        transform: rotateZ(-73deg);
+        transform-origin: center top; }
+        .judo-body .judo-arm2 .judo-bicep2 .judo-lowarm2 .judo-hand2 {
+          position: absolute;
+          top: -2px;
+          left: -6px;
+          transition: all 1s linear;
+          z-index: 99999999999;
+          width: 13px;
+          height: 13px;
+          border-radius: 100px;
+          background: #263238;
+          -ms-transform-origin: center top;
+          transform-origin: center top; }
+
+.judo-peegu {
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  z-index: -999;
+  width: 30px;
+  transition: all 1s linear;
+  height: 23px;
+  background: #546e7a;
+  transform-origin: preserve-3d;
+  transform-origin: center top; }
+  .judo-peegu .judo-belt {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 6px;
+    transition: all 1s linear;
+    background: #0097a7; }
+    .judo-peegu .judo-belt .judo-belt1 {
+      position: absolute;
+      top: -8px;
+      left: 19px;
+      width: 5px;
+      height: 33px;
+      transition: all 1s linear;
+      transform-origin: top left;
+      transform: rotateZ(-44deg) translatex(-17px) translatez(58px) rotatex(29deg);
+      background: #4dd0e1;
+      z-index: 9999;
+      animation: judobelt1 2s linear infinite; }
+@keyframes judobelt1 {
+  10%,
+                30%,
+                50%,
+                70%,
+                90% {
+    transform: rotatez(-52deg) translatex(-17px) translatez(58px) rotateX(19deg); }
+  20%,
+                40%,
+                60%,
+                80%,
+                100% {
+    transform: rotatez(-21deg) translatex(-17px) translatez(58px) rotateX(19deg); } }
+    .judo-peegu .judo-belt .judo-belt2 {
+      position: absolute;
+      top: -6px;
+      left: 15px;
+      width: 5px;
+      transition: all 1s linear;
+      height: 33px;
+      transform-origin: top left;
+      transform: rotateZ(-19deg) translatex(-9px) translatey(7px) translatez(58px) rotatex(33deg);
+      background: #26c6da;
+      z-index: 9999;
+      animation: judobelt2 2s linear infinite; }
+@keyframes judobelt2 {
+  20%,
+                40%,
+                60%,
+                80%,
+                100% {
+    transform: rotateZ(-6deg) translatex(-9px) translatey(7px) translatez(51px) rotatex(8deg); }
+  10%,
+                30%,
+                50%,
+                70%,
+                90% {
+    transform: rotateZ(-19deg) translatex(-9px) translatey(7px) translatez(51px) rotatex(33deg); } }
+  .judo-peegu .judo-upleg {
+    position: absolute;
+    top: 15px;
+    left: -3px;
+    z-index: -99;
+    transition: all 1s linear;
+    width: 18px;
+    height: 19px;
+    background: #546e7a;
+    -ms-transform: rotate(30deg);
+    transform: rotatez(79deg);
+    -ms-transform-origin: center top;
+    transform-origin: center top; }
+    .judo-peegu .judo-upleg .judo-lowleg {
+      position: absolute;
+      top: 19px;
+      left: -5px;
+      width: 18px;
+      transition: all 1s linear;
+      border-right: 3px solid transparent;
+      border-top: 9px solid #607d8b;
+      border-left: 3px solid transparent;
+      transform: rotatez(-71deg);
+      -ms-transform-origin: center top;
+      transform-origin: center top; }
+      .judo-peegu .judo-upleg .judo-lowleg .judo-foot {
+        position: absolute;
+        top: 0px;
+        left: 1px;
+        width: 13px;
+        transition: all 1s linear;
+        border-right: 1px solid transparent;
+        border-bottom: 11px solid #90a4ae;
+        border-left: 0px solid transparent;
+        transform: rotatez(-8deg);
+        transform-origin: center top; }
+        .judo-peegu .judo-upleg .judo-lowleg .judo-foot .judo-shoe {
+          width: 20px;
+          position: absolute;
+          top: 7px;
+          left: -7px;
+          transition: all 1s linear;
+          border-bottom: 8px solid #263238;
+          transform: rotateZ(-25deg);
+          border-left: 9px solid transparent; }
+  .judo-peegu .judo-upleg2 {
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    z-index: -99;
+    width: 18px;
+    transition: all 1s linear;
+    height: 17px;
+    background: #546e7a;
+    transform: rotatez(-79deg) translateZ(0px);
+    -ms-transform-origin: center top;
+    transform-origin: center top; }
+    .judo-peegu .judo-upleg2 .judo-lowleg2 {
+      position: absolute;
+      top: 13px;
+      left: 2px;
+      transition: all 1s linear;
+      width: 19px;
+      border-right: 6px solid transparent;
+      border-top: 17px solid #607d8b;
+      border-left: 3px solid transparent;
+      -ms-transform: rotate(0deg);
+      transform: rotate(57deg);
+      -ms-transform-origin: center top;
+      transform-origin: center top; }
+      .judo-peegu .judo-upleg2 .judo-lowleg2 .judo-foot2 {
+        position: absolute;
+        top: -7px;
+        left: -1px;
+        width: 15px;
+        transition: all 1s linear;
+        border-right: 2px solid transparent;
+        border-bottom: 12px solid #90a4ae;
+        border-left: 0px solid transparent;
+        transform: rotatez(13deg);
+        transform-origin: center top; }
+        .judo-peegu .judo-upleg2 .judo-lowleg2 .judo-foot2 .judo-shoe2 {
+          width: 20px;
+          position: absolute;
+          top: 8px;
+          left: 1px;
+          transition: all 1s linear;
+          border-bottom: 8px solid #263238;
+          border-right: 9px solid transparent; }
+
+.judo-sword-tail {
+  width: 8px;
+  height: 16px;
+  background: #1565c0;
+  position: absolute;
+  top: 8px;
+  left: -10px;
+  transition: all 1s linear;
+  transform-origin: center top;
+  transform: rotateZ(-97deg);
+  z-index: 9999999; }
+  .judo-sword-tail .judo-sword-sqaure {
+    width: 10px;
+    height: 78px;
+    background: #90caf9;
+    border-left: 1px solid #1565c0;
+    border-right: 1px solid #1565c0;
+    position: absolute;
+    top: 20px;
+    transition: all 1s linear;
+    left: -7px;
+    overflow: hidden; }
+    .judo-sword-tail .judo-sword-sqaure .judo-sword-effect {
+      width: 10px;
+      height: 60px;
+      background: linear-gradient(to top, transparent, #1565c0, transparent);
+      transition: all 1s linear;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      animation: judoswordeffect 10s linear infinite; }
+@keyframes judoswordeffect {
+  0%,
+                30% {
+    top: -78px; }
+  60% {
+    top: 156px; }
+  100% {
+    top: -78px; } }
+  .judo-sword-tail .judo-sword-triangle {
+    width: 10px;
+    border-top: 10px solid #90caf9;
+    border-left: 10px solid transparent;
+    border-right: 0px solid transparent;
+    position: absolute;
+    transition: all 1s linear;
+    top: 97px;
+    left: -7px; }
+    .judo-sword-tail .judo-sword-triangle .judo-sword-effect2 {
+      width: 10px;
+      height: 30px;
+      background: linear-gradient(to top, transparent, #1565c0, transparent);
+      transition: all 1s linear;
+      position: absolute;
+      top: 0px;
+      left: -11px;
+      animation: judoswordeffect2 10s linear infinite; }
+@keyframes judoswordeffect2 {
+  0%,
+                30% {
+    top: -97px; }
+  60% {
+    top: -30px;
+    height: 65px; }
+  100% {
+    top: -97px; } }
+  .judo-sword-tail .judo-sword-sqaure2 {
+    width: 10px;
+    height: 70px;
+    background: #1565c0;
+    border-left: 1px solid #90caf9;
+    border-right: 1px solid #90caf9;
+    position: absolute;
+    top: 19px;
+    transition: all 1s linear;
+    left: 4px;
+    overflow: hidden; }
+    .judo-sword-tail .judo-sword-sqaure2 .judo-sword-effect3 {
+      width: 10px;
+      height: 60px;
+      background: linear-gradient(to top, transparent, #bbdefb, transparent);
+      position: absolute;
+      top: -40px;
+      left: 0px;
+      transition: all 1s linear;
+      animation: judoswordeffect3 10s linear infinite; }
+@keyframes judoswordeffect3 {
+  0%,
+                30% {
+    top: 56px; }
+  60% {
+    top: -42px; }
+  100% {
+    top: 56px; } }
+  .judo-sword-tail .judo-sword-triangle2 {
+    width: 10px;
+    border-top: 10px solid #1565c0;
+    border-left: 0px solid transparent;
+    transition: all 1s linear;
+    border-right: 9px solid transparent;
+    position: absolute;
+    top: 87px;
+    left: 4px; }
+    .judo-sword-tail .judo-sword-triangle2 .judo-sword-effect4 {
+      width: 10px;
+      height: 30px;
+      transition: all 1s linear;
+      background: linear-gradient(to top, transparent, #bbdefb, transparent);
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      animation: judoswordeffect4 10s linear infinite; }
+@keyframes judoswordeffect4 {
+  0%,
+                30% {
+    top: -37px;
+    height: 60px; }
+  60% {
+    top: -90px; }
+  100% {
+    top: -37px;
+    height: 60px; } }
+  .judo-sword-tail .judo-sword-handle {
+    width: 5px;
+    position: absolute;
+    top: 16px;
+    border-top: 60px solid lightblue;
+    border-left: 0px solid transparent;
+    border-right: 6px solid transparent;
+    left: 1px; }
+    .judo-sword-tail .judo-sword-handle .judo-sword-bar1 {
+      width: 5px;
+      height: 15px;
+      position: absolute;
+      top: -64px;
+      background: lightskyblue;
+      left: 7px;
+      transform: rotatez(84deg);
+      transform-origin: right center; }
+    .judo-sword-tail .judo-sword-handle .judo-sword-bar2 {
+      width: 5px;
+      height: 15px;
+      position: absolute;
+      top: -68px;
+      background: lightskyblue;
+      left: -3px;
+      transform-origin: left center;
+      transform: rotatez(87deg); }
+
+.judo-effect1 {
+  width: 0.5rem;
+  height: 9rem;
+  background: brown;
+  left: 48%;
+  position: absolute;
+  top: -55%; }
+  .judo-effect1 .judo-effect2 {
+    width: 4rem;
+    height: 5rem;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    background: #90caf9;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform-origin: left center;
+    background-image: url("../images/flag.png");
+    background-blend-mode: multiply;
+    transform-origin: left center;
+    animation: judoeffect2 3s linear infinite; }
+@keyframes judoeffect2 {
+  30% {
+    transform: rotatey(30deg);
+    -webkit-transform: rotatey(30deg);
+    -moz-transform: rotatey(30deg);
+    -ms-transform: rotatey(30deg);
+    -o-transform: rotatey(30deg); }
+  40% {
+    transform: rotateY(0deg); }
+  50% {
+    transform: rotateY(50deg); }
+  60% {
+    transform: rotatey(10deg); }
+  90% {
+    transform: rotateY(-10deg); } }
+.judo-boxcontrol1 {
+  position: absolute;
+  top: 39%;
+  left: 7%;
+  z-index: 9999;
+  width: 100px;
+  outline: 1px solid;
+  height: 100px;
+  transform-style: preserve-3d;
+  perspective: 1253px;
+  cursor: pointer;
+  transition: all 1s linear;
+  transform-origin: center bottom;
+  transform: translateZ(10px);
+  animation: judoboxcontrol1 1s linear forwards; }
+@keyframes judoboxcontrol1 {
+  10% {
+    top: 41%; } }
+  .judo-boxcontrol1 .judo-sensor-top1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 100px; }
+  .judo-boxcontrol1 .judo-head1 {
+    position: absolute;
+    top: -5%;
+    left: -1%;
+    z-index: 999;
+    width: 33%;
+    height: 38%;
+    border-radius: 0 0 17px 17px;
+    background: #ffcc80;
+    border: 1px solid #ffa726;
+    transform-origin: center bottom;
+    transition: all 1s linear;
+    transform: rotateY(24deg);
+    animation: judohead1 1s linear infinite; }
+@keyframes judohead1 {
+  10%,
+            30%,
+            50% {
+    transform: rotatez(5deg); }
+  20%,
+            40%,
+            60% {
+    transform: rotateZ(-5deg); } }
+    .judo-boxcontrol1 .judo-head1 .judo-ear1 {
+      position: absolute;
+      width: 15%;
+      height: 30%;
+      background: #ffcc80;
+      top: 37%;
+      left: -15%;
+      transition: all 1s linear;
+      border-radius: 5px 0 0 5px; }
+    .judo-boxcontrol1 .judo-head1 .judo-ear21 {
+      position: absolute;
+      width: 13%;
+      height: 28%;
+      background: #ffcc80;
+      top: 36%;
+      transition: all 1s linear;
+      left: 105%;
+      border-radius: 0px 5px 5px 0; }
+    .judo-boxcontrol1 .judo-head1 .judo-hair11 {
+      position: absolute;
+      top: -63%;
+      left: -12%;
+      width: 105%;
+      height: 57%;
+      transition: all 1s linear;
+      background: #4e342e;
+      border-radius: 10px 0 10px 0px;
+      transform-origin: left bottom;
+      transform: rotateZ(24deg);
+      animation: judohair11 1s linear infinite; }
+@keyframes judohair11 {
+  10%,
+                30%,
+                50% {
+    transform: rotateZ(20deg); }
+  20%,
+                40%,
+                60% {
+    transform: rotateZ(28deg); } }
+    .judo-boxcontrol1 .judo-head1 .judo-hair21 {
+      position: absolute;
+      top: -35%;
+      left: 29px;
+      transition: all 1s linear;
+      width: 42px;
+      border-left: 30px solid #5d4037;
+      border-bottom: 17px solid transparent;
+      border-top: 4px solid transparent;
+      transform-origin: left center;
+      transform: rotatez(90deg) rotateY(-9deg);
+      animation: judohair21 1s linear infinite; }
+@keyframes judohair21 {
+  10%,
+                30%,
+                50% {
+    transform: rotateZ(74deg); }
+  20%,
+                40%,
+                60% {
+    transform: rotateZ(60deg); } }
+    .judo-boxcontrol1 .judo-head1 .judo-hair31 {
+      position: absolute;
+      top: -17px;
+      left: 9px;
+      width: 15px;
+      transition: all 1s linear;
+      border-left: 33px solid #6d4c41;
+      border-bottom: 7px solid transparent;
+      border-top: 6px solid transparent;
+      transform-origin: left center;
+      transform: rotatez(-13deg);
+      animation: judohair31 1s linear infinite; }
+@keyframes judohair31 {
+  10%,
+                30%,
+                50% {
+    transform: rotateZ(-21deg); }
+  20%,
+                40%,
+                60% {
+    transform: rotateZ(-5deg); } }
+    .judo-boxcontrol1 .judo-head1 .judo-hair-white1 {
+      position: absolute;
+      top: -10px;
+      left: 1px;
+      width: 28px;
+      transition: all 1s linear;
+      height: 15px;
+      border-left: 22px solid #5d4037;
+      border-bottom: 9px solid transparent;
+      border-top: 7px solid transparent;
+      transform-origin: left center;
+      transform: rotatez(97deg);
+      animation: judohairwhite1 1s linear infinite; }
+@keyframes judohairwhite1 {
+  10%,
+                30%,
+                50% {
+    transform: rotateZ(85deg); }
+  20%,
+                40%,
+                60% {
+    transform: rotateZ(109deg); } }
+      .judo-boxcontrol1 .judo-head1 .judo-hair-white1 .judo-hair-white21 {
+        position: absolute;
+        top: 2px;
+        left: -27px;
+        z-index: 9999;
+        width: 10px;
+        transition: all 1s linear;
+        border-left: 27px solid #795548;
+        border-bottom: 5px solid transparent;
+        border-top: 4px solid transparent;
+        transform-origin: left center;
+        transform: rotatez(-88deg);
+        animation: judohairwhite21 2s linear infinite; }
+@keyframes judohairwhite21 {
+  10%,
+                    30%,
+                    50% {
+    transform: rotatez(-95deg); }
+  20%,
+                    40%,
+                    60% {
+    transform: rotatez(-80deg); } }
+      .judo-boxcontrol1 .judo-head1 .judo-hair-white1 .judo-hair-white31 {
+        position: absolute;
+        top: -28px;
+        left: -54px;
+        z-index: 9999;
+        width: 10px;
+        transition: all 1s linear;
+        border-right: 25px solid #4e342e;
+        border-bottom: 6px solid transparent;
+        border-top: 5px solid transparent;
+        transform: rotatez(71deg);
+        transform-origin: right center;
+        animation: judohairwhite31 1s linear infinite; }
+@keyframes judohairwhite31 {
+  10%,
+                    30%,
+                    50% {
+    transform: rotateZ(90deg); }
+  20%,
+                    40%,
+                    60% {
+    transform: translatey(45deg); } }
+    .judo-boxcontrol1 .judo-head1 .judo-eyebrow1 {
+      position: absolute;
+      top: 7px;
+      left: -2px;
+      width: 13px;
+      transition: all 1s linear;
+      height: 5px;
+      background: black;
+      transform: rotatez(30deg); }
+    .judo-boxcontrol1 .judo-head1 .judo-eyebrow21 {
+      position: absolute;
+      top: 6px;
+      left: 14px;
+      width: 13px;
+      height: 5px;
+      background: black;
+      transition: all 1s linear;
+      transform: rotatez(-19deg); }
+    .judo-boxcontrol1 .judo-head1 .judo-eye1 {
+      position: absolute;
+      top: 12px;
+      left: -1px;
+      overflow: hidden;
+      width: 10px;
+      height: 3px;
+      transition: all 1s linear;
+      border-top: 1px solid brown;
+      border-radius: 0px 10px 0 10px;
+      background: white;
+      transform-origin: right center;
+      animation: judoeye1 1s linear infinite; }
+@keyframes judoeye1 {
+  20%,
+                40%,
+                60% {
+    height: 5px;
+    transform: rotateZ(5deg); } }
+      .judo-boxcontrol1 .judo-head1 .judo-eye1 .judo-eyeball1 {
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        width: 2px;
+        height: 2px;
+        transition: all 1s linear;
+        border-radius: 10px;
+        background: black; }
+    .judo-boxcontrol1 .judo-head1 .judo-eye21 {
+      position: absolute;
+      top: 12px;
+      left: 16px;
+      overflow: hidden;
+      transition: all 1s linear;
+      width: 10px;
+      height: 3px;
+      border-top: 1px solid brown;
+      border-radius: 10px 0px 10px 0;
+      background: white;
+      transform-origin: left center;
+      animation: judoeye21 1s linear infinite; }
+@keyframes judoeye21 {
+  20%,
+                40%,
+                60% {
+    height: 5px;
+    transform: rotatez(-5deg); } }
+      .judo-boxcontrol1 .judo-head1 .judo-eye21 .judo-eyeball21 {
+        position: absolute;
+        top: -1px;
+        left: 3px;
+        width: 2px;
+        transition: all 1s linear;
+        height: 2px;
+        border-radius: 10px;
+        background: black; }
+    .judo-boxcontrol1 .judo-head1 .judo-nose1 {
+      position: absolute;
+      top: 16px;
+      transition: all 1s linear;
+      left: 5px;
+      width: 11px;
+      height: 7px;
+      border-bottom: 1px solid saddlebrown;
+      border-left: 1px solid saddlebrown;
+      border-radius: 10px;
+      background: #ffa726;
+      animation: judonose1 1s linear infinite; }
+@keyframes judonose1 {
+  10%,
+                30%,
+                50% {
+    transform: translateY(1px); }
+  20%,
+                40%,
+                60% {
+    transform: translateY(-1px); } }
+    .judo-boxcontrol1 .judo-head1 .judo-lips1 {
+      position: absolute;
+      top: 27px;
+      left: 7px;
+      transition: all 1s linear; }
+      .judo-boxcontrol1 .judo-head1 .judo-lips1 .judo-mouth1 {
+        position: absolute;
+        top: -2px;
+        left: 0px;
+        width: 10px;
+        overflow: hidden;
+        height: 4px;
+        transition: all 1s linear;
+        border-radius: 2px 2px 10px 10px;
+        background: #c62828;
+        animation: judomouth1 1s linear infinite; }
+@keyframes judomouth1 {
+  10%,
+                    30%,
+                    50% {
+    height: 9px; }
+  20%,
+                    40%,
+                    60% {
+    left: -1px;
+    width: 13px;
+    height: 4px; } }
+        .judo-boxcontrol1 .judo-head1 .judo-lips1 .judo-mouth1 .judo-teeth1 {
+          width: 16px;
+          height: 1px;
+          background: white;
+          position: absolute;
+          transition: all 1s linear; }
+
+.judo-neck1 {
+  position: absolute;
+  top: 33px;
+  left: 10px;
+  width: 10px;
+  height: 5px;
+  transition: all 1s linear;
+  background: #ffb74d;
+  z-index: 9999;
+  transform-style: preserve-3d;
+  animation: judoneck1 1s linear infinite; }
+@keyframes judoneck1 {
+  30% {
+    transform: rotatez(20deg); }
+  60% {
+    transform: rotatez(-20deg); } }
+  .judo-neck1 .judo-neck1-line11 {
+    width: 0.1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: black;
+    transform-origin: top center;
+    transform: translatez(30px) rotateZ(-10deg); }
+  .judo-neck1 .judo-neck1-line21 {
+    width: 0.1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0%;
+    left: 73%;
+    background: black;
+    transform-origin: top center;
+    transform: translatez(30px) rotateZ(10deg); }
+  .judo-neck1 .judo-neck1-brand1 {
+    width: 0.7rem;
+    height: 0.7rem;
+    position: absolute;
+    top: 198%;
+    left: 0%;
+    background: black;
+    border-radius: 100px;
+    cursor: pointer;
+    transform: translateZ(30px);
+    transform-origin: center top; }
+    .judo-neck1 .judo-neck1-brand1:before {
+      content: '';
+      position: absolute;
+      width: 0.1rem;
+      height: 0.3rem;
+      border-radius: 100px;
+      top: 4%;
+      left: 21%;
+      background: white;
+      animation: judoneckbrandbefore1 1s linear infinite; }
+@keyframes judoneckbrandbefore1 {
+  40% {
+    transform: skewX(90deg); }
+  80% {
+    transform: skewY(90deg); } }
+.judo-body1 {
+  position: absolute;
+  top: 36px;
+  left: -4px;
+  transition: all 1s linear;
+  z-index: 99999999;
+  width: 40px;
+  border-top: 20px solid #ffcc80;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-radius: 10px 10px 0 0;
+  transform: rotateY(-24deg);
+  transform-style: preserve-3d;
+  animation: judobody1 1s linear infinite; }
+@keyframes judobody1 {
+  30% {
+    transform: translateY(-1px); }
+  60% {
+    transform: translateY(1px); } }
+  .judo-body1 .judo-clothes1 {
+    width: 15px;
+    border-top: 10px solid #37474f;
+    border-left: 6px solid transparent;
+    border-right: 0px solid transparent;
+    transition: all 1s linear;
+    position: absolute;
+    top: -29px;
+    left: -11px;
+    transform-origin: center right;
+    animation: judoclothes11 3s linear infinite; }
+@keyframes judoclothes11 {
+  30% {
+    transform: rotateY(30deg) translateZ(5px); }
+  60% {
+    transform: rotateY(0deg) translateZ(7px); } }
+    .judo-body1 .judo-clothes1 .judo-clothes-top1 {
+      width: 20px;
+      border-top: 10px solid #455a64;
+      border-right: 0px solid transparent;
+      border-left: 5px solid transparent;
+      transition: all 1s linear;
+      z-index: 99999999;
+      position: absolute;
+      top: -3px;
+      left: -10px;
+      transform-origin: center top;
+      animation: judoclothestop1 3s linear infinite; }
+@keyframes judoclothestop1 {
+  30% {
+    transform: rotateY(10deg) rotateX(5deg); }
+  60% {
+    transform: rotateY(-10deg) rotateX(-10deg); } }
+    .judo-body1 .judo-clothes1 .judo-clothes-chest1 {
+      width: 15px;
+      height: 15px;
+      background: #546e7a;
+      z-index: 99999999;
+      transition: all 1s linear;
+      position: absolute;
+      top: 7px;
+      left: -5px;
+      transform-origin: center top;
+      animation: judoclotheschest1 3s linear infinite; }
+@keyframes judoclotheschest1 {
+  30% {
+    transform: rotateY(10deg) rotateX(-5deg); }
+  60% {
+    transform: rotateY(-10deg) rotateX(5deg); } }
+    .judo-body1 .judo-clothes1 .judo-clothes-bottom1 {
+      width: 15px;
+      border-bottom: 17px solid #607d8b;
+      border-right: 0px solid transparent;
+      border-left: 5px solid transparent;
+      z-index: 99999999;
+      transition: all 1s linear;
+      position: absolute;
+      top: 22px;
+      left: -9px;
+      transform-origin: center top;
+      animation: judoclothesbottom1 3s linear infinite; }
+@keyframes judoclothesbottom1 {
+  30% {
+    transform: rotateY(30deg) rotateX(10deg); }
+  60% {
+    transform: rotateY(0deg) rotateX(-10deg); } }
+  .judo-body1 .judo-arm1 {
+    position: absolute;
+    top: -20px;
+    left: -18px;
+    z-index: 9999;
+    width: 15px;
+    border-top: 12px solid #455a64;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-radius: 10px 0 0 0;
+    transition: all 1s linear;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    animation: judoarm1 1s linear infinite; }
+@keyframes judoarm1 {
+  30% {
+    transform: rotatez(-10deg); }
+  60% {
+    transform: rotateZ(10deg); } }
+    .judo-body1 .judo-arm1 .judo-bicep1 {
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: 11px;
+      height: 9px;
+      border-radius: 2px 2px 2px 2px;
+      background: #546e7a;
+      -ms-transform-origin: center top;
+      transition: all 1s linear;
+      transform-origin: center top; }
+      .judo-body1 .judo-arm1 .judo-bicep1 .judo-lowarm1 {
+        position: absolute;
+        top: 7px;
+        left: -1px;
+        width: 15px;
+        border-top: 12px solid #455a64;
+        border-right: 4px solid transparent;
+        transition: all 1s linear;
+        border-left: 4px solid transparent;
+        border-radius: 9px 9px 0 0;
+        -ms-transform-origin: center top;
+        transform-origin: center top;
+        transform: rotateZ(47deg); }
+        .judo-body1 .judo-arm1 .judo-bicep1 .judo-lowarm1 .judo-hand1 {
+          position: absolute;
+          top: -1px;
+          left: -3px;
+          width: 13px;
+          height: 13px;
+          transition: all 1s linear;
+          z-index: 99999999999;
+          border-radius: 100px;
+          background: #ffcc80; }
+  .judo-body1 .judo-clothes21 {
+    position: absolute;
+    top: -31px;
+    left: 17px;
+    width: 15px;
+    transition: all 1s linear;
+    border-right: 4px solid transparent;
+    border-top: 10px solid #37474f;
+    border-left: 0px solid transparent; }
+    .judo-body1 .judo-clothes21 .judo-clothes2-top1 {
+      width: 20px;
+      border-top: 10px solid #455a64;
+      border-right: 5px solid transparent;
+      border-left: 0px solid transparent;
+      z-index: 99999999;
+      position: absolute;
+      transition: all 1s linear;
+      top: 0px;
+      left: 0px;
+      transform-origin: center top; }
+    .judo-body1 .judo-clothes21 .judo-clothes2-chest1 {
+      width: 15px;
+      height: 15px;
+      background: #546e7a;
+      z-index: 99999999;
+      position: absolute;
+      transition: all 1s linear;
+      top: 9px;
+      left: 0px;
+      transform-origin: center top; }
+    .judo-body1 .judo-clothes21 .judo-clothes2-bottom1 {
+      width: 18px;
+      border-bottom: 17px solid #607d8b;
+      border-right: 5px solid transparent;
+      border-left: 0px solid transparent;
+      z-index: 99999999;
+      position: absolute;
+      top: 24px;
+      transition: all 1s linear;
+      left: 1px;
+      transform-origin: center top; }
+  .judo-body1 .judo-arm21 {
+    z-index: 999;
+    position: absolute;
+    top: -20px;
+    transition: all 1s linear;
+    left: 25px;
+    width: 13px;
+    border-top: 11px solid #455a64;
+    border-right: 4px solid transparent;
+    border-left: 3px solid transparent;
+    border-radius: 0px 5px 5px 0px;
+    -ms-transform-origin: right top;
+    z-index: 999999999999;
+    transform-origin: left center;
+    animation: judoarm21 1s linear infinite; }
+@keyframes judoarm21 {
+  30% {
+    transform: rotatez(20deg); }
+  60% {
+    transform: rotatez(-18deg); } }
+    .judo-body1 .judo-arm21 .judo-bicep21 {
+      position: absolute;
+      top: -2px;
+      left: -1px;
+      transition: all 1s linear;
+      width: 10px;
+      height: 9px;
+      border-radius: 2px 2px 2px 2px;
+      background: #546e7a;
+      -ms-transform-origin: center top;
+      transform-origin: center top; }
+      .judo-body1 .judo-arm21 .judo-bicep21 .judo-lowarm21 {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 14px;
+        transition: all 1s linear;
+        border-top: 11px solid #455a64;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        border-radius: 8px 9px 0 0;
+        -ms-transform-origin: center top;
+        transform-origin: center top; }
+        .judo-body1 .judo-arm21 .judo-bicep21 .judo-lowarm21 .judo-hand21 {
+          position: absolute;
+          top: -2px;
+          left: -6px;
+          transition: all 1s linear;
+          z-index: 99999999999;
+          width: 13px;
+          height: 13px;
+          border-radius: 100px;
+          background: #ffcc80;
+          -ms-transform-origin: center top;
+          transform-origin: center top; }
+
+.judo-peegu1 {
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  z-index: -999;
+  width: 30px;
+  transition: all 1s linear;
+  height: 23px;
+  background: #546e7a;
+  transform-style: preserve-3d;
+  transform-origin: center top;
+  animation: judopeegu1 1s linear infinite; }
+@keyframes judopeegu1 {
+  30% {
+    transform: translateY(2px); }
+  60% {
+    transform: translateY(-2px); } }
+  .judo-peegu1 .judo-belt11 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 6px;
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+    background: #0097a7; }
+    .judo-peegu1 .judo-belt11 .judo-belt21 {
+      position: absolute;
+      top: 1px;
+      left: 11px;
+      width: 5px;
+      height: 33px;
+      transition: all 1s linear;
+      transform-origin: top center;
+      background: #4dd0e1;
+      z-index: 9999;
+      animation: judobelt21 3s linear infinite; }
+@keyframes judobelt21 {
+  30% {
+    transform: rotateZ(10deg); }
+  60% {
+    transform: rotateZ(-10deg); } }
+    .judo-peegu1 .judo-belt11 .judo-belt31 {
+      position: absolute;
+      top: 1px;
+      left: 6px;
+      width: 5px;
+      transition: all 1s linear;
+      height: 33px;
+      transform-origin: top center;
+      background: #26c6da;
+      z-index: 9999;
+      animation: judobelt31 3s linear infinite; }
+@keyframes judobelt31 {
+  30% {
+    transform: rotateZ(-10deg); }
+  60% {
+    transform: rotateZ(10deg); } }
+  .judo-peegu1 .judo-upleg1 {
+    position: absolute;
+    top: 15px;
+    left: -3px;
+    z-index: -99;
+    transition: all 1s linear;
+    width: 18px;
+    height: 12px;
+    background: #546e7a;
+    -ms-transform-origin: center top;
+    transform-origin: center top;
+    animation: judoupleg1 1s linear infinite; }
+@keyframes judoupleg1 {
+  20% {
+    transform: rotateZ(33deg); }
+  60% {
+    transform: rotateZ(-24deg); } }
+    .judo-peegu1 .judo-upleg1 .judo-lowleg1 {
+      position: absolute;
+      top: 11px;
+      left: 0px;
+      width: 18px;
+      transition: all 1s linear;
+      border-right: 3px solid transparent;
+      border-top: 9px solid #607d8b;
+      border-left: 3px solid transparent;
+      -ms-transform-origin: center top;
+      transform-origin: center top;
+      animation: judolowleg1 1s linear infinite; }
+@keyframes judolowleg1 {
+  30% {
+    transform: rotateZ(-16deg) scale(0.9); }
+  60% {
+    transform: rotateZ(0deg) scale(0.8); } }
+      .judo-peegu1 .judo-upleg1 .judo-lowleg1 .judo-foot1 {
+        position: absolute;
+        top: 0px;
+        left: 1px;
+        width: 13px;
+        transition: all 1s linear;
+        border-right: 1px solid transparent;
+        border-bottom: 11px solid #90a4ae;
+        border-left: 0px solid transparent;
+        transform: rotatez(-8deg);
+        transform-origin: center top; }
+        .judo-peegu1 .judo-upleg1 .judo-lowleg1 .judo-foot1 .judo-shoe1 {
+          width: 20px;
+          position: absolute;
+          top: 7px;
+          left: -7px;
+          transition: all 1s linear;
+          border-bottom: 8px solid #263238;
+          border-left: 9px solid transparent;
+          animation: judoshoe1 1s linear infinite; }
+@keyframes judoshoe {
+  60% {
+    transform: rotateZ(42deg); } }
+          .judo-peegu1 .judo-upleg1 .judo-lowleg1 .judo-foot1 .judo-shoe1:before {
+            content: '';
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            background: rgba(0, 0, 0, 0.7); }
+  .judo-peegu1 .judo-upleg21 {
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    z-index: -99;
+    width: 18px;
+    transition: all 1s linear;
+    height: 12px;
+    background: #546e7a;
+    -ms-transform-origin: center top;
+    transform-origin: center top;
+    animation: judoupleg21 1s linear infinite; }
+@keyframes judoupleg21 {
+  20% {
+    transform: rotatez(-24deg); }
+  60% {
+    transform: rotateZ(28deg); } }
+    .judo-peegu1 .judo-upleg21 .judo-lowleg21 {
+      position: absolute;
+      top: 10px;
+      left: -1px;
+      transition: all 1s linear;
+      width: 19px;
+      border-right: 6px solid transparent;
+      border-top: 17px solid #607d8b;
+      border-left: 3px solid transparent;
+      -ms-transform: rotate(0deg);
+      -ms-transform-origin: center top;
+      transform-origin: center top;
+      animation: judolowleg21 1s linear infinite; }
+@keyframes judolowleg21 {
+  30% {
+    transform: rotatez(-40deg) scale(0.8); }
+  60% {
+    transform: rotateZ(-35deg) scale(1); } }
+      .judo-peegu1 .judo-upleg21 .judo-lowleg21 .judo-foot21 {
+        position: absolute;
+        top: -7px;
+        left: -1px;
+        width: 15px;
+        transition: all 1s linear;
+        border-right: 2px solid transparent;
+        border-bottom: 12px solid #90a4ae;
+        border-left: 0px solid transparent;
+        transform: rotatez(13deg);
+        transform-origin: center top; }
+        .judo-peegu1 .judo-upleg21 .judo-lowleg21 .judo-foot21 .judo-shoe21 {
+          width: 20px;
+          position: absolute;
+          top: 8px;
+          left: -6px;
+          transition: all 1s linear;
+          border-bottom: 8px solid #263238;
+          border-left: 6px solid transparent;
+          animation: judoshoe21 1s linear infinite; }
+@keyframes judoshoe21 {
+  30% {
+    transform: rotateZ(-10deg); }
+  60% {
+    transform: rotateZ(0deg); } }
+          .judo-peegu1 .judo-upleg21 .judo-lowleg21 .judo-foot21 .judo-shoe21:before {
+            content: '';
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            background: rgba(0, 0, 0, 0.7); }
+
+.judo-sword-tail1 {
+  width: 8px;
+  height: 16px;
+  background: #1565c0;
+  position: absolute;
+  top: 8px;
+  left: -4px;
+  transition: all 1s linear;
+  transform-origin: center top;
+  transform: rotateZ(-97deg);
+  z-index: 9999999; }
+  .judo-sword-tail1 .judo-sword-sqaure1 {
+    width: 10px;
+    height: 78px;
+    background: #90caf9;
+    border-left: 1px solid #1565c0;
+    border-right: 1px solid #1565c0;
+    position: absolute;
+    top: 20px;
+    transition: all 1s linear;
+    left: -7px;
+    overflow: hidden; }
+    .judo-sword-tail1 .judo-sword-sqaure1 .judo-sword-effect1 {
+      width: 10px;
+      height: 60px;
+      background: linear-gradient(to top, transparent, #1565c0, transparent);
+      transition: all 1s linear;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+  .judo-sword-tail1 .judo-sword-triangle1 {
+    width: 10px;
+    border-top: 10px solid #90caf9;
+    border-left: 10px solid transparent;
+    border-right: 0px solid transparent;
+    position: absolute;
+    transition: all 1s linear;
+    top: 97px;
+    left: -7px; }
+    .judo-sword-tail1 .judo-sword-triangle1 .judo-sword-effect21 {
+      width: 10px;
+      height: 30px;
+      background: linear-gradient(to top, transparent, #1565c0, transparent);
+      transition: all 1s linear;
+      position: absolute;
+      top: 0px;
+      left: -11px; }
+  .judo-sword-tail1 .judo-sword-sqaure21 {
+    width: 10px;
+    height: 70px;
+    background: #1565c0;
+    border-left: 1px solid #90caf9;
+    border-right: 1px solid #90caf9;
+    position: absolute;
+    top: 19px;
+    transition: all 1s linear;
+    left: 4px;
+    overflow: hidden; }
+    .judo-sword-tail1 .judo-sword-sqaure21 .judo-sword-effect31 {
+      width: 10px;
+      height: 60px;
+      background: linear-gradient(to top, transparent, #bbdefb, transparent);
+      position: absolute;
+      top: -40px;
+      left: 0px;
+      transition: all 1s linear; }
+  .judo-sword-tail1 .judo-sword-triangle21 {
+    width: 10px;
+    border-top: 10px solid #1565c0;
+    border-left: 0px solid transparent;
+    transition: all 1s linear;
+    border-right: 9px solid transparent;
+    position: absolute;
+    top: 87px;
+    left: 4px; }
+    .judo-sword-tail1 .judo-sword-triangle21 .judo-sword-effect41 {
+      width: 10px;
+      height: 30px;
+      transition: all 1s linear;
+      background: linear-gradient(to top, transparent, #bbdefb, transparent);
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+  .judo-sword-tail1 .judo-sword-handle1 {
+    width: 5px;
+    position: absolute;
+    top: 16px;
+    border-top: 60px solid lightblue;
+    border-left: 0px solid transparent;
+    border-right: 6px solid transparent;
+    left: 1px; }
+    .judo-sword-tail1 .judo-sword-handle1 .judo-sword-bar11 {
+      width: 5px;
+      height: 15px;
+      position: absolute;
+      top: -64px;
+      background: lightskyblue;
+      left: 7px;
+      transform: rotatez(84deg);
+      transform-origin: right center; }
+    .judo-sword-tail1 .judo-sword-handle1 .judo-sword-bar21 {
+      width: 5px;
+      height: 15px;
+      position: absolute;
+      top: -68px;
+      background: lightskyblue;
+      left: -3px;
+      transform-origin: left center;
+      transform: rotatez(87deg); }
+
+/*# sourceMappingURL=judo.css.map */

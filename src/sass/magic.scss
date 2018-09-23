@@ -1,0 +1,216 @@
+@import './color';
+@import './judoVariable';
+.magic-boxcontrol {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    outline: 1px solid white;
+    left: 60%;
+    top: 335px;
+    z-index:999999;
+    cursor: pointer;
+
+
+}
+
+
+    .magic-hat {
+        width: 50px;
+        border-bottom: 24px solid $pink6;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        position: absolute;
+        left: 25%;
+        .magic-hat2 {
+            border-bottom: 30px solid $pink7;
+            border-left: 15px solid transparent;
+            border-right: 10px soild transparent;
+            border-right: 15px solid transparent;
+            position: absolute;
+            top: -28px;
+
+        }
+        .magic-hair {
+            width: 15px;
+            height: 35px;
+            background: linear-gradient(to left,$yellow5,$yellow9);
+            position: absolute;
+            top: 16px;
+            left: -12px;
+            border-radius: 40px 0 0 40px;
+            z-index: -9999;
+            .magic-hair2 {
+                position: absolute;
+                width: 15px;
+                height: 35px;
+                background: linear-gradient(to right,$yellow5,$yellow9);
+                top: 2px;
+                left: 39px;
+                border-radius: 0 30px 30px 0px;
+                .magic-hair4 {
+                    width: 24px;
+                    height: 10px;
+                    background: $yellow5;
+                    position: absolute;
+                    top: 1px;
+                    left: -24px;
+                }
+            }
+        }
+        .magic-hair3 {
+            width: 20px;
+            height: 28px;
+            border-radius: 0 18px 0 23px;
+            background: $red8;
+            position: absolute;
+            top: 34px;
+            left: -13px;
+            transform-origin: center top;
+            transform: rotatez(31deg);
+            z-index: -99;
+        }
+    }
+        .magic-head {
+            width: 30px;
+            height: 30px;
+            background: $orange2;
+            top: 25px;
+            position: absolute;
+            left: 35px;
+            border-radius: 0 0 17px 21px;
+            z-index: -999999;
+            .magic-eyebrow {
+                width: 4px;
+                height: 1px;
+                background: darkred;
+                position: absolute;
+                top: 6px;
+                left: 5px;
+            }
+            .magic-eyebrow2 {
+                width: 4px;
+                height: 1px;
+                background: darkred;
+                position: absolute;
+                top: 6px;
+                left: 21px;
+            }
+            .magic-eye {
+                width: 10px;
+                height: 5px;
+                background: white;
+                position: absolute;
+                top: 8px;
+                left: 1px;
+                overflow: hidden;
+                border-radius: 0 5px 0 5px;
+                border: 1px solid pink;
+                .magic-eyeball {
+                    width: 5px;
+                    height: 5px;
+                    background: black;
+                    border-radius: 100px;
+                    position: absolute;
+                    top: -2px;
+                    left: 2px;
+                }
+            }
+            .magic-eye2 {
+                width: 10px;
+                height: 5px;
+                background: white;
+                border-radius: 5px 0 5px 0;
+                position: absolute;
+                top: 8px;
+                left: 19px;
+                overflow: hidden;
+                border: 1px solid pink;
+                .magic-eyeball2 {
+                    width: 5px;
+                    height: 5px;
+                    background: black;
+                    border-radius: 100px;
+                    top: -2px;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+            .magic-nose {
+                width: 3px;
+                height: 4px;
+                background: $orange5;
+                position: absolute;
+                top: 16px;
+                left: 13px;
+                border-radius: 28px;
+            }
+            .magic-lip {
+                width: 9px;
+                height: 2px;
+                background: deeppink;
+                position: absolute;
+                top: 21px;
+                left: 11px;
+                border-radius: 5px 5px 0px 0px;
+                .magic-mouth {
+                    width: 9px;
+                    height: 2px;
+                    background: red;
+                    position: absolute;
+                    top: 1px;
+                    left: 0px;
+                    overflow: hidden;
+                    border-radius: 0 0 5px 5px;
+                    .magic-teeth {
+                        width: 9px;
+                        height: 2px;
+                        background: white;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                    }
+                }
+                .magic-lip2 {
+                    width: 9px;
+                    height: 2px;
+                    background: deeppink;
+                    position: absolute;
+                    top: 1px;
+                    left: 0px;
+                    border-radius: 0 0 5px 5px;
+                }
+            }
+        }
+        .magic-necklace {
+            width: 10px;
+            height: 6px;
+            background: repeating-linear-gradient(#fff59d, #fbc02d);
+            position: absolute;
+            top: 61px;
+            left: 2px;
+            z-index: -999999;
+        }
+        .magic-body {
+            width: 30px;
+            border-top: 16px solid #512da8;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            position: absolute;
+            top: 67px;
+            left: -8px;
+            .magic-arm {
+                .magic-bicep {
+                    .magic-lowarm {
+                        .magic-hand {}
+                    }
+                }
+            }
+            .magic-arm2 {
+                .magic-bicep2 {
+                    .magic-lowarm2 {
+                        .magic-hand2 {}
+                    }
+                }
+            }
+        }
+
