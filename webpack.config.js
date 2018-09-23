@@ -78,12 +78,30 @@ module.exports = {
                 }]
             }, {
                 test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp3|wav|mp4)(\?.*)?$/,
-                loader: 'file-loader',
-                query: {
-                    name: 'images/[name].[ext]?[hash]'
+                use:[
+                    {
+                        loader: 'file-loader',
+                    query: {
+                        name: 'images/[name].[ext]?[hash]'
+                    }
+                },{
+                    loader:'img-loader'
                 }
+                ],
+                
 
-            }, {
+            },{
+                test: /\.babylon$/,
+                use: [
+                  {
+                    loader: 'babylon-file-loader',
+                    
+                    query:{
+                        name:'models/[name].[ext]?[hash]'
+                    }  
+                  }
+                ]
+              }, {
                 test: /\.(mp4|webm|wav|mp3|m4a|aac|oga)(\?.*)?$/,
                 loader: 'url-loader',
                 query: {
