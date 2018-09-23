@@ -679,6 +679,85 @@ cursor: pointer;
     }
     }
 }
+.profile-chat,.profile-phone,.profile-video{
+    font-size: 10px;
+    cursor: pointer;  
+    margin-top: 9px;
+    /* width: 50px; */
+    
+    text-align: center;
+    height: 50px;
+    display: grid;
+    grid-template-rows: 1fr 18px;
+}
+.chat-img,.phone-img,.video-img{
+    grid-row-start: 1;
+    background: url('../images/icon-new.svg')no-repeat;
+    background-size: 9000%;
+}
+.chat-img{
+    background-position: -49px -1171px;
+}
+.phone-img{
+    background-position: -97px -1171px;
+}
+.video-img{
+    background-position: -151px -1171px;
+}
+.chat-text,.phone-text,.video-text{
+    grid-row-start: 2;
+   
+    padding-top: 3px;
+}
+.profile-lower{
+    position: absolute;
+    width: 272px;
+    height: 101px;
+    background: white;
+    bottom: 0%;
+    display:grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+.profile-chat{
+    grid-column-start: 2;
+background-position: 0px 0px;
+    
+
+    
+}
+.profile-phone{
+    grid-column-start: 3;
+    background-position: 0px 0px;
+}
+.profile-video{
+    grid-column-start: 4;
+    background-position: 0px 0px;
+}
+}
+.profile-lower-bottom{
+    position: absolute;
+    width: 272px;
+    height: 40px;
+    border-top: 1px solid darkgrey;
+    /* outline: 1px solid darkgrey; */
+    bottom: 0%;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    .profile-post{
+        grid-column-start: 2;
+        font-size: 10px;
+        margin-top: 12px;
+        text-align: center;
+        cursor: pointer
+    }
+    .profile-photo-movie{
+        grid-column-start: 4;
+        font-size: 10px;
+        margin-top: 12px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
 .bottom-bar-boxcontrol{
     grid-column-start: 2;
     grid-column-end: 12;

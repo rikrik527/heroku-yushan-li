@@ -359,7 +359,7 @@ toggleMenu(){
     const profileArticle = document.createElement('article')
     profileArticle.className = 'profile-box'
      
-     const profile = '<section class="profile-background"><div class="profile-star">&#9733;</div><div class="profile-op"></div><div class="img-circle-big"><img class="profile-img"></div><div class="profile-name"></div><div class="profile-info"></div><span class="profile-toggle">ᐁ</span></section>'
+     const profile = '<section class="profile-background"><div class="profile-star">&#9733;</div><div class="profile-op"></div><div class="img-circle-big"><img class="profile-img"></div><div class="profile-name"></div><div class="profile-info"></div><span class="profile-toggle">ᐁ</span><div class="profile-lower"><div class="profile-chat"><span class="chat-img"></span><span class="chat-text">聊天</span></div><div class="profile-phone"><span class="phone-img"></span><span class="phone-text">免費通話</span></div><div class="profile-video"><span class="video-img"></span><span class="video-text">視訊通話</span></div></div><div class="profile-lower-bottom"><div class="profile-post">投稿</div><div class="profile-photo-movie">照片.影片</div></div></section>'
      profileArticle.innerHTML = profile
      const screenBc2 = document.querySelector('.screen-boxcontrol2')
      const loveFriendClick = document.querySelector('.love-friend-click')
