@@ -2,74 +2,54 @@ var obj = require('./getall');
 var $ = require('jquery')
 var GoogleMapsLoader = require('google-maps') 
 var shanApp = shanApp || {};
+
 shanApp = {
-
+  arr:[],
+  arrPush:null,
+  arrShift:null,
+  arrSlice:null,
+  excuter:false,
   shanBtn: document.querySelector('.shan-btn'),
-  judo: '<div class="judo-sensor"></div><div class="judo-head"><div class="judo-ear"></div><div class="judo-ear2"></div><div class="judo-hair1"></div><div class="judo-hair2"></div><div class="judo-hair3"></div><div class="judo-hair-white"><div class="judo-hair-white2"></div><div class="judo-hair-white3"></div></div><div class="judo-eyebrow"></div><div class="judo-eyebrow2"></div><div class="judo-eye"><div class="judo-eyeball"></div></div><div class="judo-eye2"><div class="judo-eyeball2"></div></div><div class="judo-nose"></div><div class="judo-lips"><div class="judo-mouth"><div class="judo-teeth"></div></div></div><div class="judo-lips2"></div></div><div class="judo-neck"><div class="judo-neck-line1"></div><div class="judo-neck-line2"></div><div class="judo-neck-brand"></div></div><div class="judo-body"><div class="judo-clothes"><div class="judo-clothes-top"></div><div class="judo-clothes-chest"></div><div class="judo-clothes-bottom"></div></div><div class="judo-chest"><div class="judo-stamache"></div><div class="judo-stamache2"></div></div><div class="judo-arm"><div class="judo-bicep"><div class="judo-lowarm"><div class="judo-hand"><div class="judo-sword-tail"><div class="judo-sword-sqaure"><div class="judo-sword-effect"></div></div><div class="judo-sword-triangle"><div class="judo-sword-effect2"></div></div><div class="judo-sword-sqaure2"><div class="judo-sword-effect3"></div></div><div class="judo-sword-triangle2"><div class="judo-sword-effect4"></div></div><div class="judo-sword-handle"><div class="judo-sword-bar1"></div><div class="judo-sword-bar2"></div></div></div></div></div></div></div><div class="judo-clothes2"><div class="judo-clothes2-top"></div><div class="judo-clothes2-chest"></div><div class="judo-clothes2-bottom"></div></div><div class="judo-chest2"><div class="judo-stamache3"></div><div class="judo-stamache4"></div></div><div class="judo-arm2"><div class="judo-bicep2"><div class="judo-lowarm2"><div class="judo-hand2"></div></div></div></div></div><div class="judo-peegu"><div class="judo-belt1"><div class="judo-belt2"></div><div class="judo-belt3"></div></div><div class="judo-upleg"><div class="judo-lowleg"><div class="judo-foot"><div class="judo-shoe"></div></div></div></div><div class="judo-upleg2"><div class="judo-lowleg2"><div class="judo-foot2"><div class="judo-shoe2"></div></div></div></div></div><div class="judo-effect3"></div><div class="judo-effect4"></div><div class="judo-effect5"></div><div class="judo-effect6"></div><div class="judo-effect7"></div><div class="judo-effect8"></div><div class="judo-effect9"><div class="judo-effect10"></div>',
-  judoAppearApp: function () {
-    this.shanBtn.insertAdjacentHTML('afterbegin', '<article class="judo-boxcontrol"></article>');
-    var judoBc = document.querySelector('.judo-boxcontrol');
-    judoBc.innerHTML = this.judo;
-
-
-  },
-  flag: '<div class="judo-effect1"><div class="judo-effect2"></div></div></div><div class="judo-boat"><figure class="judo-boat-front"></figure><figure class="judo-boat-left"></figure><figure class="judo-boat-right"></figure><figure class="judo-boat-back"></figure><figure class="judo-boat-bottom"></figure></div>',
-  judoFlagApp: function () {
-    var div = obj.create('article');
-    var flagBc = div.classList.add('judo-flag-boxcontrol')
-    this.shanBtn.insertAdjacentElement('afterbegin', div);
-    div.innerHTML = this.flag;
-  },
+  
+  
   svg: '<svg width="150" class="the-game-name" height="200" viewBox="0 0 300 900"><pattern id="rain" viewBox="100 100 100 100" patternUnits="userSpaceOnUse" width="150" height="200" x="0" y="150"><image xlink:href="" width="100" height="150"/></pattern><text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text">雨珊</text></svg>',
   nameSvg: function () {
     var imgShan = document.querySelector('.the-game');
     imgShan.innerHTML = this.svg;
   },
-  shanHouse: require('../images/shan-house.png'),
+  
 
-  parallaxHouseApp: function () {
-    var div = obj.create('div');
-    div.classList.add('shan-house');
+  
 
-    this.shanBtn.insertAdjacentElement('afterbegin', div);
-    console.log('setting up parallaxhouseApp');
-
-  },
-
-  userTalkApp: function () {
-    var judoBc = document.querySelector('.judo-boxcontrol');
-
-    judoBc.insertAdjacentHTML('afterbegin', '<article class="user-talk-boxcontrol"><ul class="user-talk-box"></ul></article>');
-    var userTalkBc = document.querySelector('.user-talk-boxcontrol');
-
-
-    console.log('usertalk app')
-  },
-
-  shanTalkApp: function () {
-    var shanLiBc = document.querySelector('.shan-li-boxcontrol');
-    shanLiBc.insertAdjacentHTML('afterbegin', '<article class="shan-talk-boxcontrol"><ul class="shan-talk"></ul></article>');
-    var shanTalkBc = document.querySelector('.shan-talk-boxcontrol')
-
-    shanTalkBc.style.display = 'none'
-
-    console.log('shantalk app');
-  },
+  
   line:'<article class="line"><div class="line-setting-boxcontrol"><div class="friends">好友<p class="friends-total"></p></div><div class="add-friend"></div><div class="search-friends"></div><div class="setting"></div></div><article class="five-section"><div class="sec-friends"><span class="friends-bubble"></span><div class="under-line1 display"></div></div><div class="sec-talk"><span class="talk-bubble"></span><div class="under-line2"></div></div><div class="sec-post"><span class="post-bubble"></span><div class="under-line3"></div></div><div class="sec-today"><span class="today-bubble"></span><div class="under-line4"></div></div><div class="sec-setting"><span class="setting-bubble"></span><div class="under-line5"></div></div></article><article class="big-wrap"><article class="line-wrap"></article><article class="line-wrap2">2</article><article class="line-wrap3">3</article><article class="line-wrap4">4</article><article class="line-wrap5">5</article></article></article>',
 
   
 
   conversation: '<article class="upper"><div class="battery"></div><div class="camera-out"><div class="camera"></div></div></article><div class="screen-original"></div><article class="screen-boxcontrol"><video class="video"></video><div class="time-now"><p class="hour-now"></p><p class="two-dot">:</p><p class="minutes-now"></p><p class="two-dot-2">:</p><p class="seconds-now"></p><p class="session"></p></div><div class="year-now"><p class="month-now"></p><p class="dates-now"></p><p class="days-now"></p></div><section class="fb-app"></section><section class="line-app"></section><section class="photo-app"></section></article><article class="bottom-bar-boxcontrol"><div class="back"></div><div class="five-points"></div><div class="sqaure"></div></article>',
   shanChatApp: function () {
+    var self = this
     document.querySelector('.main-boxcontrol').insertAdjacentHTML('afterbegin', '<article class="shan-li-chat-app"></article>');
     var shanLiChatApp = document.querySelector('.shan-li-chat-app');
     shanLiChatApp.innerHTML = this.conversation;
-    var div = document.createElement('article');
-    div.classList.add('screen-boxcontrol2');
+    var screenArticle = document.createElement('article')
+    screenArticle.className = 'screen-boxcontrol2'
+    
+    
+    this.arrPush = this.arr.push(screenArticle,screenArticle)
+    
+    this.arrShift = this.arr.shift()
+    console.log('screenArticle boxcontrol2',this.arr)
+    console.log('shanChatapp arrpush',this.arrPush)
     var screenBc = document.querySelector('.screen-boxcontrol');
-    screenBc.insertAdjacentElement('beforeend',div
-    );
-    div.innerHTML = this.line;
+   
+    $('.line-app').on('click',function(){
+      console.log('clicked')
+      screenArticle.innerHTML = self.line;
+      screenBc.appendChild(self.arrShift)
+      
+    })
+    
     console.log('line-app')
     console.log('shanchatapp');
 
@@ -303,6 +283,7 @@ toggleMenu(){
 
   
   lineWrap:function(){
+    shanApp.excuter = true
     var userBox = '<div class="user-box"><span class="img-circle"><img class="giveId"></span><div class="name"></div><div class="status"></div></div><hr>'
     var myloveBox = '<div class="mylove-box"><div class="mylove-bar">我的最愛<span class="love-number"></span><span class="mylove-click"></span><div class="toggle-arrow">ᐃ</div><div class="love-friend-box"><span class="love-friend-click"></span><span class="img-circle-friend"><img class="loveId"></span><div class="love-name"></div><div class="love-status"></div></div></div></div><hr>'
     var lineWrapper = document.querySelector('.line-wrap')
@@ -311,8 +292,11 @@ toggleMenu(){
     var userB = document.querySelector('.user-box');
     userB.insertAdjacentHTML('afterend',myloveBox)
     console.log('linewrapper')
-
+    shanApp.lineWrapUserConfig('git-push哩', 'https://mrjudo.000webhostapp.com/public/assets/html/index.html', require("../images/judo-face-cut.png"))
+    shanApp.lineWrapMyloveConfig('Yushan Li', '做事要警慎小心。不要圖一時之利', require("../images/yushan-img.jpg"))
+    console.log('shanppexculer',shanApp.excuter)
   },
+  
   lineWrapUserConfig:function(user,theStatus,selectImg){
     var name = document.querySelector('.name')
     name.innerHTML = user
@@ -363,10 +347,14 @@ toggleMenu(){
      profileArticle.innerHTML = profile
      const screenBc2 = document.querySelector('.screen-boxcontrol2')
      const loveFriendClick = document.querySelector('.love-friend-click')
-     
+     var self = this
      loveFriendClick.onclick = function(){
-       console.log('clicked')
-       screenBc2.appendChild(profileArticle)
+       console.log(shanApp.arrShift)
+       shanApp.arrPush = shanApp.arr.push(profileArticle,profileArticle)
+      
+         shanApp.arrShift =  shanApp.arr.shift()
+       screenBc2.appendChild(shanApp.arrShift)
+       
        var profileName = document.querySelector('.profile-name')
        var profileImg = document.querySelector('.profile-img')
        profileImg.src = require('../images/yushan-img.jpg')
@@ -376,6 +364,38 @@ toggleMenu(){
      }
     
      
+  },
+  
+  mobileBack(){
+    
+   
+   
+    var back = document.querySelector('.back')
+    var screenBc2 = document.querySelector('.screen-boxcontrol2')
+    var screenBc = document.querySelector('.screen-boxcontrol')
+    back.onclick = function(){
+      
+     
+     console.log(shanApp.arr)
+      
+      if(shanApp.arr.length !== 0 && document.documentElement.contains(screenBc2)){
+        console.log('congraduation')
+        shanApp.arrShift = shanApp.arr.shift()
+        screenBc2.removeChild(shanApp.arrShift)
+      }
+      else if(shanApp.arr.length !== 0 && document.documentElement.contains(screenBc2) !== true){
+        console.log('screenbc',screenBc,'screenbc2',screenBc2)
+       shanApp.arrShift = shanApp.arrShift()
+       screenBc.removeChild(shanApp.arrShift)
+      }
+      
+      else{
+        if(screenBc.hasChildNodes('screen-boxcontrol2')){
+          screenBc.removeChild(screenBc2)
+          console.log('removed')
+        }
+      }
+    }
   },
   profileToggle(){
     var profileToggle = document.querySelector('.profile-toggle')

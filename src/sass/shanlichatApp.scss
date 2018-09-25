@@ -228,7 +228,7 @@
     }
 }
 .screen-boxcontrol2{
-    display: none;
+    display: grid;
     grid-template-columns: 10px 30px 10px 30px 10px 30px 10px 30px 10px 30px 10px 30px 10px 23px 10px;
     grid-template-rows: 10px 30px 20px 30px 10px 30px 10px 30px 10px 30px 10px 30px 10px 30px 10px 30px 30px;
     /* width: 273px; */

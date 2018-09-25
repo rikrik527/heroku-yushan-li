@@ -3,15 +3,18 @@
 import * as BABYLON from 'babylonjs'
 import 'babylonjs-materials'
 import 'babylonjs-loaders'
+
 import duder from '../../models/Dude/dude.babylon'
 
 var canvas;
 var engine;
 var scene;
-
+var cartoonHouse = require('../../models/cartoonhouse.babylon')
 module.exports.startGame = function(){
     canvas = document.getElementById("renderCanvas");
     engine = new BABYLON.Engine(canvas,true);
+    
+    
     scene = createScene();
     var toRender = function () {
         scene.render();
@@ -35,6 +38,7 @@ var createScene = function () {
     
     //     scene.beginAnimation(skeletons[0], 0, 100, true, 1.0);
     // })
+   
     var ground = BABYLON.Mesh.CreateGround("myGround", 60, 60, 50, scene);
     var mirrorMaterial = new BABYLON.StandardMaterial("mirrorMaterial", scene);
     mirrorMaterial.diffuseColor = new BABYLON.Color3(0.4, 1, 0.4);
@@ -124,7 +128,11 @@ var yushan = require('../../images/yushan.png')
 
     var camera = new BABYLON.FreeCamera("myCamera", new BABYLON.Vector3(0, 1, -10), scene);
     camera.attachControl(canvas);
-
+    module.exports = camera
     return scene;
 };
+window.addEventListener('resize',function(){
+    console.log('resisze')
+    engine.resize()
+})
 

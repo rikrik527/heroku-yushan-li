@@ -1,4 +1,3 @@
-
 require('../sass/app.scss');
 var $ = require('jquery')
 var shanApp = require('./shanApp')
@@ -15,7 +14,7 @@ var math = require('./math');
 window.onload = function () {
   navigator.getUserMedia = (navigator.getUserMedia ||
     navigator.webkitGetUserMedia ||
-    navigator.mozGetUserMedia || 
+    navigator.mozGetUserMedia ||
     navigator.msGetUserMedia);
 
 
@@ -24,63 +23,96 @@ window.onload = function () {
   shanApp.nameSvg()
 
 
-  shanApp.judoAppearApp()
   shanApp.shanAppearApp()
 
-  
 
-  
-  shanApp.userTalkApp()
-  shanApp.shanTalkApp()
-  
+
+
+
+
   shanApp.shanMoodsApp()
-  
+
   shanApp.temperApp()
   shanApp.specialApp()
 
 
 
-  shanApp.action.judoWalk()
-shanApp.shanChatApp()
-shanApp.judoFlagApp()
 
-$('.line-app').click(function(){
-  console.log('line clicked')
-  $('.screen-boxcontrol2').css('display','grid');
-})
-toggleSwitch.toggleSwitch('specialBtn','.special-btn','shanLiChatApp','.shan-li-chat-app','phone-on','bottom:10%;','bottom:-460px;');
-photos.infiniteLoop();
 
-shanApp.lineWrap()
-shanApp.lineWrapUserConfig('git-push哩','https://mrjudo.000webhostapp.com/public/assets/html/index.html',require("../images/judo-face-cut.png"))
 
-shanApp.lineWrapMyloveConfig('Yushan Li','做事要警慎小心。不要圖一時之利',require("../images/yushan-img.jpg"))
+  shanApp.shanChatApp()
 
-shanApp.toggleMenu()
-shanApp.lineWrapMyloveToggle()
-shanApp.lineProfile()
-var id = setInterval(check,1)
-function check(){
- 
+  toggleSwitch.toggleSwitch('specialBtn', '.special-btn', 'shanLiChatApp', '.shan-li-chat-app', 'phone-on', 'bottom:10%;', 'bottom:-460px;');
+  photos.infiniteLoop()
+
+  var linewrap = new checking('.big-wrap', shanApp.lineWrap)
+  linewrap.start()
+  console.log('excute shanapp',shanApp.excuter)
+  if(shanApp.excuter == true){
+    console.log('liwrap excuted')
     
-    if(document.documentElement.contains(document.querySelector('.profile-toggle'))){
-      console.log('checked yed find it')
-      shanApp.profileToggle()
-      window.clearInterval(id)
-    }
- 
+   
+    shanApp.excuter = false
+  }
   
+
+  
+
+
+
+
+
+
+
+
+  var togglemenu = new checking('.five-section', shanApp.toggleMenu)
+  togglemenu.start()
+  var linewrapmylovetoggle = new checking('.line-wrap', shanApp.lineWrapMyloveToggle)
+  linewrapmylovetoggle.start()
+  var lineprofile = new checking('.love-friend-click', shanApp.lineProfile)
+  lineprofile.start()
+
+
+  function checking(selector, callback,time) {
+    var self = this
+    self.selector = selector
+    self.callback = callback
+    self.time = 1 || time
+    self.start = function () {
+    
+      self.id = setInterval(self.check, time)
+    }
+    self.check = function () {
+      
+      if (document.documentElement.contains(document.querySelector(selector))) {
+
+        callback()
+        console.log('checked yed find it', selector, 'proceed callback', callback)
+        window.clearInterval(self.id)
+      }
+
+    }
+
+
+  }
+  var pb = new checking('.profile-box', shanApp.profileToggle)
+  pb.start()
+  var back = new checking('.profile-box', shanApp.mobileBack)
+  back.start()
+
+  // babylonApp.startGame()
+
+
+  shanApp.googleMapsApp()
+
 }
-// babylonApp.startGame()
+document.addEventListener('DOMContentLoaded', app.startGame)
 
+// document.querySelector('.special-three').onclick = function(){
+//     console.log('special3')
+//     app.camera.position()
 
-shanApp.googleMapsApp()
-
-}
-document.addEventListener('DOMContentLoaded',app.startGame)
-window.addEventListener('resize',function(){
-   app.engine.resize()
-})
+// }
 /// <reference path="js/babylon.max.js" />
 // var canvas;
 // var engine;
@@ -166,7 +198,7 @@ window.addEventListener('resize',function(){
 
 //      var section1 = require('../video/section1.mp4')
 //     sphereMaterials[9].diffuseTexture = new BABYLON.VideoTexture("video", [section1],scene);
-   
+
 
 //     // lights
 //     var light = new BABYLON.PointLight("myPointLight", new BABYLON.Vector3(0, 3, 0), scene);
@@ -180,7 +212,7 @@ window.addEventListener('resize',function(){
 //     var counter = 0;
 
 //     scene.registerBeforeRender(function () {
-    
+
 //         for(var i = 0 ; i < spheres.length-1 ; i++)
 //         {
 //             spheres[i].position.z = 2*i * Math.sin((i * counter)/2);
