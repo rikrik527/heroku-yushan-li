@@ -1,13 +1,19 @@
-var obj = require('./getall');
+
 var $ = require('jquery')
 var GoogleMapsLoader = require('google-maps') 
 var shanApp = shanApp || {};
 
 shanApp = {
   arr:[],
-  arrPush:null,
+  
+  arrPush(el){
+    return shanApp.arr.push(el)
+  },
   arrShift:null,
   arrSlice:null,
+  arrPop(el){ 
+    return shanApp.arr.pop(el)
+  },
   excuter:false,
   shanBtn: document.querySelector('.shan-btn'),
   
@@ -22,7 +28,7 @@ shanApp = {
   
 
   
-  line:'<article class="line"><div class="line-setting-boxcontrol"><div class="friends">好友<p class="friends-total"></p></div><div class="add-friend"></div><div class="search-friends"></div><div class="setting"></div></div><article class="five-section"><div class="sec-friends"><span class="friends-bubble"></span><div class="under-line1 display"></div></div><div class="sec-talk"><span class="talk-bubble"></span><div class="under-line2"></div></div><div class="sec-post"><span class="post-bubble"></span><div class="under-line3"></div></div><div class="sec-today"><span class="today-bubble"></span><div class="under-line4"></div></div><div class="sec-setting"><span class="setting-bubble"></span><div class="under-line5"></div></div></article><article class="big-wrap"><article class="line-wrap"></article><article class="line-wrap2">2</article><article class="line-wrap3">3</article><article class="line-wrap4">4</article><article class="line-wrap5">5</article></article></article>',
+  line:'<div class="line-setting-boxcontrol"><div class="friends">好友<p class="friends-total"></p></div><div class="add-friend"></div><div class="search-friends"></div><div class="setting"></div></div><article class="five-section"><div class="sec-friends"><span class="friends-bubble"></span><div class="under-line1 display"></div></div><div class="sec-talk"><span class="talk-bubble"></span><div class="under-line2"></div></div><div class="sec-post"><span class="post-bubble"></span><div class="under-line3"></div></div><div class="sec-today"><span class="today-bubble"></span><div class="under-line4"></div></div><div class="sec-setting"><span class="setting-bubble"></span><div class="under-line5"></div></div></article><article class="big-wrap"><article class="line-wrap"></article><article class="line-wrap2">2</article><article class="line-wrap3">3</article><article class="line-wrap4">4</article><article class="line-wrap5">5</article></article>',
 
   
 
@@ -32,22 +38,27 @@ shanApp = {
     document.querySelector('.main-boxcontrol').insertAdjacentHTML('afterbegin', '<article class="shan-li-chat-app"></article>');
     var shanLiChatApp = document.querySelector('.shan-li-chat-app');
     shanLiChatApp.innerHTML = this.conversation;
-    var screenArticle = document.createElement('article')
-    screenArticle.className = 'screen-boxcontrol2'
+    var ArticleBc2 = document.createElement('article')
+    ArticleBc2.className = 'screen-boxcontrol2'
+    var lineArticle = document.createElement('article')
+    lineArticle.className = 'line'
     
+   
     
-    this.arrPush = this.arr.push(screenArticle,screenArticle)
-    
-    this.arrShift = this.arr.shift()
-    console.log('screenArticle boxcontrol2',this.arr)
-    console.log('shanChatapp arrpush',this.arrPush)
     var screenBc = document.querySelector('.screen-boxcontrol');
    
     $('.line-app').on('click',function(){
       console.log('clicked')
-      screenArticle.innerHTML = self.line;
-      screenBc.appendChild(self.arrShift)
-      
+      screenBc.appendChild(ArticleBc2)
+      lineArticle.innerHTML = self.line;
+      ArticleBc2.appendChild(lineArticle)
+      self.arrPush(ArticleBc2)
+      self.arrPush(lineArticle)
+      console.log('line-app clicked',self.arr)
+      if(self.arr.length >= 2){
+        console.log('self arrpush >= 2',self.arr)
+        self.arrPush()
+      }
     })
     
     console.log('line-app')
@@ -101,7 +112,18 @@ shanApp = {
 
     }
     setInterval(timeStart,1000);
-    
+    var togglemenu = new checking('.five-section',shanApp.toggleMenu)
+    togglemenu.start()
+    var linewrap = new checking('.big-wrap',shanApp.lineWrap)
+    linewrap.start()
+    var lineprofile = new checking('.love-friend-click',shanApp.lineProfile)
+    lineprofile.start()
+    var linewrapmylovetoggle = new checking('.line-wrap',shanApp.lineWrapMyloveToggle)
+    linewrapmylovetoggle.start()
+    var profiletoggle = new checking('.profile-box',shanApp.profileToggle)
+    profiletoggle.start()
+    var mobileback = new checking('.profile-box',shanApp.mobileBack)
+    mobileback.start()
 },
 toggleMenu(){
   // const sec = [
@@ -257,22 +279,7 @@ toggleMenu(){
   }
  
   
-  function backgroundC(param){
-    console.log('backgroundc')
-    var txt = document.createTextNode('background-position:'+param+';')
-    return txt
-  }
-  var excuteOnce = (function(){
-    var executed = false
-    return function(){
-      if(!executed){
-        executed = true
-        secFriends.style.backgroundPosition ='17px -713px'
-    underLine[0].style.display = 'block'
-        
-      }
-    }
-    })()
+  
 
 },
 
@@ -283,9 +290,9 @@ toggleMenu(){
 
   
   lineWrap:function(){
-    shanApp.excuter = true
-    var userBox = '<div class="user-box"><span class="img-circle"><img class="giveId"></span><div class="name"></div><div class="status"></div></div><hr>'
-    var myloveBox = '<div class="mylove-box"><div class="mylove-bar">我的最愛<span class="love-number"></span><span class="mylove-click"></span><div class="toggle-arrow">ᐃ</div><div class="love-friend-box"><span class="love-friend-click"></span><span class="img-circle-friend"><img class="loveId"></span><div class="love-name"></div><div class="love-status"></div></div></div></div><hr>'
+   
+    var userBox = '<div class="user-box"><span class="img-circle"><img class="giveId"></span><div class="name"></div><div class="status"></div></div>'
+    var myloveBox = '<div class="mylove-box"><div class="mylove-bar">我的最愛<span class="love-number"></span><span class="mylove-click"></span><div class="toggle-arrow">ᐃ</div><div class="love-friend-box"><span class="love-friend-click"></span><span class="img-circle-friend"><img class="loveId"></span><div class="love-name"></div><div class="love-status"></div></div></div></div>'
     var lineWrapper = document.querySelector('.line-wrap')
   
     lineWrapper.innerHTML = userBox
@@ -294,7 +301,7 @@ toggleMenu(){
     console.log('linewrapper')
     shanApp.lineWrapUserConfig('git-push哩', 'https://mrjudo.000webhostapp.com/public/assets/html/index.html', require("../images/judo-face-cut.png"))
     shanApp.lineWrapMyloveConfig('Yushan Li', '做事要警慎小心。不要圖一時之利', require("../images/yushan-img.jpg"))
-    console.log('shanppexculer',shanApp.excuter)
+   
   },
   
   lineWrapUserConfig:function(user,theStatus,selectImg){
@@ -344,17 +351,18 @@ toggleMenu(){
     profileArticle.className = 'profile-box'
      
      const profile = '<section class="profile-background"><div class="profile-star">&#9733;</div><div class="profile-op"></div><div class="img-circle-big"><img class="profile-img"></div><div class="profile-name"></div><div class="profile-info"></div><span class="profile-toggle">ᐁ</span><div class="profile-lower"><div class="profile-chat"><span class="chat-img"></span><span class="chat-text">聊天</span></div><div class="profile-phone"><span class="phone-img"></span><span class="phone-text">免費通話</span></div><div class="profile-video"><span class="video-img"></span><span class="video-text">視訊通話</span></div></div><div class="profile-lower-bottom"><div class="profile-post">投稿</div><div class="profile-photo-movie">照片.影片</div></div></section>'
-     profileArticle.innerHTML = profile
+     
      const screenBc2 = document.querySelector('.screen-boxcontrol2')
      const loveFriendClick = document.querySelector('.love-friend-click')
      var self = this
      loveFriendClick.onclick = function(){
-       console.log(shanApp.arrShift)
-       shanApp.arrPush = shanApp.arr.push(profileArticle,profileArticle)
       
-         shanApp.arrShift =  shanApp.arr.shift()
-       screenBc2.appendChild(shanApp.arrShift)
-       
+      shanApp.arrPush(profileArticle)
+      
+      
+       screenBc2.appendChild(profileArticle)
+       profileArticle.innerHTML = profile
+       console.log('lovefriendclick onclick arr',shanApp.arr)
        var profileName = document.querySelector('.profile-name')
        var profileImg = document.querySelector('.profile-img')
        profileImg.src = require('../images/yushan-img.jpg')
@@ -366,37 +374,7 @@ toggleMenu(){
      
   },
   
-  mobileBack(){
-    
-   
-   
-    var back = document.querySelector('.back')
-    var screenBc2 = document.querySelector('.screen-boxcontrol2')
-    var screenBc = document.querySelector('.screen-boxcontrol')
-    back.onclick = function(){
-      
-     
-     console.log(shanApp.arr)
-      
-      if(shanApp.arr.length !== 0 && document.documentElement.contains(screenBc2)){
-        console.log('congraduation')
-        shanApp.arrShift = shanApp.arr.shift()
-        screenBc2.removeChild(shanApp.arrShift)
-      }
-      else if(shanApp.arr.length !== 0 && document.documentElement.contains(screenBc2) !== true){
-        console.log('screenbc',screenBc,'screenbc2',screenBc2)
-       shanApp.arrShift = shanApp.arrShift()
-       screenBc.removeChild(shanApp.arrShift)
-      }
-      
-      else{
-        if(screenBc.hasChildNodes('screen-boxcontrol2')){
-          screenBc.removeChild(screenBc2)
-          console.log('removed')
-        }
-      }
-    }
-  },
+  
   profileToggle(){
     var profileToggle = document.querySelector('.profile-toggle')
      var click = 0;
@@ -434,60 +412,70 @@ toggleMenu(){
          })()
 
      }
+  },mobileBack(){
+    
+   
+   
+    var back = document.querySelector('.back')
+    var screenBc2 = document.querySelector('.screen-boxcontrol2')
+    var screenBc = document.querySelector('.screen-boxcontrol')
+    back.onclick = function(){
+      
+     
+     console.log(shanApp.arr)
+      
+      if(shanApp.arr.length !== 0 && document.documentElement.contains(screenBc2)){
+        console.log('congraduation',shanApp.arr)
+        
+        screenBc2.removeChild(shanApp.arrPop())
+      }
+      else if(shanApp.arr.length !== 0 && document.documentElement.contains(screenBc2) !== true){
+         console.log('nothing yet')
+      }
+      
+      else{
+        if(screenBc.hasChildNodes('screen-boxcontrol2')){
+          screenBc.removeChild(screenBc2)
+          console.log('removed')
+        }
+        console.log('nothing to do')
+      }
+    }
   },
-  // aside: '<ul class="aside-menu"><li class="nav icon-action">/li><li class="nav icon-tools"></li><li class="nav icon-service"><span class="tips pos2">找雨珊談談</span></li></ul>',
-  // asideApp: function () {
-  //   this.shanBtn.insertAdjacentHTML('afterbegin', '<aside class="aside-boxcontrol"></aside>');
-  //   var asideBc = document.querySelector('.aside-boxcontrol');
-  //   asideBc.innerHTML = this.aside;
-  //   console.log('aside app')
-  // },
-
-  // toolBox: '<div class="tool-box"><span class="title">道具箱</span><div class="tool-set-one"></div><div class="tool-set-two"></div><div class="tool-set-three"></div><div class="tool-set-four"></div><div class="tool-set-five"></div><div class="tool-set-six"></div><div class="tool-set-seven"></div><div class="tool-set-eight"></div><div class="tool-set-nigh"></div><div class="tool-btn-down"></div><div class="tool-btn-up"></div>',
-
-  // toolApp: function () {
-  //   console.log('toolapp')
-  //   var shanBtn = document.querySelector('.shan-btn');
-
-  //   shanBtn.insertAdjacentHTML('afterbegin', '<article class="tool-boxcontrol"></article>');
-  //   var toolBc = document.querySelector('.tool-boxcontrol');
-  //   toolBc.innerHTML = this.toolBox;
-  //   var ToolBox = document.querySelector('.tool-box');
-  //   ToolBox.style.display = 'none';
-  //   var iconTools = document.querySelector('.icon-tools');
-  //   iconTools.onclick = function () {
-
-  //     $('.tool-box').slideToggle('slow', function () {
-  //       window.onresize = function () {
-  //         toolBox.clientHeight = shanBtn.clientHeight;
-  //         console.log('resized tool-box')
-  //       }
-
-  //     })
-
-  //   }
-
-
-
-
-
-  // },
+  
   bag:'<section class="upper-bag"><div class="items ipos0"></div><div class="items ipos1"></div><div class="items ipos2"></div><div class="items ipos3"></div><div class="items ipos4"></div><div class="items ipos5"></div><div class="items ipos6"></div><div class="items ipos7"></div><div class="items ipos8"></div><div class="items ipos9"></div></section><section class="lower-bag"></section><section class="inner-bag"></section><div class="item"><span class="close-bag"></span></div>',
 
   special:'<div class="special-btn"><span class="tips pos">手機</span></div><div class="special-one"><span class="tips pos1">背包</span></div><div class="special-two"></div><div class="special-three"></div><div class="special-four"></div><div class="special-five"></div>',
-  specialApp: function () {
+  specialAppBtn: function () {
     var footerBc = document.querySelector('.footer-boxcontrol');
     footerBc.insertAdjacentHTML('afterbegin', '<article class="special-boxcontrol"></article>');
     var spBc = document.querySelector('.special-boxcontrol');
     spBc.innerHTML = this.special;
     console.log('special app finished loading');
     var bag = document.querySelector('.special-one')
+    var phone = document.querySelector('.special-btn')
     var mainBc = document.querySelector('.main-boxcontrol')
 
     var article = document.createElement('article')
     article.className = 'bag-boxcontrol'
     article.innerHTML = this.bag 
     mainBc.appendChild(article)
+    var phoneClick = 0;
+    phone.onclick = ()=>{
+      console.log('phone')
+      phoneClick++
+      return (()=>{
+        if(phoneClick === 3)phoneClick =1
+        switch(phoneClick){
+          case 1:$('.shan-li-chat-app').css('bottom','10%')
+          phone.classList.add('phone-on')
+          break
+          case 2:$('.shan-li-chat-app').css('bottom','-460px')
+          phone.classList.remove('phone-on')
+          break
+        }
+      })()
+    }
     var click = 0
     bag.onclick = ()=>{
       console.log('bag clicked')
@@ -557,179 +545,26 @@ toggleMenu(){
 
 
 
-  shanMoodsApp: function () {
-    var shanLiBc = document.querySelector('.shan-li-boxcontrol');
-    shanLiBc.insertAdjacentHTML('afterbegin', '<div class="shan-moods"><span class="shan-moods-dot"></span></div><div class="shan-moods-status">雨珊現在的心情<p class="moods-change"></p></div>');
-    var moodsChange = document.querySelector('.moods-change');
-  },
-  shanStance: "<div class='shan-li-sensor'></div><div class='shan-li-hair1'></div><div class='shan-li-hair2'></div><div class='shan-li-hair3'></div><div class='shan-li-head'><div class='shan-li-eyebrow'></div><div class='shan-li-eyebrow2'></div><div class='shan-li-eye'><div class='shan-li-eyeball'></div></div><div class='shan-li-eye2'><div class='shan-li-eyeball2'></div></div><div class='shan-li-nose'></div><div class='shan-li-lips'></div><div class='shan-li-mouth'><div class='shan-li-teeth'></div></div><div class='shan-li-lips2'></div></div><div class='shan-li-neck'></div><div class='shan-li-body'><div class='shan-li-mimi'></div><div class='shan-li-mimi2'></div></div><div class='shan-li-arm'></div><div class='shan-li-arm2'></div><div class='shan-li-lowarm'><div class='shan-li-hand'></div></div><div class='shan-li-lowarm2'><div class='shan-li-hand2'></div></div><div class='shan-li-stomache'></div><div class='shan-li-peegu'></div><div class='shan-li-leg'></div><div class='shan-li-leg2'></div><div class='shan-li-lowleg'><div class='shan-li-feet'></div></div><div class='shan-li-lowleg2'><div class='shan-li-feet2'></div></div><div class='shan-li-book'><div class='shan-li-book-left'></div><div class='shan-li-book-right'></div><div class='shan-li-book-middle'></div></div>",
-  shanAppearApp: function () {
-    this.shanBtn.insertAdjacentHTML('afterbegin', '<article class="shan-li-boxcontrol"></article>');
-    var shanLiBc = document.querySelector('.shan-li-boxcontrol');
-    shanLiBc.innerHTML = this.shanStance;
-  },
-  googleMapsApp(){
-     const photoApp = document.querySelector('.photo-app')
-     photoApp.onclick = function(){
-      GoogleMapsLoader.load((google)=>{
-        new google.maps.Map(el,options)
-      })
-     }
-  }
+  
+  
+  
 }
-
-shanApp.action = {
-  count: 3000,
-  step: 0,
-  judoDrag: function () {
-    //judoDrag is a test function to test the collition detection purpose
-    var judoBc = document.querySelector('.judo-boxcontrol');
-    judoBc.onDrag = function (e) {
+function checking(selector,callback,time){
+  var self = this
+  self.selector = selector
+  self.callback = callback
+  self.time = 1 || time
+  self.start = function(){
+    self.id = setInterval(self.check,time)
+  }
+  self.check = function(){
+    if(document.documentElement.contains(document.querySelector(selector))){
+      callback()
+      console.log('find it',selector,'proceed',callback)
+      window.clearInterval(self.id)
 
     }
-  },
-  judoWalk: function () {
-
-  }
-}
-var reqId, dir;
-var elem1, elem2, pw, ph, px, py, tw, th, tx, ty;
-var jLeft = 950;
-// this function simply changes the direction the object will move
-
-function startAnimation(d) {
-  var shanBtn = document.querySelector('.shan-btn');
-  var sOffL = shanBtn.offsetLeft;
-  var sOffW = shanBtn.offsetWidth;
-  var el1OffL = elem1.offsetLeft;
-  dir = d;
-
-
-
-
-
-  if (jLeft <= sOffL && jLeft < sOffW) {
-    console.log('right dir', d)
-    dir = 'right';
-    setTimeout(() => {
-      elem1.style.left = (jLeft += 2) + 'px';
-    }, 1000);
-  }
-  if (jLeft >= sOffW && jLeft > sOffL) {
-    console.log('left dir', d)
-    dir = 'left';
-    setTimeout(() => {
-      elem1.style.left = (jLeft -= 2) + 'px';
-    }, 1000)
-  }
-  if (dir == 'right') {
-    console.log('go ahead')
-
-
-  } else if (dir == 'left') {
-    console.log('turn back')
-
-
-  }
-
-  reqId = window.requestAnimationFrame(startAnimation);
-
-}
-
-function stopAnimation() {
-  console.log('should stop now')
-  window.cancelAnimationFrame(reqId);
-}
-//the window load event fire this function 
-// this function is where you get everything ready in the program after document is fully loaded
-
-function docReady(player, player2, callback) {
-  // get object references for elements we are scripting against
-  elem1 = document.querySelector(player);
-  elem2 = document.querySelector(player2);
-  elem1.style.left = jLeft + 'px';
-
-  //start up the collition function
-  collition();
-
-
-
-
-  callback()
-}
-
-function collition() {
-
-  pw = elem1.offsetWidth;
-  ph = elem1.offsetHeight;
-  px = elem1.offsetLeft;
-  py = elem1.offsetTop;
-  tw = elem2.offsetWidth;
-  th = elem2.offsetHeight;
-  tx = elem2.offsetLeft;
-  ty = elem2.offsetTop;
-  if ((px + pw) > tx && px < (tx + tw) && (py + ph) > ty && py < (ty + th)) {
-    stopAnimation();
-    console.log('collition');
-
-  }
-  // this make the collision function repeat very quickly
-  window.requestAnimationFrame(collition)
-}
-
-var say = function (parent, out, words, openSec, fn) {
-  var pElem = document.querySelector(parent);
-  var talkBubble = document.querySelector(out);
-
-  pElem.style.display = 'block';
-  setTimeout(() => {
-    pElem.appendChild(talkBubble);
-    talkBubble.innerHTML = words;
-    console.log('finished say')
-  }, openSec);
-  setTimeout(function () {
-    pElem.style.display = 'none';
-    talkBubble.innerHTML = '';
-    console.log('finished callback')
-  }, 3000)
-
-
-}
-// say(function () {
-//   setTimeout(function () {
-//     pElem.style.display = 'none';
-//     talkBubble.innerHTML = '';
-//     console.log('finished callback')
-//   },  3000)
-
-// });  
-
-function judoOpenMouth() {
-  console.log('judoopenmouth')
-  var judoMouth = document.querySelector('.judo-mouth');
-  judoMouth.classList.add('judomouth');
-}
-
-function judoCloseMouth() {
-  var judoMouth = document.querySelector('.judo-mouth');
-  if (hasClass(judoMouth, 'judomouth')) {
-    judoMouth.classList.remove('judomouth');
-  } else {
-    console.log('not open mouth');
-  }
-}
-
-function hasClass(el, className) {
-  return ('' + el.className + '').indexOf('' + className + '') > -1;
-
-}
-
-
-// setting mutiple element attributes at once helper function
-function set(el, attrs) {
-  for (var key in attrs) {
-    el.setAttribute(key, attrs[key]);
-    console.log('setting up mutiple attributes inside', el.id, el.className);
+    // console.log('checking...',selector,callback)
   }
 }
 

@@ -23,17 +23,17 @@ window.onload = function () {
   shanApp.nameSvg()
 
 
-  shanApp.shanAppearApp()
+  
 
 
 
 
 
 
-  shanApp.shanMoodsApp()
+ 
 
   shanApp.temperApp()
-  shanApp.specialApp()
+  shanApp.specialAppBtn()
 
 
 
@@ -42,71 +42,20 @@ window.onload = function () {
 
   shanApp.shanChatApp()
 
-  toggleSwitch.toggleSwitch('specialBtn', '.special-btn', 'shanLiChatApp', '.shan-li-chat-app', 'phone-on', 'bottom:10%;', 'bottom:-460px;');
+  
   photos.infiniteLoop()
 
-  var linewrap = new checking('.big-wrap', shanApp.lineWrap)
-  linewrap.start()
-  console.log('excute shanapp',shanApp.excuter)
-  if(shanApp.excuter == true){
-    console.log('liwrap excuted')
-    
-   
-    shanApp.excuter = false
-  }
   
 
   
-
-
-
-
-
-
-
-
-  var togglemenu = new checking('.five-section', shanApp.toggleMenu)
-  togglemenu.start()
-  var linewrapmylovetoggle = new checking('.line-wrap', shanApp.lineWrapMyloveToggle)
-  linewrapmylovetoggle.start()
-  var lineprofile = new checking('.love-friend-click', shanApp.lineProfile)
-  lineprofile.start()
-
-
-  function checking(selector, callback,time) {
-    var self = this
-    self.selector = selector
-    self.callback = callback
-    self.time = 1 || time
-    self.start = function () {
-    
-      self.id = setInterval(self.check, time)
-    }
-    self.check = function () {
-      
-      if (document.documentElement.contains(document.querySelector(selector))) {
-
-        callback()
-        console.log('checked yed find it', selector, 'proceed callback', callback)
-        window.clearInterval(self.id)
-      }
-
-    }
-
-
-  }
-  var pb = new checking('.profile-box', shanApp.profileToggle)
-  pb.start()
-  var back = new checking('.profile-box', shanApp.mobileBack)
-  back.start()
+  
 
   // babylonApp.startGame()
 
 
-  shanApp.googleMapsApp()
 
 }
-document.addEventListener('DOMContentLoaded', app.startGame)
+document.addEventListener('DOMContentLoaded', app.startGame())
 
 // document.querySelector('.special-three').onclick = function(){
 //     console.log('special3')

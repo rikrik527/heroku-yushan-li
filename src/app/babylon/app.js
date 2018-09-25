@@ -10,8 +10,12 @@ var canvas;
 var engine;
 var scene;
 var cartoonHouse = require('../../models/cartoonhouse.babylon')
+module.exports.Game = ()=>{
+
+}
+
 module.exports.startGame = function(){
-    canvas = document.getElementById("renderCanvas");
+    canvas = document.querySelector("#renderCanvas");
     engine = new BABYLON.Engine(canvas,true);
     
     
