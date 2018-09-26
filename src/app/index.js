@@ -52,10 +52,10 @@ window.onload = function () {
 
   // babylonApp.startGame()
 
-
+ 
 
 }
-document.addEventListener('DOMContentLoaded', app.startGame())
+document.addEventListener('DOMContentLoaded', app.Game())
 
 // document.querySelector('.special-three').onclick = function(){
 //     console.log('special3')

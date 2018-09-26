@@ -11,7 +11,95 @@ var engine;
 var scene;
 var cartoonHouse = require('../../models/cartoonhouse.babylon')
 module.exports.Game = ()=>{
+canvas = document.querySelector('#renderCanvas')
+engine = new BABYLON.Engine(canvas,true)
+scene = createScene2()
+modifySetting()
 
+var toRender = ()=>{
+    scene.render()
+}
+engine.runRenderLoop(toRender)
+}
+var createScene2 =()=>{
+    var scene = new BABYLON.Scene(engine)
+    var ground = CreateGround(scene)
+
+    var camera = createFreeCamera(scene)
+
+    var light0 = new BABYLON.DirectionalLight('dir0',new BABYLON.Vector3(10,-4,0),scene)
+
+    return scene
+}
+
+// document.querySelector('.special-btn').onmousedown =function(){
+//     var i = 0;
+//     return (()=>{
+//         light0.position(new BABYLON.Vector3(i,i,i))
+//         i++
+//     })()
+// }
+function createBall(scene){
+   
+}
+function createFreeCamera(scene){
+    var camera = new BABYLON.FreeCamera('freecamera',new BABYLON.Vector3(0,0,0),scene)
+    camera.attachControl(canvas)
+    camera.position.y = 2000
+    camera.position.z = -500
+    camera.rotation.x = 1.3
+    camera.checkCollisions = true
+    camera.applyGravity = true
+    camera.keysUp.push('w'.charCodeAt(0))
+    camera.keysUp.push('W'.charCodeAt(0))
+    camera.keysDown.push('s'.charCodeAt(0))
+    camera.keysDown.push('S'.charCodeAt(0))
+    camera.keysLeft.push('a'.charCodeAt(0))
+    camera.keysLeft.push('A'.charCodeAt(0))
+    camera.keysRight.push('d'.charCodeAt(0))
+    camera.keysRight.push('D'.charCodeAt(0)) 
+    return camera
+}
+function modifySetting(){
+    scene.onPointerDown = ()=>{
+        if(!scene.alreadyLocked){
+            console.log('requesting ponter lock..')
+            canvas.requestPointerLock = canvas.requestPointerLock || canvas.msRequestPointerLock || canvas.mozRequestPointerLock ||
+            canvas.webkitRequestPointerLock;
+            canvas.requestPointerLock()    
+        }else{
+            console.log('not requesting..we are already locked')
+        }
+        
+    }
+    document.addEventListener('pointerlockchange',pointerLockListener)
+    document.addEventListener('mspointerlockchange',pointerLockListener)
+    document.addEventListener('mozpointerlockchange',pointerLockListener)
+    document.addEventListener('webkitpointerlockchange',pointerLockListener)
+
+
+    function pointerLockListener(){
+        var element = document.pointerLockElement ||document.webkitPointerLockElement ||document.mozPointerLockElement ||document.msPointerLockElement || null
+        
+        if(element){
+            scene.alreadyLocked = true
+        }else{
+            scene.alreadyLocked = false
+        }
+    }
+}
+
+function CreateGround(scene){
+      var ground = new BABYLON.Mesh.CreateGroundFromHeightMap('ground',require('../../images/hmap2.jpg'),2000,2000,20,0,100,scene,false,OnGroundCreated)
+
+    function OnGroundCreated(){
+        var groundMaterial = new BABYLON.StandardMaterial('groundMaterial',scene)
+        groundMaterial.diffuseTexture = new BABYLON.Texture(require('../../images/grass.jpg'),scene)
+        ground.material = groundMaterial
+        ground.checkCollisions = true
+    } 
+    return ground
+    
 }
 
 module.exports.startGame = function(){
