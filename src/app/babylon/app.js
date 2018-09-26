@@ -15,39 +15,62 @@ canvas = document.querySelector('#renderCanvas')
 engine = new BABYLON.Engine(canvas,true)
 scene = createScene2()
 modifySetting()
-
+var tank = scene.getMeshByName('hero')
 var toRender = ()=>{
+    tank.moveWithCollisions(new BABYLON.Vector3(0,0,3))
     scene.render()
 }
 engine.runRenderLoop(toRender)
 }
+
+
 var createScene2 =()=>{
     var scene = new BABYLON.Scene(engine)
     var ground = CreateGround(scene)
-
-    var camera = createFreeCamera(scene)
-
-    var light0 = new BABYLON.DirectionalLight('dir0',new BABYLON.Vector3(10,-4,0),scene)
+    var tank = CreateTank(scene)
+    var freeCamera = createFreeCamera(scene)
+    var followCamera = createFollowCamera(scene,tank)
+    scene.activeCamera = followCamera;
+      createLight(scene)
+   
 
     return scene
 }
 
-// document.querySelector('.special-btn').onmousedown =function(){
-//     var i = 0;
-//     return (()=>{
-//         light0.position(new BABYLON.Vector3(i,i,i))
-//         i++
-//     })()
-// }
-function createBall(scene){
-   
+function createFollowCamera(scene,target){
+    var camera = new BABYLON.FollowCamera('followCamera',target.position,scene,target)
+    camera.radius = 10 // how far from the object to follow
+    camera.heightOffset = 4  //how high above the object to place the camera
+    camera.rotationOffset = 180 //the view of angle
+    camera.cameraAcceleration = 0.5 //how fast to move
+    camera.maxCameraSpeed = 50 //limit speed
+    return camera
+}
+function createLight(scene){
+    var light0 = new BABYLON.DirectionalLight('dir0',new BABYLON.Vector3(-.1,-1,0),scene)
+    var light1 = new BABYLON.DirectionalLight('dir1',new BABYLON.Vector3(-1,-1,0),scene)
+}
+function CreateTank(scene){
+    var tank = new BABYLON.MeshBuilder.CreateBox('hero',{
+        height:3,
+        depth:6,
+        width:5
+    },scene)
+    var tankMaterial = new BABYLON.StandardMaterial('heroMaterial',scene)
+    tankMaterial.diffuseColor = new BABYLON.Color3.Red
+    tankMaterial.emissiveColor = new BABYLON.Color3.Blue
+    tank.material = tankMaterial
+    
+    tank.position.y += 1.6
+    console.log('tank')
+    return tank
 }
 function createFreeCamera(scene){
     var camera = new BABYLON.FreeCamera('freecamera',new BABYLON.Vector3(0,0,0),scene)
     camera.attachControl(canvas)
-    camera.position.y = 2000
+    camera.position.y = 200
     camera.position.z = -500
-    camera.rotation.x = 1.3
+    camera.rotation.x = 0
     camera.checkCollisions = true
     camera.applyGravity = true
     camera.keysUp.push('w'.charCodeAt(0))
@@ -90,7 +113,7 @@ function modifySetting(){
 }
 
 function CreateGround(scene){
-      var ground = new BABYLON.Mesh.CreateGroundFromHeightMap('ground',require('../../images/hmap2.jpg'),2000,2000,20,0,100,scene,false,OnGroundCreated)
+      var ground = new BABYLON.Mesh.CreateGroundFromHeightMap('ground',require('../../images/hmap1.png'),2000,2000,20,0,100,scene,false,OnGroundCreated)
 
     function OnGroundCreated(){
         var groundMaterial = new BABYLON.StandardMaterial('groundMaterial',scene)

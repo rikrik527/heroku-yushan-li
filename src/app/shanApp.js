@@ -54,10 +54,24 @@ shanApp = {
       ArticleBc2.appendChild(lineArticle)
       self.arrPush(ArticleBc2)
       self.arrPush(lineArticle)
+
+var togglemenu = new checking('.five-section',shanApp.toggleMenu)
+    togglemenu.start()
+    var linewrap = new checking('.line-wrap',shanApp.lineWrap)
+    linewrap.start()
+    var lineprofile = new checking('.love-friend-click',shanApp.lineProfile)
+    lineprofile.start()
+    var linewrapmylovetoggle = new checking('.line-wrap',shanApp.lineWrapMyloveToggle)
+    linewrapmylovetoggle.start()
+    var profiletoggle = new checking('.profile-box',shanApp.profileToggle)
+    profiletoggle.start()
+    var mobileback = new checking('.profile-box',shanApp.mobileBack)
+    mobileback.start()
+
       console.log('line-app clicked',self.arr)
-      if(self.arr.length >= 2){
+      if(self.arr.length >= 3){
         console.log('self arrpush >= 2',self.arr)
-        self.arrPush()
+        
       }
     })
     
@@ -112,18 +126,7 @@ shanApp = {
 
     }
     setInterval(timeStart,1000);
-    var togglemenu = new checking('.five-section',shanApp.toggleMenu)
-    togglemenu.start()
-    var linewrap = new checking('.big-wrap',shanApp.lineWrap)
-    linewrap.start()
-    var lineprofile = new checking('.love-friend-click',shanApp.lineProfile)
-    lineprofile.start()
-    var linewrapmylovetoggle = new checking('.line-wrap',shanApp.lineWrapMyloveToggle)
-    linewrapmylovetoggle.start()
-    var profiletoggle = new checking('.profile-box',shanApp.profileToggle)
-    profiletoggle.start()
-    var mobileback = new checking('.profile-box',shanApp.mobileBack)
-    mobileback.start()
+    
 },
 toggleMenu(){
   // const sec = [
@@ -351,16 +354,22 @@ toggleMenu(){
     profileArticle.className = 'profile-box'
      
      const profile = '<section class="profile-background"><div class="profile-star">&#9733;</div><div class="profile-op"></div><div class="img-circle-big"><img class="profile-img"></div><div class="profile-name"></div><div class="profile-info"></div><span class="profile-toggle">ᐁ</span><div class="profile-lower"><div class="profile-chat"><span class="chat-img"></span><span class="chat-text">聊天</span></div><div class="profile-phone"><span class="phone-img"></span><span class="phone-text">免費通話</span></div><div class="profile-video"><span class="video-img"></span><span class="video-text">視訊通話</span></div></div><div class="profile-lower-bottom"><div class="profile-post">投稿</div><div class="profile-photo-movie">照片.影片</div></div></section>'
-     
+     const line = document.querySelector('.line')
      const screenBc2 = document.querySelector('.screen-boxcontrol2')
      const loveFriendClick = document.querySelector('.love-friend-click')
      var self = this
      loveFriendClick.onclick = function(){
+      for(var i = 0;i< shanApp.arr.length;i++){
+        if(shanApp.arr[i] === undefined){
+          shanApp.arr.splice(i,1)
+          console.log('undefine',shanApp.arr)
+        }
+      }
       
       shanApp.arrPush(profileArticle)
       
       
-       screenBc2.appendChild(profileArticle)
+       line.appendChild(profileArticle)
        profileArticle.innerHTML = profile
        console.log('lovefriendclick onclick arr',shanApp.arr)
        var profileName = document.querySelector('.profile-name')
@@ -419,25 +428,28 @@ toggleMenu(){
     var back = document.querySelector('.back')
     var screenBc2 = document.querySelector('.screen-boxcontrol2')
     var screenBc = document.querySelector('.screen-boxcontrol')
+    var line = document.querySelector('.line')
     back.onclick = function(){
       
      
      console.log(shanApp.arr)
       
-      if(shanApp.arr.length !== 0 && document.documentElement.contains(screenBc2)){
-        console.log('congraduation',shanApp.arr)
+      if(shanApp.arr.length === 3 && document.documentElement.contains(line)){
+        console.log('remove profile box',shanApp.arr)
         
-        screenBc2.removeChild(shanApp.arrPop())
+        line.removeChild(shanApp.arrPop())
       }
-      else if(shanApp.arr.length !== 0 && document.documentElement.contains(screenBc2) !== true){
-         console.log('nothing yet')
+      else if(shanApp.arr.length === 2 && document.documentElement.contains(screenBc2)){
+         screenBc2.removeChild(shanApp.arrPop())
+         console.log(shanApp.arr)
+         if(shanApp.arr.length === 1 &&document.documentElement.contains(screenBc) && screenBc.hasChildNodes('screen-boxcontrol2')){
+          screenBc.removeChild(shanApp.arrPop())
+          console.log('removed',shanApp.arr)
+        }
       }
       
       else{
-        if(screenBc.hasChildNodes('screen-boxcontrol2')){
-          screenBc.removeChild(screenBc2)
-          console.log('removed')
-        }
+        
         console.log('nothing to do')
       }
     }
@@ -564,7 +576,7 @@ function checking(selector,callback,time){
       window.clearInterval(self.id)
 
     }
-    // console.log('checking...',selector,callback)
+    console.log('checking...',selector,callback)
   }
 }
 
