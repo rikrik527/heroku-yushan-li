@@ -388,7 +388,7 @@ toggleMenu(){
     var profileToggle = document.querySelector('.profile-toggle')
      var click = 0;
      profileToggle.onclick = ()=>{
-       console.log('clicked protogglert')
+       console.log('clicked protogglert',click)
          return (()=>{
            click++
            if(click === 3)click = 1
@@ -415,7 +415,12 @@ toggleMenu(){
              $('.profile-name').css('top','50%')
              $('.profile-info').css('top','57%')
              $('.profile-toggle').text('ᐁ')
-             $('.profile-info2').css('display','none')
+             document.querySelector('.profile-info2').parentElement.lastChild.remove()
+             if(document.documentElement.contains(document.querySelector('profile-info2'))){
+               console.log('shit its still here')
+             }else{
+               console.log('removed profile-info2')
+             }
              break
            }
          })()

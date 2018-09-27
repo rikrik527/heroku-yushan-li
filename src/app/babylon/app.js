@@ -3,12 +3,18 @@
 import * as BABYLON from 'babylonjs'
 import 'babylonjs-materials'
 import 'babylonjs-loaders'
+import 'babylonjs-inspector'
 
-import duder from '../../models/Dude/dude.babylon'
+
+
 
 var canvas;
 var engine;
 var scene;
+var isWPressed = false
+var isSPressed = false
+var isAPressed = false
+var isDPressed = false
 var cartoonHouse = require('../../models/cartoonhouse.babylon')
 module.exports.Game = ()=>{
 canvas = document.querySelector('#renderCanvas')
@@ -17,7 +23,7 @@ scene = createScene2()
 modifySetting()
 var tank = scene.getMeshByName('hero')
 var toRender = ()=>{
-    tank.moveWithCollisions(new BABYLON.Vector3(0,0,3))
+     tank.move()
     scene.render()
 }
 engine.runRenderLoop(toRender)
@@ -26,20 +32,27 @@ engine.runRenderLoop(toRender)
 
 var createScene2 =()=>{
     var scene = new BABYLON.Scene(engine)
+    // scene.debugLayer.show()
     var ground = CreateGround(scene)
     var tank = CreateTank(scene)
     var freeCamera = createFreeCamera(scene)
     var followCamera = createFollowCamera(scene,tank)
     scene.activeCamera = followCamera;
       createLight(scene)
-   
+    //   BABYLON.SceneLoader.ImportMesh("him",'Dude/','dude.babylon', scene, function (newMeshes, particleSystems, skeletons) {
+
+    //     newMeshes[0].position = new BABYLON.Vector3(0, 0, 5);  // The original dude
+    //     scene.beginAnimation(skeletons[0], 0, 120, 1.0, true);
+    
+        
+    // })
 
     return scene
 }
 
 function createFollowCamera(scene,target){
     var camera = new BABYLON.FollowCamera('followCamera',target.position,scene,target)
-    camera.radius = 10 // how far from the object to follow
+    camera.radius = 30 // how far from the object to follow
     camera.heightOffset = 4  //how high above the object to place the camera
     camera.rotationOffset = 180 //the view of angle
     camera.cameraAcceleration = 0.5 //how fast to move
@@ -58,10 +71,37 @@ function CreateTank(scene){
     },scene)
     var tankMaterial = new BABYLON.StandardMaterial('heroMaterial',scene)
     tankMaterial.diffuseColor = new BABYLON.Color3.Red
+    var pic = require('../../images/yushan01.jpg')
+    tankMaterial.diffuseTexture = new BABYLON.Texture(pic,scene)
     tankMaterial.emissiveColor = new BABYLON.Color3.Blue
     tank.material = tankMaterial
     
-    tank.position.y += 1.6
+    tank.position.y += 2
+    tank.speed = 1
+    tank.frontVector = new BABYLON.Vector3(0,0,1)
+    tank.move = ()=>{
+        var yMovement = 0
+    if(tank.position.y > 2){
+        
+        yMovement = -2
+        
+        
+    }
+    if(isWPressed){
+      tank.moveWithCollisions(tank.frontVector.multiplyByFloats(tank.speed,tank.speed,tank.speed))
+    }
+    if(isSPressed){
+        tank.moveWithCollisions(tank.frontVector.multiplyByFloats(-1*tank.speed,-1*tank.speed,-1*tank.speed))
+    }
+    if(isAPressed){
+        tank.rotation.y -= .1
+        tank.frontVector = new BABYLON.Vector3(Math.sin(tank.rotation.y),0,Math.cos(tank.rotation.y))
+    }
+    if(isDPressed){
+        tank.rotation.y += .1
+        tank.frontVector = new BABYLON.Vector3(Math.sin(tank.rotation.y),0,Math.cos(tank.rotation.y))
+    }
+    }
     console.log('tank')
     return tank
 }
@@ -111,15 +151,46 @@ function modifySetting(){
         }
     }
 }
-
+document.addEventListener('keydown',function(event){
+    if(event.key == 'w' || event.key == 'W'){
+         isWPressed = true
+    }
+    if(event.key == 's' || event.key == 'S'){
+        isSPressed = true
+    }
+    if(event.key == 'a' || event.key == 'A'){
+        isAPressed = true
+    }
+    if(event.key == 'd' || event.key == 'D'){
+        isDPressed = true
+    }
+})
+document.addEventListener('keyup',function(event){
+    if(event.key == 'w' || event.key == 'W'){
+        isWPressed = false
+    }
+    if(event.key == 's' || event.key == 'S'){
+        isSPressed = false
+    }
+    if(event.key == 'a' || event.key == 'A'){
+        isAPressed = false
+    }
+    if(event.key == 'd' || event.key == 'D'){
+        isDPressed = false
+    }
+})
 function CreateGround(scene){
       var ground = new BABYLON.Mesh.CreateGroundFromHeightMap('ground',require('../../images/hmap1.png'),2000,2000,20,0,100,scene,false,OnGroundCreated)
 
     function OnGroundCreated(){
         var groundMaterial = new BABYLON.StandardMaterial('groundMaterial',scene)
-        groundMaterial.diffuseTexture = new BABYLON.Texture(require('../../images/grass.jpg'),scene)
+        groundMaterial.diffuseTexture = new BABYLON.Texture(require('../../images/yushan03.jpg'),scene)
+        ground.rotation.y = 1
         ground.material = groundMaterial
         ground.checkCollisions = true
+        ground.registerBeforeRender(function(){
+            groundMaterial.diffuseTexture.uOffset += .0001
+        })
     } 
     return ground
     
