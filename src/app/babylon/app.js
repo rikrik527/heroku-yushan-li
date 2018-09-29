@@ -4,7 +4,7 @@ import * as BABYLON from 'babylonjs'
 import 'babylonjs-materials'
 import 'babylonjs-loaders'
 import 'babylonjs-inspector'
-
+var babylonFileLoader = require('babylon-file-loader')
 
 
 
@@ -15,7 +15,7 @@ var isWPressed = false
 var isSPressed = false
 var isAPressed = false
 var isDPressed = false
-var cartoonHouse = require('../../models/cartoonhouse.babylon')
+
 module.exports.Game = ()=>{
 canvas = document.querySelector('#renderCanvas')
 engine = new BABYLON.Engine(canvas,true)
@@ -39,7 +39,9 @@ var createScene2 =()=>{
     var followCamera = createFollowCamera(scene,tank)
     scene.activeCamera = followCamera;
       createLight(scene)
-    //   BABYLON.SceneLoader.ImportMesh("him",'Dude/','dude.babylon', scene, function (newMeshes, particleSystems, skeletons) {
+      var f = require('./Dude/dude.babylon')
+    
+    //   BABYLON.SceneLoader.ImportMesh("him",f,scene, function (newMeshes, particleSystems, skeletons) {
 
     //     newMeshes[0].position = new BABYLON.Vector3(0, 0, 5);  // The original dude
     //     scene.beginAnimation(skeletons[0], 0, 120, 1.0, true);

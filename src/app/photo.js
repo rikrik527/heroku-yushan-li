@@ -58,6 +58,33 @@ photos.infiniteLoop = function(){
     
     
 }
+photos.greeting = ()=>{
+    var greeting0 = ['好美啊....','真...真可愛...','想親一個....','雨珊....','今天也要把雨珊搞得很開心~']
+    var getSingle = function(fn){
+        var result
+        return function(){
+            return result||(result = fn.apply(this,arguments))
+        }
+    }
+    var createDiv = (function(){
+        var div =document.createElement('div')
+        var greeting0Length = greeting0.length
+        div.innerHTML = math.getRandomNumber(1,greeting0Length)
+        div.className = 'user-greeting'
+
+        return function(){
+         if(!div){
+             console.log('not div')
+             div = document.createElement('div')
+             div.innerHTML = math.getRandomNumber(1,greeting0Length)
+
+         }
+        }
+    })
+    var div
+   
+
+}
 photos.snow = function(){
     console.log('snow start')
     var canvas = document.querySelector('.snow-canvas')

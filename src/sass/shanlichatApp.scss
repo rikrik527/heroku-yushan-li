@@ -510,6 +510,19 @@ cursor: pointer;
     
     margin: 0 auto;
 }
+.img-circle-small{
+    grid-column-start: 3;
+   
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    /* left: 0; */
+    /* top: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    /* position: absolute; */
+    margin: 10px;
+}
 .mylove-box{
     transition: all .5s linear;
     width: 272px;
@@ -624,7 +637,13 @@ cursor: pointer;
         left: 0px;
         width: 274px;
         top: 0px;
-    .profile-star{
+        transition:all 1s ease-out;
+        -webkit-transition:all 1s ease-out;
+        -moz-transition:all 1s ease-out;
+        -ms-transition:all 1s ease-out;
+        -o-transition:all 1s ease-out;
+        
+        .profile-star{
         position: absolute;
         right: 10%;
         top: 4%;
@@ -757,7 +776,128 @@ background-position: 0px 0px;
         cursor: pointer;
     }
 }
-
+.profile-box2{
+    position: absolute;
+    height: 370px;
+    /* left: -274px; */
+    width: 274px;
+    top: 0px;
+    overflow: hidden;
+    z-index: 2;
+    background: white;
+  .profile-background2{
+    position: absolute;
+    height: 370px;
+    /* left: -274px; */
+    width: 274px;
+    top: 370px;
+    overflow: hidden;
+    z-index: 2;
+    .profile-small-box{
+        position: absolute;
+    width: 273px;
+    height: 74px;
+    border-bottom: 1px solid grey;
+    display: grid;
+    grid-template-columns: 20px 1fr 50px 1fr 10px 10px;
+    grid-template-rows: 40px auto;
+    .profile-post-thing{
+        font-size: 13px;
+    color: gray;
+    grid-column-start: 2;
+    text-align: center;
+    grid-row-start: 2;
+    padding-top: 10px;
+    cursor: pointer;
+    }
+    .profile-photo-movie2{
+        font-size: 13px;
+    color: gray;
+    grid-column-start: 4;
+    text-align: center;
+    grid-row-start: 2;
+    padding-top: 10px;
+    cursor: pointer;
+    }
+    .profile-chat-small,.profile-op2{
+        background: url('../images/icon-new.svg')no-repeat;
+    background-size: 15000%;
+    }
+    .profile-chat-small{
+        font-size: 13px;
+        color: gray;
+        /* grid-column-start: 5; */
+        text-align: center;
+        /* grid-row-start: 2; */
+        width: 30px;
+        
+        padding-top: 10px;
+        background-position: -185px -1021px;
+        height: 30px;
+        outline: 1px solid;
+        right: 30px;
+        position: absolute;
+        cursor: pointer
+    }
+    .profile-op2{
+        position: absolute;
+        width: 20px;
+        height: 30px;
+        margin-top: 0px;
+        right: 0px;
+        outline: 1px solid;
+        background-position: 0px 0px;
+        cursor: pointer
+    }
+    }
+    .profile-post-box{
+        position: absolute;
+   
+    width: 274px;
+    height: 294px;
+    top: 74px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 20px 1fr;
+        
+        .profile-post-background{
+            background-position: 0px 0px;
+        }
+        
+    }
+    .profile-photo-movie-box{
+        position: absolute;
+    
+    width: 274px;
+    height: 294px;
+    top: 74px;
+    left: 274px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 20px 1fr;
+    transition: all 1s ease-out;
+    .profile-photo-movie-background{
+        background-position: 0px 0px
+    }
+    }
+  }
+}
+.profile-post-background,.profile-photo-movie-background{
+    grid-row-start: 2;
+    background: url('../images/icon-new.svg')no-repeat;
+    background-size: 5000%;
+   
+    grid-column-start: 2;
+}
+.profile-post-nopost,.profile-photo-movie-nopost{
+    grid-column-start: 2;
+grid-row-start: 3;
+font-size: 10px;
+text-align: center;
+color: grey;
+outline: 1px solid;
+padding-top: 4px;
+}
 .bottom-bar-boxcontrol{
     grid-column-start: 2;
     grid-column-end: 12;

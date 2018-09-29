@@ -71,6 +71,23 @@
 .none{
     display:none;
 }
+// move up and move down profilebg
+.move-up{
+    top: -368px!important;
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+}
+.move-down{
+    top: 368px!important;
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+}
   //bag animation
   .lower-bag-open-animation{
       animation: open 1s linear forwards;
