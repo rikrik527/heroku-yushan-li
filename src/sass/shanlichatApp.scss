@@ -512,7 +512,7 @@ cursor: pointer;
 }
 .img-circle-small{
     grid-column-start: 3;
-   
+   overflow: hidden;
     border-radius: 100px;
     width: 30px;
     height: 30px;
@@ -566,7 +566,7 @@ cursor: pointer;
         /* outline: 1px solid; */
         padding: 8px;
         cursor: pointer;
-        z-index: 99;
+        
     }
     .mylove-click{
         width: 274px;
@@ -627,7 +627,7 @@ cursor: pointer;
     width: 274px;
     top: 0px;
     overflow: hidden;
-    z-index: 2;
+    z-index: 10;
     .profile-background{
         background: url('../images/yushan-line.png')no-repeat;
         background-size: cover;
@@ -637,6 +637,7 @@ cursor: pointer;
         left: 0px;
         width: 274px;
         top: 0px;
+        z-index: 3;
         transition:all 1s ease-out;
         -webkit-transition:all 1s ease-out;
         -moz-transition:all 1s ease-out;
@@ -788,11 +789,16 @@ background-position: 0px 0px;
   .profile-background2{
     position: absolute;
     height: 370px;
-    /* left: -274px; */
-    width: 274px;
+    /*left: -274px;
+    */width: 274px;
     top: 370px;
     overflow: hidden;
     z-index: 2;
+    transition:all 1s ease-out;
+    -webkit-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
     .profile-small-box{
         position: absolute;
     width: 273px;
@@ -832,9 +838,9 @@ background-position: 0px 0px;
         width: 30px;
         
         padding-top: 10px;
-        background-position: -185px -1021px;
+        background-position: -123px -984px;
         height: 30px;
-        outline: 1px solid;
+        
         right: 30px;
         position: absolute;
         cursor: pointer
@@ -845,8 +851,8 @@ background-position: 0px 0px;
         height: 30px;
         margin-top: 0px;
         right: 0px;
-        outline: 1px solid;
-        background-position: 0px 0px;
+       
+        background-position: -125px -676px;
         cursor: pointer
     }
     }

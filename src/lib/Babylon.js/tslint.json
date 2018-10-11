@@ -1,0 +1,6 @@
+{
+    "rules": {
+        "no-this-assignment": true,
+        "completed-docs": true
+    }
+}

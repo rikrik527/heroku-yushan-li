@@ -4,7 +4,7 @@ import * as BABYLON from 'babylonjs'
 import 'babylonjs-materials'
 import 'babylonjs-loaders'
 import 'babylonjs-inspector'
-var babylonFileLoader = require('babylon-file-loader')
+
 
 
 

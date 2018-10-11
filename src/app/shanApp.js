@@ -1,5 +1,6 @@
 var $ = require('jquery')
 var GoogleMapsLoader = require('google-maps')
+var yushanLiImg = require('../images/yushan-img.jpg')
 var shanApp = shanApp || {};
 
 shanApp = {
@@ -56,10 +57,16 @@ shanApp = {
 
       var togglemenu = new checking('.five-section', shanApp.toggleMenu)
       togglemenu.start()
+      
       var linewrap = new checking('.line-wrap', shanApp.lineWrap)
       linewrap.start()
-      var lineprofile = new checking('.love-friend-click', shanApp.lineProfile)
+      
+      var lineprofilebox = new checking('.line',shanApp.lineProfileBox)
+      lineprofilebox.start()
+
+      var lineprofile = new checking('.profile-box', shanApp.lineProfile)
       lineprofile.start()
+      
       var linewrapmylovetoggle = new checking('.line-wrap', shanApp.lineWrapMyloveToggle)
       linewrapmylovetoggle.start()
       var profiletoggle = new checking('.profile-box', shanApp.profileToggle)
@@ -366,19 +373,20 @@ shanApp = {
             myLoveBox.style.height = '60px'
             loveFriendBox.style.height = '41px'
             console.log(click)
+            break
+            default : toggleArrow.innerHTML = ''
         }
       })()
 
     }
   },
-  lineProfile() {
-
+  lineProfileBox() {
+    
     const profileArticle = document.createElement('article')
     profileArticle.className = 'profile-box'
 
-    const profile = '<section class="profile-background"><div class="profile-star">&#9733;</div><div class="profile-op"></div><div class="img-circle-big"><img class="profile-img"></div><div class="profile-name"></div><div class="profile-info"></div><span class="profile-toggle">ᐁ</span><div class="profile-lower"><div class="profile-chat"><span class="chat-img"></span><span class="chat-text">聊天</span></div><div class="profile-phone"><span class="phone-img"></span><span class="phone-text">免費通話</span></div><div class="profile-video"><span class="video-img"></span><span class="video-text">視訊通話</span></div></div><div class="profile-lower-bottom"><div class="profile-post">投稿</div><div class="profile-photo-movie">照片.影片</div></div></section>'
-    var isMouseDown = false
-    var isTouchDown = false
+    const profile = '<section class="profile-background"><div class="profile-star">&#9733;</div><div class="profile-op"></div><div class="img-circle-big"><img class="profile-img"></div><div class="profile-name"></div><div class="profile-info"></div><span class="profile-toggle">ᐁ</span><div class="profile-lower"><div class="profile-chat"><span class="chat-img"></span><span class="chat-text">聊天</span></div><div class="profile-phone"><span class="phone-img"></span><span class="phone-text">免費通話</span></div><div class="profile-video"><span class="video-img"></span><span class="video-text">視訊通話</span></div></div><div class="profile-lower-bottom"><div class="profile-post">投稿</div><div class="profile-photo-movie">照片.影片</div></div></section><article class="profile-box2"><div class="profile-background2"><div class="profile-small-box"><div class="profile-post-thing">投稿</div><div class="img-circle-small"><img class="profile-img"></div><div class="profile-photo-movie2">照片.影片</div><div class="profile-chat-small"></div><div class="profile-op2"></div></div><section class="profile-post-box"><div class="profile-post-background"></div><span class="profile-post-nopost">沒有任何投稿</section><section class="profile-photo-movie-box"><div class="profile-photo-movie-background"></div><span class="profile-photo-movie-nopost">沒有照片或影片</section></div></article>'
+    
     var loveClick = false
     const line = document.querySelector('.line')
     const screenBc2 = document.querySelector('.screen-boxcontrol2')
@@ -387,12 +395,7 @@ shanApp = {
     loveFriendClick.onclick = function () {
       loveClick = true
       console.log(loveClick)
-      for (var i = 0; i < shanApp.arr.length; i++) {
-        if (shanApp.arr[i] === undefined) {
-          shanApp.arr.splice(i, 1)
-          console.log('undefine', shanApp.arr)
-        }
-      }
+      
 
       shanApp.arrPush(profileArticle)
 
@@ -401,118 +404,152 @@ shanApp = {
       profileArticle.innerHTML = profile
       console.log('lovefriendclick onclick arr', shanApp.arr)
       var profileName = document.querySelector('.profile-name')
-      var profileImg = document.querySelector('.profile-img')
-      profileImg.src = require('../images/yushan-img.jpg')
+      var profileImg = document.querySelectorAll('.profile-img')
+      for(var i  = 0; i < profileImg.length;i++){
+        profileImg[i].src = yushanLiImg
+      }
+      
       profileName.innerHTML = 'Yushan Li'
       var profileInfo = document.querySelector('.profile-info')
       profileInfo.innerHTML = '做事要謹慎小心。不要圖一時之利'
-    
-    if (loveClick == true) {
-      console.log('loveclick true')
+    }
+   
+  },
+    lineProfile(){
+      var isMouseDown = false
+    var isMouseMove = false
+    var isTouchDown = false
+   
+     
       var profileBox = document.querySelector('.profile-box')
-      var profileBg = profileBox.querySelector('.profile-background')
-      profileBg.onmousemove = (e) => {
-        console.log('mousemove')
-        if (isMouseDown == true && e.movementY < 1) {
-          console.log('ismousedown',isMouseDown)
-          var profileArticle2 = document.createElement('aritcle')
-          profileArticle2.className = 'profile-box2'
-          const profile2 = '<div class="profile-background2"><div class="profile-small-box"><div class="profile-post-thing">投稿</div><div class="img-circle-small"><img class="profile-img"></div><div class="profile-photo-movie2">照片.影片</div><div class="profile-chat-small"></div><div class="profile-op2"></div></div><section class="profile-post-box"><div class="profile-post-background"></div><span class="profile-post-nopost">沒有任何投稿</section><section class="profile-photo-movie-box"><div class="profile-photo-movie-background"></div><span class="profile-photo-movie-nopost">沒有照片或影片</section></div>'
-          $('.profile-background2').removeClass('move-down')
-          $('.profile-background').addClass('move-up')
+     
 
-          
-          if ($('.profile-background').hasClass('move-up')) {
-            profileBox.appendChild(profileArticle2)
-          profileArticle2.innerHTML = profile2
-          var profileImg = document.querySelector('.profile-img')
-      profileImg.src = require('../images/yushan-img.jpg')
-            shanApp.arrPush(profileArticle2)
-            console.log(shanApp.arr)
-          }
-
-
+      profileBox.onmousemove = (e) => {
+        isMouseMove = true
+        if(!isMouseDown){
+          isMouseMove = false
+          console.log('not mousedown')
+          return false
         }
-      }
+        if (e.movementY < 1 && isMouseDown == true) {
+          console.log('ismousedown swipe up to scroll down')
+         
+         $('.profile-background').css('top','-370px')
+         $('.profile-background2').css('top','0px')
+        }
+          
+          if (e.movementY >1 && isMouseDown == true ) {
+            console.log('swipe down to scroll up')
+            $('.profile-background').css('top','0px')
+            $('.profile-background2').css('top','370px')
+               
+        }
       
-        
-
       
-      profileBg.onmousedown = (e) => {
+    }
+profileBox.ontouchmove = (e)=>{
+  console.log('touchmove')
+  if(!isTouchDown){
+    console.log('not touch')
+    return false
+  }
+  var touches = e.targetTouches[0]
+  console.log(touches)
+  if(touches.movementY < 1 && isTouchDown == true){
+    console.log('istocuhdown swipe up to scroll down')
+         
+    $('.profile-background').css('top','-370px')
+    $('.profile-background2').css('top','0px')
+  }
+  if(touches.movementY > 1 && isTouchDown == true){
+    console.log('tocuh down swipe down to scroll up')
+            $('.profile-background').css('top','0px')
+            $('.profile-background2').css('top','370px')
+  }
+}
+      
+      profileBox.onmousedown = (e) => {
         console.log('profile mose down')
         isMouseDown = true
       }
-      profileBg.onmouseup = (e) => {
+      profileBox.onmouseup = (e) => {
         console.log('mouse up')
         isMouseDown = false
       }
-      profileBg.ontouchstart = (e) => {
-        var touched = e.targetTouches
+      profileBox.ontouchstart = (e) => {
+        var touch = e.touches[0]
+        if(touch.target.className == 'profile-box'){
+          console.log('what the fuck')
+      }
         isTouchDown = true
         console.log('touch down')
       }
-      profileBg.ontouchend = (e) => {
+      profileBox.ontouchend = (e) => {
         isTouchDown = false
         console.log('touch end')
       }
-      profileBg.ontouchmove = (e) => {
-        var touch = e.changedTouches[0]
-        console.log(touch)
-        if (touch.movementY < 1 && isTouchDown == true) {
-          var profileArticle2 = document.createElement('aritcle')
-          profileArticle2.className = 'profile-box2'
-          const profile2 = '<div class="profile-background2"><div class="profile-small-box"><div class="profile-post-thing">投稿</div><div class="img-circle-small"><img class="profile-img"></div><div class="profile-photo-movie2">照片.影片</div><div class="profile-chat-small"></div><div class="profile-op2"></div></div><section class="profile-post-box"><div class="profile-post-background"></div><span class="profile-post-nopost">沒有任何投稿</section><section class="profile-photo-movie-box"><div class="profile-photo-movie-background"></div><span class="profile-photo-movie-nopost">沒有照片或影片</section></div>'
-          $('.profile-background').addClass('move-up')
-          if ($('.profile-background').hasClass('move-up')) {
-            profileBox.appendChild(profileArticle2)
-          profileArticle2.innerHTML = profile2
-          var profileImg = document.querySelector('.profile-img')
-      profileImg.src = require('../images/yushan-img.jpg')
-            shanApp.arrPush(profileArticle2)
-            console.log(shanApp.arr)
-          }
-        }if(isTouchDown == true && e.movementY < 1){
-          $('.profile-background').addClass('move-down')
-          console.log('profile-bckground movedown')
-          if($('.profile-background').hasClass('move-down')){
-            setTimeout(function(){
-              var profileBox = document.querySelector('.profile-box')
-              profileBox.removeChild(profileArticle2)
-              shanApp.arrPop(profileArticle2)
-              console.log(shanApp.arr)
-            },1500)
-          }
-        }
-      }
-    }
+      
 
-  }
+  
 
-
+    
+  
 
 
     
 
+  },
+  // lineProfile2(){
+  //   var ismousedown = false
+  //   var isTouchDown = false
+  //   var profileBg2 = document.querySelector('.profile-background2')
+  //   profileBg2.onmousemove = (e)=>{
+  //     if(isMouseDown == true && e.movementY > 1){
+  //       $('.profile-background2').removeClass('move-up')
+  //       $('.profile-background2,.profile-background').addClass('move-down')
 
-  },
-  lineProfile2(){
-    var profileBg2 = document.querySelector('.profile-background2')
-    profileBg2.onmousemove = (e)=>{
-      if(isMouseDown == true && e.movementY > 1){
-        $('.profile-background').removeClass('move-up')
-        $('.profile-background2').addClass('move-down')
-        console.log('profile-bckground movedown')
-        if($('.profile-background2').hasClass('move-down')){
-          setTimeout(function(){
-            var profileBox = document.querySelector('.profile-box')
-            profileBox.removeChild(profileArticle2)
-            shanApp.arrPop(profileArticle2)
-            console.log(shanApp.arr)
-          },1500)
-        }
-      }
-    }
-  },
+  //       console.log('profile-bckground movedown')
+  //       if($('.profile-background2').hasClass('move-down')){
+  //         setTimeout(function(){
+  //           var profileBox = document.querySelector('.profile-box')
+  //           profileBox.removeChild(profileArticle2)
+  //           shanApp.arrPop(profileArticle2)
+  //           console.log(shanApp.arr)
+  //         },1500)
+  //       }
+  //     }
+  //   }
+  //   profileBg2.onmousedown=(e)=>{
+  //      console.log('mousedown')
+  //      ismousedown = true
+  //   }
+  //   profileBg2.onmouseup =(e)=>{
+  //     console.log('moudeup')
+  //     ismousedown = false
+  //   }
+  //   profileBg2.ontouchstart =(e)=>{
+  //     isTouchDown = true
+  //   }
+  //   profileBg2.ontouchend = (e)=>{
+  //     isTouchDown = false
+  //   }
+  //   profileBg2.ontouchmove = (e)=>{
+  //     var touch = e.changedTouches
+  //     if(isTouchDown == true && touch.movementY > 1){
+  //       $('.profile-background').removeClass('move-up')
+  //       $('.profile-background2').addClass('move-down')
+  //       console.log('profile-bckground movedown')
+  //       if($('.profile-background2').hasClass('move-down')){
+  //         setTimeout(function(){
+  //           var profileBox = document.querySelector('.profile-box')
+  //           profileBox.removeChild(profileArticle2)
+  //           shanApp.arrPop(profileArticle2)
+  //           console.log(shanApp.arr)
+  //         },1500)
+  //       }
+  //     }
+  //   }
+  // },
 
   profileToggle() {
     var profileToggle = document.querySelector('.profile-toggle')
@@ -561,7 +598,15 @@ shanApp = {
   },
   mobileBack() {
 
-
+//checking if shanapp.arr have undefine insdie if it does then remove it
+for (var i = 0; i < shanApp.arr.length; i++) {
+  if (shanApp.arr[i] === undefined || shanApp.arr[i] === null) {
+    shanApp.arr.splice(i, 1)
+    console.log('undefine null', shanApp.arr)
+  } else{
+    console.log('nothing trash')
+  }
+}
 
     var back = document.querySelector('.back')
     var screenBc2 = document.querySelector('.screen-boxcontrol2')
@@ -710,12 +755,14 @@ function checking(selector, callback, time) {
   self.start = function () {
     self.id = setInterval(self.check, time)
   }
-  self.check = function () {
+  self.check = function (err) {
     if (document.documentElement.contains(document.querySelector(selector))) {
       callback()
       console.log('find it', selector, 'proceed', callback)
       window.clearInterval(self.id)
 
+    }if(err){
+      console.log('err',err)
     }
     console.log('checking...', selector, callback)
   }
